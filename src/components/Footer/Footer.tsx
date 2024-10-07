@@ -14,8 +14,8 @@ const Footer = () => {
               <li><a href="#" className="hover:underline">Fast Link</a></li>
             </ul>
           </div>
-          <div className="w-full sm:w-1/4 mb-6 text-black">
-            <h3 className="text-lg font-medium mb-4">SUPPORT</h3>
+          <div className="w-full sm:w-1/4 mb-6 ">
+            <h3 className="text-lg font-medium mb-4 text-black">SUPPORT</h3>
             <ul className="space-y-2">
               <li><a href="#" className="hover:underline">Support Portal</a></li>
               <li><a href="#" className="hover:underline">FAQ</a></li>
@@ -23,8 +23,8 @@ const Footer = () => {
               <li><a href="#" className="hover:underline">Documentation</a></li>
             </ul>
           </div>
-          <div className="w-full sm:w-1/4 mb-6 text-black">
-            <h3 className="text-lg font-medium mb-4">COMPANY</h3>
+          <div className="w-full sm:w-1/4 mb-6 ">
+            <h3 className="text-lg font-medium mb-4 text-black">COMPANY</h3>
             <ul className="space-y-2">
               <li><a href="#" className="hover:underline">About Us</a></li>
               <li><a href="#" className="hover:underline">Press</a></li>
@@ -42,6 +42,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <span className="h-20 w-10 bg-gray-600"></span>
         <div className="text-center mt-10">
           <div className="mb-4">
             <a href="https://cryptapp.wpengine.com/" rel="home">
