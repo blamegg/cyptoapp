@@ -13,6 +13,9 @@ const config: Config = {
         foreground: "var(--foreground)",
         customYellow:"#fea301",
       },
+      fontFamily: {
+        varela: ['Varela', 'sans-serif'],
+      },
     },
   },
   plugins: [],
