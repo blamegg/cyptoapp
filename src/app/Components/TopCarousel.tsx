@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { hand, verticalScreen, horizontalScreen } from '@/assets'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import Slider from 'react-slick'
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
