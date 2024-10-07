@@ -48,6 +48,10 @@ const config: Config = {
         bitBlack: "#222328",
         text: "#353535",
         nLetterbg: "#1F202D",
+        customYellow:"#fea301",
+      },
+      fontFamily: {
+        varela: ['Varela', 'sans-serif'],
       },
     },
   },
