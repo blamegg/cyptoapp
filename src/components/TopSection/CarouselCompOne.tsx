@@ -10,7 +10,7 @@ export default function CarouselCompOne() {
     <div className="bg-customGray min-h-[55rem] text-white p-8 flex justify-between items-center">
       <div className="w-1/2 -mt-20">
         <motion.h2
-          className="text-yellow-500 w-fit text-2xl mb-2 "
+          className="text-yellow-500 w-fit text-2xl mb-2 font-opensans "
           initial={{ opacity: 0, x: -40, backgroundColor: "#ffffff" }}
           animate={{ opacity: 1, x: 0, backgroundColor: "#00000000" }}
           transition={{ duration: 1 }}
@@ -40,7 +40,7 @@ export default function CarouselCompOne() {
         </div>
 
         <motion.p
-          className="mb-6"
+          className="mb-6 font-opensans font-thin"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
