@@ -12,7 +12,8 @@ import Price from "@/components/shared/Price";
 
 import Downloads from "@/components/Downloads";
 
-import ChooseUs from "./ChooseUs";
+import ChooseUs from "@/components/ChooseUs";
+import Screenshot from "@/components/Screenshot";
 export default function Home() {
   return (
    <>
@@ -25,6 +26,7 @@ export default function Home() {
    <NewsLetter/>
    <Downloads/>
    <ChooseUs/>
+   <Screenshot/>
   <Price/>
   <NetworkInfo/>
   <ContactForm/>
