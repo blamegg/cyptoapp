@@ -7,7 +7,7 @@ import ScatteredCrypto from "./ScatteredCrypto";
 
 export default function CarouselCompOne() {
   return (
-    <div className="bg-customGray min-h-[55rem] text-white p-8 flex justify-between items-center">
+    <div className="bg-customGray px-20 min-h-[55rem] text-white p-8 flex justify-between items-center">
       <div className="w-1/2 -mt-20">
         <motion.h2
           className="text-yellow-500 w-fit text-2xl mb-2 font-opensans "
@@ -88,7 +88,7 @@ export default function CarouselCompOne() {
           <img
             src={horizontalScreen.src}
             alt="Horizontal Screen"
-            className="min-w-[52vw]"
+            className="min-w-[48vw]"
           />
         </motion.div>
         <motion.div
