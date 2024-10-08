@@ -5,7 +5,7 @@ import Link from "next/link";
 const Navbar: React.FC = () => {
   return (
     <div className="bg-customGray border-b-[1px] border-gray-700">
-      <nav className="w-[75%] mx-auto flex justify-between items-center text-white h-[71px]">
+      <nav className="w-[75%] mx-auto flex justify-between items-center  h-[71px]">
         {/* Logo Section */}
         <div className="text-xl font-bold h-auto w-[210px]">
           <Link href="/">
@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
         </div>
 
        
-        <div className="hidden md:flex space-x-8 text-[16px] font-light">
+        <div className="hidden md:flex space-x-8 text-[16px] font-light ">
           {["Home", "Features", "Blog", "Faq", "Gallery", "Pricing", "Mail us", "Widgets"].map((item,i) => (
             <Link key={item} href={`/${item.toLowerCase().replace(" ", "")}`} className="relative group">
             
@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
                 {item}
               </span> */}
             
-              <span className={`block transition-transform duration-500 group-hover:-translate-y-3  ${i===0 ?"text-[#FEA301]": "text-white"} `}>
+              <span className={`block transition-transform duration-500 group-hover:-translate-y-3 ${i===0 ?"text-[#FEA301] hover:text-white": "text-white"} `}>
                 {item}
               </span>
             </Link>
