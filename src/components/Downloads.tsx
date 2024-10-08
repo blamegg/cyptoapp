@@ -1,8 +1,8 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import { img4, img5, img6 } from '@/Middle-assests';
+import { img4, img5, img6 } from '@/assets/Middle-assests';
 
-const Download = () => {
+const Downloads = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const Download = () => {
   );
 }
 
-export default Download;
+export default Downloads;
 
 
 

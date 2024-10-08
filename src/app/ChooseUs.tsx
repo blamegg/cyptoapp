@@ -6,17 +6,17 @@ import { FaMinus } from "react-icons/fa";
 
 const ChooseUs = () => {
      
-    let [first,setFirst] = useState(true);
-    let [second,setSecond] = useState(false);
-    let[third,setThird] = useState(false);
-    let [four,setFour] = useState(false);
-    let [five,setFive] = useState(false);
+    const [first,setFirst] = useState(true);
+    const [second,setSecond] = useState(false);
+    const[third,setThird] = useState(false);
+    const [four,setFour] = useState(false);
+    const [five,setFive] = useState(false);
 
-    let[headone, setHeadone] = useState(true);
-    let [headtwo,setHeadtwo] = useState(false);
-    let[headthree,setHeadthree] = useState(false);
+    const[headone, setHeadone] = useState(true);
+    const[headtwo,setHeadtwo] = useState(false);
+    const[headthree,setHeadthree] = useState(false);
 
-    let one = ()=>{
+    const one = ()=>{
         setFirst(true);
         setSecond(false);
         setThird(false);
@@ -24,7 +24,7 @@ const ChooseUs = () => {
         setFive(false);
     }
 
-    let two = () =>{
+const two = () =>{
         setFirst(false);
         setSecond(true);
         setThird(false);
@@ -32,7 +32,7 @@ const ChooseUs = () => {
         setFive(false);
     }
     
-    let three = () =>{
+    const three = () =>{
         setFirst(false);
         setSecond(false);
         setThird(true);
@@ -40,14 +40,14 @@ const ChooseUs = () => {
         setFive(false);
     }
 
-    let fourth = () =>{
+    const fourth = () =>{
         setFirst(false);
         setSecond(false);
         setThird(false);
         setFour(true);
         setFive(false);
     }
-    let fifth = () =>{
+    const fifth = () =>{
         setFirst(false);
         setSecond(false);
         setThird(false);
@@ -55,17 +55,17 @@ const ChooseUs = () => {
         setFive(true);
     }
 
-    let headfirst = () =>{
+    const headfirst = () =>{
         setHeadone(true);
         setHeadtwo(false);
         setHeadthree(false);
     }
-    let headsecond= () =>{
+    const headsecond= () =>{
         setHeadone(false);
         setHeadtwo(true);
         setHeadthree(false);
     }
-    let headthird= () =>{
+    const headthird= () =>{
         setHeadone(false);
         setHeadtwo(false);
         setHeadthree(true);
@@ -77,7 +77,7 @@ const ChooseUs = () => {
 
   return (
    <>
-   <div className='bg-Choosebg'>
+   <div className='bg-Choosebg '>
    <div className='flex justify-center flex-col items-center '>
     <div className='mt-20'>
         <p><span className='text-40 text-bitBlack'>Why?</span> <span className='text-crypOrange text-40 font-semibold'>Choose Us</span></p>

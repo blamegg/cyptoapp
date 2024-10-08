@@ -1,4 +1,4 @@
-import { img1,img2,img3 } from '@/Middle-assests';
+import { img1,img2,img3 } from '@/assets/Middle-assests';
 import React from 'react';
 import { FaRegCircleUser } from "react-icons/fa6";
 import { TiMessages } from "react-icons/ti";
@@ -6,9 +6,9 @@ import { TiMessages } from "react-icons/ti";
 const BitcoinNews = () => {
   return (
     <>
-    <div className='flex justify-center items-center flex-col'>
+    <div className='flex justify-center items-center flex-col mt-24'>
         <div className='whitespace-break-spaces' >
-           <span className='text-bitBlack text-40'>BitCoin & <span className='text-crypOrange text-40 font-semibold'>Cryptocurrency</span></span>
+           <span className='text-bitBlack text-4xl'>BitCoin & <span className='text-crypOrange text-40 font-semibold'>Cryptocurrency</span></span>
         </div>
         <div>
            <p className='text-13 font-semibold opacity-55'>OUR LATEST NEWS</p>

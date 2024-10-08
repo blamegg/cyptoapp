@@ -1,6 +1,10 @@
 import React from "react";
 
-const Footer = () => {
+import { FaFacebookF, FaGooglePlus, FaTwitter } from "react-icons/fa";
+import { IoLogoFlickr } from "react-icons/io";
+
+
+const Footer:React.FC = () => {
   return (
     <footer className="text-gray-400 py-10 bg-white font-varela">
       <div className="w-[80%] mx-auto">
@@ -35,10 +39,10 @@ const Footer = () => {
           <div className="w-full sm:w-1/4 mb-6">
             <h3 className="text-lg font-medium mb-4 text-black">SOCIAL</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-gray-400"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="hover:text-gray-400"><i className="fab fa-twitter"></i></a>
-              <a href="#" className="hover:text-gray-400"><i className="fab fa-google-plus-g"></i></a>
-              <a href="#" className="hover:text-gray-400"><i className="fab fa-flickr"></i></a>
+              <a href="#" className="hover:text-gray-400"><FaFacebookF /></a>
+              <a href="#" className="hover:text-gray-400"><FaTwitter /></a>
+              <a href="#" className="hover:text-gray-400"><FaGooglePlus /></a>
+              <a href="#" className="hover:text-gray-400"><IoLogoFlickr /></a>
             </div>
           </div>
         </div>
