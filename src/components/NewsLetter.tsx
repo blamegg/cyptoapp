@@ -17,7 +17,7 @@ const NewsLetter = () => {
     <div className='flex justify-center gap-5 mt-20'>
         <input placeholder='Name' className='h-16 w-96 p-5'/>
         <input placeholder='Email' className='h-16 w-96 p-5'/>
-        <button className=' bg-crypOrange w-auto p-5 flex items-center gap-5 text-white font-semibold'>SUBSCRIBE <span className='text-white'><FaPaperPlane /></span></button>
+        <button className=' bg-crypOrange w-44 p-5 flex items-center gap-5 text-white font-semibold'>SUBSCRIBE <span className='text-white'><FaPaperPlane /></span></button>
     </div>
    </div>
    </>

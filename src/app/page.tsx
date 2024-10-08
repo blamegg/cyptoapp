@@ -10,6 +10,9 @@ import ContactForm from "@/components/shared/ContactForm";
 import NetworkInfo from "@/components/shared/NetworkInfo";
 import Price from "@/components/shared/Price";
 
+import Downloads from "@/components/Downloads";
+
+import ChooseUs from "./ChooseUs";
 export default function Home() {
   return (
    <>
@@ -20,6 +23,8 @@ export default function Home() {
 
    <BitcoinNews/>
    <NewsLetter/>
+   <Downloads/>
+   <ChooseUs/>
   <Price/>
   <NetworkInfo/>
   <ContactForm/>

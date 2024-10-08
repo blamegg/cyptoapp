@@ -27,7 +27,9 @@ export default function AppLanding() {
           Using the App, you can check the current exchange rate for BTC and LTC
           at any time and keep yourself updated.
         </p>
-        <h2 className="text-2xl font-semibold mb-4 text-gray-800">Download the App on</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+          Download the App on
+        </h2>
         <div className="flex space-x-4">
           <Image
             src={appleStore}

@@ -1,24 +1,21 @@
-
 "use client";
-import React from 'react';
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
-import { Parallax } from 'react-parallax'; // Parallax library
-import { cryptoData } from './constants';
-
-
+import React from "react";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+import { Parallax } from "react-parallax"; // Parallax library
+import { cryptoData } from "./constants";
 
 const CryptoProgress = () => {
   return (
     <Parallax
-      bgImage="https://r4.wallpaperflare.com/wallpaper/285/256/939/bitcoin-money-wallpaper-f74f82a40f75df0acf22e441218157c5.jpg"
+      bgImage="https://cryptapp.wpenginepowered.com/wp-content/uploads/2018/03/parallax.jpg"
       strength={300}
-      className=" flex items-center min-w[100vh] h-[20rem] justify-center  "
+      className="flex items-center min-w[100vh] h-[22rem] justify-center"
     >
-      <div className="flex justify-between  items-center text-center  bg-gray-900 min-w-[100vw] px-32 min-h-[20rem]  bg-transparent bg-opacity-80">
+      <div className="flex justify-between items-center text-center !bg-gray-900 min-w-[100vw] px-32 min-h-[22rem] bg-transparent !bg-opacity-90">
         {cryptoData.map((crypto, index) => (
           <div key={index} className="flex flex-col items-center">
-            <div className="w-36 h-36  mb-2">
+            <div className="w-36 h-36 mb-2">
               <CircularProgressbar
                 value={crypto.percentage}
                 text={`${crypto.percentage}%`}
@@ -26,6 +23,8 @@ const CryptoProgress = () => {
                   pathColor: crypto.color,
                   textColor: "#ffffff",
                   trailColor: "#2B2B2B",
+                  pathTransitionDuration: 0.5,
+                  rotation: 0.3,
                 })}
               />
             </div>
