@@ -26,6 +26,34 @@ body {
   }
 }
 
+.navbar a {
+  color: white; /* Default text color */
+  padding: 10px 20px;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%; /* Expands underline */
+}
+
+.navbar a:hover {
+  color: #00C9A7; /* Hover text color */
+}
+
+
 .hover\:clip-polygon {
   position: relative;
   overflow: hidden; 
