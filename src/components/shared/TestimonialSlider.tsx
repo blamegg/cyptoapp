@@ -1,97 +1,124 @@
-'use client';
-import React, { useState } from 'react';
-import {  FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import img from '../../assets/testimonial2.jpg'; 
+"use client";
+import React, { useEffect, useState } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { profile1, profile2, profile3 } from '@/assets/sharedSection';
+import Image from "next/image";
 
 const testimonials = [
   {
-    name: "Anna Deynah",
-    role: "UX Designer",
-    quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    avatar: img.src,
+    name: "Alice Brown",
+    position: "Investor",
+    quote: "Cryptapp has made tracking my cryptocurrency so simple and secure. Highly recommended!",
+    image: profile1.src,
   },
   {
-    name: "John Doe",
-    role: "Web Developer",
-    quote: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.",
-    avatar: img.src,
+    name: "John Smith",
+    position: "Entrepreneur",
+    quote: "A game-changer for my crypto investments! Cryptapp has an intuitive design and offers amazing insights.",
+    image: profile2.src,
   },
   {
-    name: "Maria Kate",
-    role: "Photographer",
-    quote: "At vero eos et accusamus et iusto odio dignissimos ducimus.",
-    avatar: img.src,
+    name: "Emma Johnson",
+    position: "Trader",
+    quote: "With Cryptapp, I can track my portfolio easily and securely. It's a must-have tool for any crypto enthusiast.",
+    image: profile3.src,
+  },
+  // Duplicate entries for demonstration
+  {
+    name: "Alice Brown",
+    position: "Investor",
+    quote: "Cryptapp has made tracking my cryptocurrency so simple and secure. Highly recommended!",
+    image: profile1.src,
   },
   {
-    name: "Alex Smith",
-    role: "Marketing Specialist",
-    quote: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.",
-    avatar: img.src,
+    name: "John Smith",
+    position: "Entrepreneur",
+    quote: "A game-changer for my crypto investments! Cryptapp has an intuitive design and offers amazing insights.",
+    image: profile2.src,
   },
   {
-    name: "Emma Brown",
-    role: "Content Writer",
-    quote: "But I must explain to you how all this mistaken idea of denouncing pleasure.",
-    avatar: img.src,
+    name: "Emma Johnson",
+    position: "Trader",
+    quote: "With Cryptapp, I can track my portfolio easily and securely. It's a must-have tool for any crypto enthusiast.",
+    image: profile3.src,
   },
 ];
 
-const TestimonialCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsToShow = 3;
+const ITEMS_PER_PAGE = 3;
 
-  const showSlide = (index:number) => {
-    const totalSlides = Math.ceil(testimonials.length / itemsToShow);
-    if (index >= totalSlides) {
-      setCurrentIndex(0);
-    } else if (index < 0) {
-      setCurrentIndex(totalSlides - 1);
-    } else {
-      setCurrentIndex(index);
-    }
+const TestimonialSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? Math.max(testimonials.length - ITEMS_PER_PAGE, 0) : prevIndex - ITEMS_PER_PAGE
+    );
   };
 
-  return (
-    <div className="carousel relative max-w-6xl mx-auto">
-      {/* Controls */}
-      <button
-        className="carousel-control carousel-control-prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-white rounded-full p-2 shadow"
-        onClick={() => showSlide(currentIndex - 1)}
-      >
-        <FaChevronLeft />
-      </button>
-      <button
-        className="carousel-control carousel-control-next absolute top-1/2 right-4 transform -translate-y-1/2 bg-white rounded-full p-2 shadow"
-        onClick={() => showSlide(currentIndex + 1)}
-      >
-        <FaChevronRight />
-      </button>
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex + ITEMS_PER_PAGE >= testimonials.length ? 0 : prevIndex + ITEMS_PER_PAGE
+    );
+  };
 
-      {/* Inner */}
-      <div className='bg-gray-100 py-12'>
-        <div
-          className="carousel-inner flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)` }} 
-        >
-          {testimonials.map((testimonial, index) => (
-            <div className="carousel-item min-w-[33.33%] p-4" key={index}>
-              <div className="text-center">
-                <img
-                  className="rounded-full shadow-lg mb-4"
-                  src={testimonial.avatar}
-                  alt={testimonial.name}
-                  style={{ width: '150px' }}
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // Automatically change every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <section className="bg-white lg:py-44 sm:py-28 md:py-32">
+      <div className="flex flex-col justify-center items-center mb-10">
+        <h2 className="text-40 font-semibold">
+          <span className="text-crypOrange">Testimonials</span>
+        </h2>
+        <p className="text-13 font-semibold opacity-55">WHAT OUR USERS SAY</p>
+      </div>
+
+      <div className="mx-8 relative">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 max-w-7xl mx-auto">
+          {testimonials.slice(currentIndex, currentIndex + ITEMS_PER_PAGE).map((review, index) => (
+            <div key={index} className="bg-white-100 p-6 md:p-14 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+              <div className="flex items-start mb-4">
+                <Image
+                  src={review.image}
+                  alt={review.name}
+                  className="w-16 h-16 rounded-full mr-3"
+                  width={64}
+                  height={64}
                 />
-                <p className="text-lg italic text-gray-600 mb-2">“{testimonial.quote}”</p>
-                <h5 className="mb-1 font-bold">{testimonial.name}</h5>
-                <p className="text-sm text-gray-500">{testimonial.role}</p>
+                <div>
+                  <h3 className="text-md md:text-lg font-semibold">{review.name}</h3>
+                  <p className="text-gray-400 text-sm md:text-lg">{review.position}</p>
+                </div>
               </div>
+              <p className="text-black text-sm md:text-lg">{review.quote}</p>
             </div>
           ))}
         </div>
+
+        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 hidden md:block">
+          <button
+            className="p-3 sm:p-4 border-2 rounded-full bg-opacity-50 hover:bg-opacity-75"
+            onClick={prevSlide}
+          >
+            <FaArrowLeft />
+          </button>
+        </div>
+        <div className="absolute right-4 top-1/2 transform -translate-y-1/2 hidden md:block">
+          <button
+            className="p-3 sm:p-4 border-2 rounded-full bg-opacity-50 hover:bg-opacity-75"
+            onClick={nextSlide}
+          >
+            <FaArrowRight />
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default TestimonialCarousel;
+export default TestimonialSection;

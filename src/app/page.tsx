@@ -13,6 +13,7 @@ import Price from "@/components/shared/Price";
 import Downloads from "@/components/Downloads";
 
 import ChooseUs from "./ChooseUs";
+import TestimonialSection from "@/components/shared/TestimonialSlider";
 export default function Home() {
   return (
    <>
@@ -27,6 +28,7 @@ export default function Home() {
    <ChooseUs/>
   <Price/>
   <NetworkInfo/>
+  <TestimonialSection/>
   <ContactForm/>
 
   
