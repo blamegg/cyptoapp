@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
           <span className="absolute top-0 left-0 transition-transform duration-500 transform translate-y-full  opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
               Home
             </span>
-            <span className="block transition-transform duration-500  group-hover:-translate-y-0 group-hover:opacity-0">
+            <span className="block transition-transform duration-300  group-hover:-translate-y-10 group-hover:opacity-0">
               Home
             </span>
            
