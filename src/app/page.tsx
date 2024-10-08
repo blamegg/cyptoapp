@@ -1,5 +1,7 @@
-import Image from "next/image";
+
+import NetworkInfo from "@/components/Network/NetworkInfo";
 import AppLanding from "../components/AppLanding";
+import ContactForm from "@/components/Contact/ContactForm";
 
 
 export default function Home() {
@@ -7,6 +9,8 @@ export default function Home() {
     <>
 
     <AppLanding/>
+    <NetworkInfo/>
+    <ContactForm/>
     </>
   );
 }
