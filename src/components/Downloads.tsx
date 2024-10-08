@@ -24,7 +24,7 @@ const Downloads = () => {
               
             </div>
           </div>
-          <img className='absolute h-650 -translate-y-92 translate-x-24' src={img4.src} />
+          <img className='absolute h-650 -translate-y-92 translate-x-24 ' src={img4.src} />
         </div>
 
         <div className='w-1/2 mr-32'>
