@@ -68,14 +68,14 @@ const Screenshot = () => {
     <div className='mt-20'>
         <div className='flex flex-col justify-center items-center'>
             <div>
-                <span className='whitespace-break-spaces'><span className='text-40'>Cryptap</span> <span className='text-crypOrange text-40 font-semibold'>Live Screenshots</span></span>
+                <span className='whitespace-break-spaces'><span className='text-40'>Cryptap</span>  <span className='text-crypOrange text-40 font-semibold'>Live Screenshots</span></span>
             </div>
             <div>
                 <span className='text-13 font-semibold opacity-55'>CRYPTAP WORKS FOR YOUR SUCCESS</span>
             </div>
         </div>
 
-        <div className=" w-full max-w-7xl h-auto  mx-auto overflow-hidden mt-20 ">
+        <div className=" w-full max-w-6xl h-auto  mx-auto overflow-hidden mt-20 ">
       <div 
         className="flex transition-transform duration-300 ease-in-out"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}

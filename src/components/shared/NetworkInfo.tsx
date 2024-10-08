@@ -1,6 +1,5 @@
 import React from "react";
-import img from "../../assets/img.png"; 
-
+import { background } from "@/assets/sharedSection";
 const NetworkInfo = () => {
   return (
     <div className="bg-gray-100 h-[500px] p-6 flex  ">
@@ -10,7 +9,7 @@ const NetworkInfo = () => {
          <div
           className="w-2/3 h-60  rounded-lg flex justify-center items-center  "
           style={{
-            backgroundImage: `url(${img.src})`,
+            backgroundImage: `url(${background.src})`,
           }}
         >
          
@@ -30,9 +29,9 @@ const NetworkInfo = () => {
        
 
         {/* Right Section - Text Content */}
-        <div className="w-2/3 text-center lg:text-left ">
-          <h2 className="text-3xl font-bold text-gray-800">
-            Innovative Payment <span className="text-[#FEA301]">Network</span>
+        <div className="w-2/3 text-center lg:text-left font-sans ">
+          <h2 className="text-[40px]  text-[#222328]">
+            Innovative Payment <span className="text-[#FEA301] ">Network</span>
           </h2>
           <h2 className="text-gray-600 mt-4 text-2xl ">
             Simple & secure access to buy, sell and use Bitcoin.

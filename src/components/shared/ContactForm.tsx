@@ -1,12 +1,14 @@
 import React from 'react'
-import bg from '../../assets/contact.jpg'
+import { contact } from '@/assets/sharedSection'
 const ContactForm:React.FC = () => {
   return (
     <div
-      className="bg-cover bg-center py-16"
+      className="bg-cover bg-center py-16 "
       style={{
-        backgroundImage: `url(${bg.src})`,
-         
+        backgroundImage: `url(${contact.src})`,
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
       <div className="max-w-2xl mx-auto text-center">
@@ -18,31 +20,31 @@ const ContactForm:React.FC = () => {
             <input
               type="email"
               placeholder="text@domain.com"
-              className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#FEA301]"
               required
             />
             <div className="flex gap-3 mb-2">
               <input
                 type="text"
                 placeholder="John"
-                className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 w-1/2"
+                className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#FEA301] w-1/2"
                 required
               />
               <input
                 type="text"
                 placeholder="Christopher"
-                className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 w-1/2"
+                className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#FEA301] w-1/2"
                 required
               />
             </div>
           </div>
           <textarea
             placeholder="Your message..."
-            className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 mb-6"
+            className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#FEA301] mb-6"
             rows={4}
             required
           ></textarea>
-          <button className="w-full bg-[#FEA301] text-white py-3 rounded hover:bg-orange-600 transition duration-300">
+          <button className="w-full bg-[#FEA301] text-white py-3 rounded hover:cursor-pointer transition duration-300">
             SEND
           </button>
         </form>

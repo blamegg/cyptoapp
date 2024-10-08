@@ -7,7 +7,7 @@ import ScatteredCrypto from "./ScatteredCrypto";
 
 export default function CarouselCompOne() {
   return (
-    <div className="bg-customGray min-h-[55rem] text-white p-8 flex justify-between items-center">
+    <div className="bg-customGray px-20 min-h-[55rem] text-white p-8 flex justify-between items-center">
       <div className="w-1/2 -mt-20">
         <motion.h2
           className="text-yellow-500 w-fit text-2xl mb-2 font-opensans "
@@ -45,8 +45,9 @@ export default function CarouselCompOne() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Get to know the live rates of all the <strong className="font-bold">crypto currency</strong>{" "}
-          without any delay. Pay with crypto currency in more than{" "}
+          Get to know the live rates of all the{" "}
+          <strong className="font-bold">crypto currency</strong> without any
+          delay. Pay with crypto currency in more than{" "}
           <strong className="font-bold">20000 stores</strong>.
         </motion.p>
 
@@ -73,9 +74,8 @@ export default function CarouselCompOne() {
 
       <div className="relative w-1/2 mt-20">
         <motion.div
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: -100, opacity: 1 }}
           animate={{ x: -100, y: -359, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1.4 }}
           className="z-40 min-h-[180vh] absolute bg-transparent left-10 top-1/2 -translate-y-1/2 min-w-[50vw]"
         >
           <ScatteredCrypto />
@@ -88,7 +88,7 @@ export default function CarouselCompOne() {
           <img
             src={horizontalScreen.src}
             alt="Horizontal Screen"
-            className="min-w-[52vw]"
+            className="min-w-[48vw]"
           />
         </motion.div>
         <motion.div
