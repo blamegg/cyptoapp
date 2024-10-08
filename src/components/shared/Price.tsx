@@ -1,7 +1,5 @@
 import React from "react";
-import logo1 from "../../assets/pricing-logo-1.webp";
-import logo2 from "../../assets/pricing-logo-2.webp";
-import logo3 from "../../assets/pricing-logo-3.webp";
+import { price1,price2,price3 } from "@/assets/sharedSection";
 import { FaCheck } from "react-icons/fa";
 import { BsDash } from "react-icons/bs";
 
@@ -9,7 +7,7 @@ const Price = () => {
   const plans = [
     {
       name: "mycelium",
-      logo: logo1.src,
+      logo: price1.src,
       price: "$50",
       features: [
         "Control over your money",
@@ -23,7 +21,7 @@ const Price = () => {
     },
     {
       name: "Armory",
-      logo: logo2.src,
+      logo: price2.src,
       price: "$20",
       features: [
         "Control over your money",
@@ -37,7 +35,7 @@ const Price = () => {
     },
     {
       name: "Exodus",
-      logo: logo3.src,
+      logo: price3.src,
       price: "$100",
       features: [
         "Control over your money",

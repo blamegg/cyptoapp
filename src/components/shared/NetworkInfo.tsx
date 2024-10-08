@@ -1,6 +1,5 @@
 import React from "react";
-import img from "../../assets/img.png"; 
-
+import { background } from "@/assets/sharedSection";
 const NetworkInfo = () => {
   return (
     <div className="bg-gray-100 h-[500px] p-6 flex  ">
@@ -10,7 +9,7 @@ const NetworkInfo = () => {
          <div
           className="w-2/3 h-60  rounded-lg flex justify-center items-center  "
           style={{
-            backgroundImage: `url(${img.src})`,
+            backgroundImage: `url(${background.src})`,
           }}
         >
          

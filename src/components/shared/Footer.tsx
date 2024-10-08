@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="w-full sm:w-1/4 mb-6">
             <h3 className="text-lg font-medium mb-7 text-black">SOCIAL</h3>
-            <div className="flex space-x-4">
+            <div className="flex space-x-2">
               <a
                 href="#"
                 className="hover:text-gray-400 border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
@@ -113,20 +113,20 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-400 opacity-30 my-5" />
-        <div className="text-center mt-10">
+        <div className="border-t border-gray-400 opacity-30 my-12" />
+        <div className="text-center mt-10 ">
           <div className="mb-4">
             <a href="https://cryptapp.wpengine.com/" rel="home">
               <img
                 src="https://cryptapp.wpenginepowered.com/wp-content/themes/cryptapp/images/logo.png"
                 alt="CryptApp WordPress Theme"
-                className="mx-auto"
+                className="mx-auto "
               />
             </a>
           </div>
           <p>
             Copyright © 2018{" "}
-            <a href="#" className="hover:text-[#FEA301]">
+            <a href="#" className="hover:text-[#FEA301] text-">
               designthemes
             </a>{" "}
             | All Rights Reserved
