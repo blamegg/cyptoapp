@@ -1,6 +1,6 @@
 import { bitcoin, iota, omigo, ripple, zcash } from "@/assets";
 
-import { introIcon1, introIcon2, introIcon3 ,backgroundimg} from '@/assets';
+import { introIcon1, introIcon2, introIcon3 } from '@/assets';
 export const CarouselData=[
   {
     name:"Bitcoin",

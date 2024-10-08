@@ -40,14 +40,14 @@ export default function CarouselCompOne() {
         </div>
 
         <motion.p
-          className="mb-6 font-opensans font-thin"
+          className="mb-6 font-sans font-thin"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Get to know the live rates of all the <strong>crypto currency</strong>{" "}
+          Get to know the live rates of all the <strong className="font-bold">crypto currency</strong>{" "}
           without any delay. Pay with crypto currency in more than{" "}
-          <strong>20000 stores</strong>.
+          <strong className="font-bold">20000 stores</strong>.
         </motion.p>
 
         <div className="space-x-4">

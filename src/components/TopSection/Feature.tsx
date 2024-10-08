@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import { features } from './constants';
 import { motion } from 'framer-motion';
-import { backgroundimg1 } from '@/assets';
+
 
 const Feature = () => {
   const [hovered, setHovered] = useState<number | null>(null);
