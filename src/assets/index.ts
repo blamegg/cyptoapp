@@ -14,6 +14,7 @@ import introIcon1 from './TopSection/intro-icon-1-alt.webp'
 import introIcon2 from './TopSection/intro-icon-2-alt.webp'
 import introIcon3 from './TopSection/intro-icon-3-alt.webp'
 
+
 import mobile from './TopSection/mobiles.webp'
 
 import l1 from './TopSection/l1.png'

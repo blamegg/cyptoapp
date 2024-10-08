@@ -6,6 +6,9 @@ import Transaction from "../components/TopSection/Transaction";
 
 import BitcoinNews from "@/components/BitcoinNews";
 import NewsLetter from "@/components/NewsLetter";
+import ContactForm from "@/components/shared/ContactForm";
+import NetworkInfo from "@/components/shared/NetworkInfo";
+import Price from "@/components/shared/Price";
 
 import Downloads from "@/components/Downloads";
 
@@ -22,6 +25,9 @@ export default function Home() {
    <NewsLetter/>
    <Downloads/>
    <ChooseUs/>
+  <Price/>
+  <NetworkInfo/>
+  <ContactForm/>
 
   
         </>

@@ -17,17 +17,17 @@ export default function AppLanding() {
 
       {/* Right Section with Text and Download Buttons */}
       <div className="lg:w-1/2 max-w-lg">
-        <h1 className="text-4xl lg:text-5xl  mb-4">
+        <h1 className="text-4xl lg:text-4xl  mb-4 font-sans font-thin">
           App For Bitcoin With
-          <span className="block text-customYellow font-bold">
+          <span className="block text-customYellow !font-ubuntu font-bold">
             Functional Wallet
           </span>
         </h1>
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-600 mb-8 font-opensans font-light">
           Using the App, you can check the current exchange rate for BTC and LTC
           at any time and keep yourself updated.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">Download the App on</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-gray-800">Download the App on</h2>
         <div className="flex space-x-4">
           <Image
             src={appleStore}
