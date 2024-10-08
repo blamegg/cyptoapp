@@ -38,7 +38,7 @@ const testimonials = [
 
 const TestimonialCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsToShow = 3; // Number of testimonials to show at once
+  const itemsToShow = 3;
 
   const showSlide = (index:number) => {
     const totalSlides = Math.ceil(testimonials.length / itemsToShow);

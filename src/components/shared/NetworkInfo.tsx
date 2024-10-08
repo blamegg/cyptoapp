@@ -30,9 +30,9 @@ const NetworkInfo = () => {
        
 
         {/* Right Section - Text Content */}
-        <div className="w-2/3 text-center lg:text-left ">
-          <h2 className="text-3xl font-bold text-gray-800">
-            Innovative Payment <span className="text-[#FEA301]">Network</span>
+        <div className="w-2/3 text-center lg:text-left font-sans ">
+          <h2 className="text-[40px]  text-[#222328]">
+            Innovative Payment <span className="text-[#FEA301] ">Network</span>
           </h2>
           <h2 className="text-gray-600 mt-4 text-2xl ">
             Simple & secure access to buy, sell and use Bitcoin.
