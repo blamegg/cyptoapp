@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./light-logo.webp";
+import logo from "../../assets/light-logo.webp";
 import Link from "next/link";
 
 const Navbar: React.FC = () => {

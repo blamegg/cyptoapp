@@ -1,10 +1,8 @@
-import Image from "next/image";
-import BitcoinNews from "./BitcoinNews";
-import NewsLetter from "./NewsLetter";
-import Download from "./Download";
+import AppLanding from "@/components/AppLanding";
+import BitcoinNews from "@/components/BitcoinNews";
+import NewsLetter from "@/components/NewsLetter";
+import { Download } from "lucide-react";
 
-import AppLanding from "./Components/AppLanding";
-import TopCarousel from "./Components/TopCarousel";
 export default function Home() {
   return (
    <>
@@ -12,7 +10,7 @@ export default function Home() {
    <NewsLetter/>
    <Download/>
 
-    <TopCarousel/>
+  
     <AppLanding/>
     </>
   );
