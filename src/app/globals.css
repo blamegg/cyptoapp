@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;700&family=Open+Sans:wght@100;300;400;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -15,7 +13,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-ubuntu), sans-serif;
+  font-family: "Varela", sans-serif;
   overflow-x: hidden;
 
 }
@@ -26,59 +24,29 @@ body {
   }
 }
 
-.navbar a {
-  color: white; /* Default text color */
-  padding: 10px 20px;
-  text-decoration: none;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.navbar a::after {
-  content: '';
-  width: 0;
-  height: 2px;
-  background: white;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transition: width 0.3s ease;
-}
-
-.navbar a:hover::after {
-  width: 100%; /* Expands underline */
-}
-
-.navbar a:hover {
-  color: #00C9A7; /* Hover text color */
-}
-
 
 .hover\:clip-polygon {
   position: relative;
-  overflow: hidden; 
-  display: inline-block; /* Allow for clipping */
-  transition: all 0.3s ease-in-out; /* Smooth transitions */
-}
-
-.hover\:clip-polygon span {
-  display: block; /* Allow stacking */
-  position: absolute; /* Position absolutely */
-  top: 0; /* Align with the top */
-  left: 0; /* Align with the left */
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transitions */
-}
-
-.hover\:clip-polygon:hover span:first-child {
-  transform: translateY(-100%); /* Move the first span up */
-  opacity: 0; /* Hide it */
-}
-
-.hover\:clip-polygon:hover span:last-child {
-  transform: translateY(0); /* Bring the second span into view */
-  opacity: 1; /* Show it */
+  transition: all 0.3s ease-in-out;
+  clip-path: polygon(50% 0%, 100% 50%, 100% 80%, 20% 100%, 0% 62%);
+ 
 }
 
 .hover\:clip-polygon:hover {
+  animation: openBook 0.6s forwards; /* Trigger the animation on hover */
   background: #f1f1f1; /* Background color on hover */
 }
+
+@keyframes openBook {
+  0% {
+    clip-path: polygon(50% 0%, 100% 50%, 100% 80%, 20% 100%, 0% 62%); /* Initial pentagon */
+  }
+  50% {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%, 0% 100%, 100% 100%); /* V-shape (opens) */
+  }
+  100% {
+    clip-path: polygon(50% 0%, 100% 62%, 80% 100%, 20% 100%, 0% 62%); /* Final pentagon */
+  }
+}
+
+
