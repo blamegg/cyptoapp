@@ -1,23 +1,23 @@
 import React from "react";
-import img from "./img.png"; // Assuming you have the image in the src folder
+import img from "../../assets/img.png"; 
 
 const NetworkInfo = () => {
   return (
     <div className="bg-gray-100 min-h-screen p-6">
-      {/* Container for responsiveness */}
+   
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
         
-        {/* Left Section - Image with Overlay */}
+      
         <div
           className="relative w-full h-80 lg:h-full bg-cover bg-center rounded-lg"
           style={{
-            backgroundImage: `url(${img})`,
+            backgroundImage: `url(${img.src})`,
           }}
         >
-          {/* Card Overlay */}
-          <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-90 shadow-lg rounded-lg p-6">
+         
+          <div className="absolute inset-0 flex items-center justify-center bg-opacity-90 shadow-lg rounded-lg p-6">
             <div className="text-center">
-              <h2 className="text-blue-600 text-xl font-semibold mb-2">
+              <h2 className="text-[#2C4676] text-xl font-semibold mb-2">
                 BTC Prices List
               </h2>
               <p className="text-gray-600">

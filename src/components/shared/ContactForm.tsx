@@ -1,5 +1,5 @@
 import React from 'react'
-import bg from './contact.jpg'
+import bg from '../../assets/contact.jpg'
 const ContactForm:React.FC = () => {
   return (
     <div
