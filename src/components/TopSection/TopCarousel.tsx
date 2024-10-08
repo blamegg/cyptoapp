@@ -15,14 +15,14 @@ const TopCarousel = () => {
   const prevCarousel = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + components.length) % components.length);
   };
-/* 
-  useEffect(() => {
+ 
+  /* useEffect(() => {
     const interval = setInterval(() => {
       nextCarousel();
-    }, 3000);
+    }, 4000);
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
-  }, []); */
+    return () => clearInterval(interval); 
+  }, []);  */
 
   return (
     <div className="relative">

@@ -39,7 +39,7 @@ const CarouselCompTwo = () => {
         </motion.h1>
 
         <motion.p
-          className={`text-lg mb-6 transition-colors duration-500 ${isVisible ? "text-white" : "text-black"}`}
+          className={`text-lg mb-6 font-thin font-sans transition-colors duration-500 ${isVisible ? "text-white" : "text-black"}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}

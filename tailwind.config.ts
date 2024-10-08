@@ -53,6 +53,8 @@ const config: Config = {
       },
       fontFamily: {
         varela: ['Varela', 'sans-serif'],
+        ubuntu: ['Ubuntu', 'sans-serif'],
+        opensans: ['Open Sans', 'sans-serif'],
       },
     },
   },
