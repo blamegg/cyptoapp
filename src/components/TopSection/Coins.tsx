@@ -15,7 +15,7 @@ const CryptoProgress = () => {
       strength={300}
       className=" flex items-center min-w[100vh] h-[20rem] justify-center  "
     >
-      <div className="flex justify-between  items-center text-center  bg-gray-950 min-w-[100vw] px-32 min-h-[20rem]  bg-transparent bg-opacity-80">
+      <div className="flex justify-between  items-center text-center  bg-gray-900 min-w-[100vw] px-32 min-h-[20rem]  bg-transparent bg-opacity-80">
         {cryptoData.map((crypto, index) => (
           <div key={index} className="flex flex-col items-center">
             <div className="w-36 h-36  mb-2">
