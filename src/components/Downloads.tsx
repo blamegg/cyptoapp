@@ -1,8 +1,8 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import { img4, img5, img6 } from '@/assests';
+import { img4, img5, img6 } from '@/assets/Middle-assests';
 
-const Download = () => {
+const Downloads = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -15,10 +15,10 @@ const Download = () => {
 
   return (
     <>
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center mb-20'>
         <div className='w-1/2 justify-center ml-32 items-center h-auto relative'>
           <div
-            className={`mt-20 h-550 w-550 rounded-full border-40 border-black flex items-center justify-center transition-opacity duration-500 ${isVisible ? 'opacity-' : 'opacity-0'} transition-all ease-in-out`}
+            className={`mt-20 h-550 w-550 rounded-full border-40 border-black flex items-center justify-center transition-opacity duration-500 ${isVisible ? 'opacity-5' : 'opacity-0'} transition-all ease-in-out`}
           >
             <div className='h-350 w-350 rounded-full border-40 border-black flex items-center justify-center'>
               
@@ -48,7 +48,7 @@ const Download = () => {
   );
 }
 
-export default Download;
+export default Downloads;
 
 
 
