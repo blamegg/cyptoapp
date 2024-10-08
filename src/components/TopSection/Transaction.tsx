@@ -10,8 +10,8 @@ const Transaction = () => {
           Transparent{" "}
           <span className="font-bold text-customYellow">Transactions</span>
         </h2>
-        <p className="text-xs font-bold text-gray-700">GET CLARITY NOW!</p>
-        <p className='text-gray-600 text-lg font-thin'>Maecenas posuere ac ex vitae fringilla. Fusce pulvinar luctus elit. Fusce cursus lacus vel orci <br />
+        <p className="text-sm font-sans font-bold text-gray-500">GET CLARITY NOW!</p>
+        <p className='text-gray-600 mt-4 font-thin font-sans text-base'>Maecenas posuere ac ex vitae fringilla. Fusce pulvinar luctus elit. Fusce cursus lacus vel orci <br />
 malesuada pharetra. Duis vel imperdiet enim. Vestibulum dolor metus.
 
 </p>
