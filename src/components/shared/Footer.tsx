@@ -5,86 +5,86 @@ import { IoLogoFlickr } from "react-icons/io";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-gray-400 py-10 bg-white font-varela">
+    <footer className="text-[#757575] py-10 bg-white font-sans">
       <div className="w-[80%] mx-auto">
-        <div className="flex flex-wrap justify-between px-5">
-          <div className="w-full sm:w-1/4 mb-6">
-            <h3 className="text-lg font-medium mb-4 text-black">PRODUCTS</h3>
-            <ul className="space-y-2">
+        <div className="flex flex-wrap justify-between px-5 ">
+          <div className="w-full sm:w-1/4 mb-9">
+            <h3 className="text-lg font-medium mb-7 text-black">PRODUCTS</h3>
+            <ul className="space-y-5">
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-[#FEA301]">
                   Zen Features
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-[#FEA301]">
                   Mahogany Express
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-[#FEA301]">
                   Socialite Versace
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-[#FEA301]">
                   Fast Link
                 </a>
               </li>
             </ul>
           </div>
           <div className="w-full sm:w-1/4 mb-6 ">
-            <h3 className="text-lg font-medium mb-4 text-black">SUPPORT</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-medium mb-7 text-black">SUPPORT</h3>
+            <ul className="space-y-5">
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-[#FEA301]">
                   Support Portal
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-[#FEA301]">
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-[#FEA301]">
                   Tutorials
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-[#FEA301]">
                   Documentation
                 </a>
               </li>
             </ul>
           </div>
           <div className="w-full sm:w-1/4 mb-6 ">
-            <h3 className="text-lg font-medium mb-4 text-black">COMPANY</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-medium mb-7 text-black">COMPANY</h3>
+            <ul className="space-y-5">
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-[#FEA301]">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-[#FEA301]">
                   Press
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-[#FEA301]">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-[#FEA301]">
                   Forum
                 </a>
               </li>
             </ul>
           </div>
           <div className="w-full sm:w-1/4 mb-6">
-            <h3 className="text-lg font-medium mb-4 text-black">SOCIAL</h3>
+            <h3 className="text-lg font-medium mb-7 text-black">SOCIAL</h3>
             <div className="flex space-x-4">
               <a
                 href="#"
@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
           </div>
           <p>
             Copyright © 2018{" "}
-            <a href="#" className="hover:underline">
+            <a href="#" className="hover:text-[#FEA301]">
               designthemes
             </a>{" "}
             | All Rights Reserved
