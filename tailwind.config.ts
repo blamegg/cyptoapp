@@ -49,6 +49,7 @@ const config: Config = {
         text: "#353535",
         nLetterbg: "#1F202D",
         customYellow:"#fea301",
+        customGray:"rgb(34 35 47)"
       },
       fontFamily: {
         varela: ['Varela', 'sans-serif'],
