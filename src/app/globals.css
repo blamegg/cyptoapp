@@ -3,16 +3,19 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Varela", sans-serif;
+  overflow-x: hidden;
+
 }
 
 @layer utilities {
@@ -21,16 +24,31 @@ body {
   }
 }
 
-
 .hover\:clip-polygon {
   position: relative;
-  transition: all 0.3s ease-in-out;
-  clip-path: polygon(50% 0%, 100% 62%, 80% 100%, 20% 100%, 0% 62%);
-   
+  overflow: hidden; 
+  display: inline-block; /* Allow for clipping */
+  transition: all 0.3s ease-in-out; /* Smooth transitions */
+}
+
+.hover\:clip-polygon span {
+  display: block; /* Allow stacking */
+  position: absolute; /* Position absolutely */
+  top: 0; /* Align with the top */
+  left: 0; /* Align with the left */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transitions */
+}
+
+.hover\:clip-polygon:hover span:first-child {
+  transform: translateY(-100%); /* Move the first span up */
+  opacity: 0; /* Hide it */
+}
+
+.hover\:clip-polygon:hover span:last-child {
+  transform: translateY(0); /* Bring the second span into view */
+  opacity: 1; /* Show it */
 }
 
 .hover\:clip-polygon:hover {
-  
-  clip-path: polygon(50% 0%, 100% 62%, 80% 100%, 20% 100%, 0% 62%);
-  background: gray;
+  background: #f1f1f1; /* Background color on hover */
 }

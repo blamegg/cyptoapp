@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import {  FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import img from '../../assets/testimonial2.jpg'; 
 
 const testimonials = [
@@ -40,7 +40,7 @@ const TestimonialCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsToShow = 3; // Number of testimonials to show at once
 
-  const showSlide = (index:any) => {
+  const showSlide = (index:number) => {
     const totalSlides = Math.ceil(testimonials.length / itemsToShow);
     if (index >= totalSlides) {
       setCurrentIndex(0);

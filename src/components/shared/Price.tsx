@@ -57,17 +57,17 @@ const Price = () => {
         <h2 className="text-3xl font-bold text-gray-800">
           Comes with <span className="text-[#FEA301]">Best Price</span>
         </h2>
-        <p className="text-gray-500">We work for your success</p>
+        <p className="text-gray-500 text-xs pt-2">WE WORK FOR YOUR SUCCESS</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {plans.map((plan, index) => (
           <div
           key={index}
-          className="border rounded-lg shadow-lg p-6 bg-white transition-transform transform hover:scale-105"
+          className=" rounded-lg border border-gray-100 p-6 bg-white "
         >
-          <div className="relative mb-4 transition-all duration-300 ease-in-out">
-            <div className="border-4 border-transparent p-4 rounded-md mb-4 transition-all duration-300 ease-in-out hover:clip-polygon">
+          <div className="relative mb-4 ">
+            <div className="border-4 border-transparent p-4 rounded-md mb-4  hover:clip-polygon">
               <img src={plan.logo} alt={plan.name} className="h-16 mx-auto mb-2" />
               <h3 className="text-4xl font-bold text-center">{plan.price}</h3>
             </div>
@@ -84,7 +84,7 @@ const Price = () => {
               ))}
               {plan.negatives.map((negative, idx) => (
                 <li key={idx} className="flex items-center space-x-2">
-                  <span className="text-red-500">
+                  <span className="text-red-500 font-extrabold">
                     <BsDash />
                   </span>
                   <span className="text-gray-700">{negative}</span>

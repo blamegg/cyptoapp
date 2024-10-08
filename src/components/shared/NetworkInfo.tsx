@@ -30,11 +30,11 @@ const NetworkInfo = () => {
        
 
         {/* Right Section - Text Content */}
-        <div className="w-2/3 text-center lg:text-left">
+        <div className="w-2/3 text-center lg:text-left ">
           <h2 className="text-3xl font-bold text-gray-800">
             Innovative Payment <span className="text-[#FEA301]">Network</span>
           </h2>
-          <h2 className="text-gray-600 mt-4 text-2xl">
+          <h2 className="text-gray-600 mt-4 text-2xl ">
             Simple & secure access to buy, sell and use Bitcoin.
           </h2>
           <p className="text-gray-500 mt-4">
@@ -45,7 +45,7 @@ const NetworkInfo = () => {
             Proin quis purus eu mi fermentum blandit. Nam eget nisi ipsum. Nullam
             vitae nunc ac eros laoreet egestas.
           </p>
-          <button className="bg-[#FEA301] text-white font-bold py-2 px-4 mt-6 rounded-lg">
+          <button className="bg-[#FEA301] text-white font-light text-sm py-3 px-4 mt-6 r">
             READ MORE
           </button>
         </div>
