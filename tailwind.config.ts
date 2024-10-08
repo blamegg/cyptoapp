@@ -40,6 +40,9 @@ const config: Config = {
       fontSize: {
         '40': '40px',
         '13': '13px',
+        '18': '18px',
+        '16': '16px',
+
       },
       colors: {
         background: "var(--background)",
@@ -49,6 +52,7 @@ const config: Config = {
         text: "#353535",
         nLetterbg: "#1F202D",
         customYellow:"#fea301",
+        Choosebg: "#FAFAFA",
       },
       fontFamily: {
         varela: ['Varela', 'sans-serif'],
