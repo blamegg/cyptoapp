@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import { Applanding, appleStore, googlePlayStore } from '@/assets'
+import Image from "next/image";
+import { Applanding, appleStore, googlePlayStore } from "@/assets";
 
 export default function AppLanding() {
   return (
@@ -19,7 +19,9 @@ export default function AppLanding() {
       <div className="lg:w-1/2 max-w-lg">
         <h1 className="text-4xl lg:text-5xl  mb-4">
           App For Bitcoin With
-          <span className="block text-customYellow font-bold">Functional Wallet</span>
+          <span className="block text-customYellow font-bold">
+            Functional Wallet
+          </span>
         </h1>
         <p className="text-gray-600 mb-8">
           Using the App, you can check the current exchange rate for BTC and LTC
@@ -44,5 +46,5 @@ export default function AppLanding() {
         </div>
       </div>
     </div>
-  )
+  );
 }

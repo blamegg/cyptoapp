@@ -12,6 +12,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         customYellow:"#fea301",
+        customGray:"rgb(34 35 47)"
       },
       fontFamily: {
         varela: ['Varela', 'sans-serif'],
