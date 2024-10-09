@@ -4,7 +4,7 @@ import CarouselCompOne from "./CarouselCompOne";
 import CarouselCompTwo from "./CarouselCompTwo";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 
-const TopCarousel = () => {
+export const TopCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const components = [
     <CarouselCompOne key="compOne" />,
@@ -42,4 +42,3 @@ const TopCarousel = () => {
   );
 };
 
-export default TopCarousel;

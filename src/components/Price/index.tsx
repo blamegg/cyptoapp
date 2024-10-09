@@ -1,5 +1,5 @@
 import React from "react";
-import { pricingPlans } from "./data"; // Adjust the path if necessary
+import { pricingPlans } from "../constants"; 
 import { FaCheck } from "react-icons/fa";
 import { BsDash } from "react-icons/bs";
 

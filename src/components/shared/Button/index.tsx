@@ -1,6 +1,6 @@
 'use client';
 import React, { useState} from 'react';
-import { button1, button2 } from '@/assets/sharedSection'; // Adjust the import if needed
+import { button1, button2 } from '@/assets/sharedSection'; 
 
 const Button = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -19,7 +19,7 @@ const Button = () => {
     <img 
       src={isHovered ? button2.src : button1.src} 
       alt="Scroll to top" 
-      className="w-12 h-12" // Adjust size as needed
+      className="w-12 h-12"
     />
   </button></div>
    

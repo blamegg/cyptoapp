@@ -26,4 +26,7 @@ import l6 from './TopSection/l6.png'
 import l7 from './TopSection/l7.png'
 import l8 from './TopSection/l8.png'
 import pattern from './TopSection/pattern.png'
-export {pattern,l1,l2,l3,l4,l5,l6,l7,l8,mobile,introIcon1,introIcon2,introIcon3,bitcoin,ripple,omigo,zcash,iota,appleStore,Applanding,hand,googlePlayStore, horizontalScreen, verticalScreen}
+import ParallaxImg from './TopSection/parallax.jpg'
+import gradientImg from './TopSection/gradientImg.svg'
+import bgBlack from './TopSection/bgblackn.png'
+export {bgBlack,gradientImg,ParallaxImg,pattern,l1,l2,l3,l4,l5,l6,l7,l8,mobile,introIcon1,introIcon2,introIcon3,bitcoin,ripple,omigo,zcash,iota,appleStore,Applanding,hand,googlePlayStore, horizontalScreen, verticalScreen}
