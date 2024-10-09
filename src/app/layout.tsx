@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Ubuntu } from "next/font/google"
 import "./globals.css";
+import "react-circular-progressbar/dist/styles.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import Navbar from "@/components/shared/Header/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
 

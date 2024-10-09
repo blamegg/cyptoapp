@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        parallax: {
+          '0%': { backgroundPosition: 'center 50%' },
+          '100%': { backgroundPosition: 'center 100%' },
+        },
+      },
+      animation: {
+        parallax: 'parallax 1s linear infinite',
+      },
       borderWidth: {
         '10': '10px',  // Custom border width
         '12': '12px',
