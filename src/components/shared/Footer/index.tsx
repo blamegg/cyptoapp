@@ -88,25 +88,25 @@ const Footer: React.FC = () => {
             <div className="flex space-x-2">
               <a
                 href="#"
-                className="hover:text-gray-400 border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
+                className=" border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
               >
                 <FaFacebookF />
               </a>
               <a
                 href="#"
-                className="hover:text-gray-400 border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
+                className=" border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
               >
                 <FaTwitter />
               </a>
               <a
                 href="#"
-                className="hover:text-gray-400 border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
+                className=" border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
               >
                 <FaGooglePlus />
               </a>
               <a
                 href="#"
-                className="hover:text-gray-400 border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
+                className=" border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
               >
                 <IoLogoFlickr />
               </a>
