@@ -2,15 +2,15 @@ import React from "react";
 import { mobile } from "@/assets";
 import CryptoProgress from "./Coins";
 
-const Transaction = () => {
+export const Transaction = () => {
   return (
     <div className="">
-      <div className="text-center mb-20 mt-40">
+      <div className="text-center mb-20 mt-20">
         <h2 className="font-normal text-4xl mb-4">
           Transparent{" "}
           <span className="font-bold text-customYellow">Transactions</span>
         </h2>
-        <p className="text-sm font-sans font-bold text-gray-500">
+        <p className="text-xs font-sans font-bold text-gray-500">
           GET CLARITY NOW!
         </p>
         <p className="text-gray-600 mt-4 font-thin font-sans text-base">
@@ -27,4 +27,3 @@ const Transaction = () => {
   );
 };
 
-export default Transaction;

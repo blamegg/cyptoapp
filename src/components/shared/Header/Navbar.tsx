@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "../../assets/sharedSection/light-logo.webp";
+import logo from '../../../assets/sharedSection/light-logo.webp'
 import Link from "next/link";
 
 const Navbar: React.FC = () => {
   return (
     <div className="bg-customGray border-b-[1px] border-gray-700">
-      <nav className="w-[80%] mx-auto flex justify-between items-center  h-[71px]">
+      <nav className="w-[80%]  mx-auto flex justify-between items-center  h-[71px]">
         {/* Logo Section */}
-        <div className="text-xl font-bold h-auto w-[210px]">
+        <div className="w-[210px]">
           <Link href="/">
             <img src={logo.src} alt="logo" />
           </Link>
@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
             
             
             <div>
-            <span className={` mt-5 block  transition-transform duration-300 group-hover:-translate-y-3 group-hover:opacity-0   hover:text-[#FEA301]  ${i===0 ?"text-[#FEA301] hover:text-white": "text-white "} `}>
+            <span className={` mt-5 block text-[#FEA301] transition-transform duration-300 group-hover:-translate-y-3 group-hover:opacity-0   hover:text-[#FEA301]  ${i===0 ?"text-[#FEA301] hover:text-white": "text-white "} `}>
                 {item}
               </span>
               <span className={`  transition-transform duration-500 transform translate-y-full opacity-0 hover:text-[#FEA301] group-hover:translate-y-1 group-hover:opacity-100  `}>

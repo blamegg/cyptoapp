@@ -2,16 +2,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { verticalScreen, horizontalScreen } from "@/assets";
-import { CarouselData } from "./constants";
+import { CarouselData } from "../constants";
 import ScatteredCrypto from "./ScatteredCrypto";
 
 export default function CarouselCompOne() {
   return (
-    <div className="bg-customGray px-20 min-h-[55rem] text-white p-8 flex justify-between items-center">
+    <div className="bg-customGray px-20 min-h-[50rem] text-white p-8 flex justify-between items-center">
       <div className="w-1/2 -mt-20">
         <motion.h2
           className="text-yellow-500 w-fit text-2xl mb-2 font-opensans "
-          initial={{ opacity: 0, x: -40, backgroundColor: "#ffffff" }}
+          initial={{ opacity: 1, x: 0, backgroundColor: "#ffffff" }}
           animate={{ opacity: 1, x: 0, backgroundColor: "#00000000" }}
           transition={{ duration: 1 }}
         >
@@ -19,7 +19,7 @@ export default function CarouselCompOne() {
         </motion.h2>
         <motion.h1
           className="text-5xl font-bold mb-4 w-fit"
-          initial={{ opacity: 0, y: 20, backgroundColor: "#fea301" }}
+          initial={{ opacity: 1, y: 0, backgroundColor: "#fea301" }}
           animate={{ opacity: 1, y: 0, backgroundColor: "#00000000" }}
           transition={{ duration: 1, delay: 0.2 }}
         >
@@ -46,7 +46,7 @@ export default function CarouselCompOne() {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           Get to know the live rates of all the{" "}
-          <strong className="font-bold">crypto currency</strong> without any
+          <strong className="font-bold">crypto currency</strong> without any <br />
           delay. Pay with crypto currency in more than{" "}
           <strong className="font-bold">20000 stores</strong>.
         </motion.p>

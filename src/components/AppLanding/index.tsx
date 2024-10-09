@@ -1,29 +1,32 @@
 import Image from "next/image";
 import { Applanding, appleStore, googlePlayStore } from "@/assets";
 
-export default function AppLanding() {
+export const AppLanding=()=> {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between bg-white py-16 px-4 lg:px-24 max-w-7xl mx-auto">
+    <div className="flex flex-col lg:flex-row items-center justify-between bg-white py-8 px-4 lg:px-28 max-w-7xl mx-auto">
       {/* Left Section with App Image */}
       <div className="lg:w-1/2 mb-8 lg:mb-0">
         <Image
           src={Applanding}
           alt="Bitcoin Wallet App Interface"
-          width={600}
-          height={600}
+          width={450}
+          height={450}
           className="object-contain"
         />
       </div>
 
       {/* Right Section with Text and Download Buttons */}
-      <div className="lg:w-1/2 max-w-lg">
-        <h1 className="text-4xl lg:text-4xl  mb-4 font-sans font-thin">
+      <div className="lg:w-1/2 max-w-lg leading-8">
+        <h1 className="text-4xl lg:text-4xl  mb-4 font-ubuntu">
+        <span>
+
           App For Bitcoin With
-          <span className="block text-customYellow !font-ubuntu font-bold">
+        </span >
+          <span className="block text-customYellow font-ubuntu font-bold">
             Functional Wallet
           </span>
         </h1>
-        <p className="text-gray-600 mb-8 font-opensans font-light">
+        <p className="text-gray-600 mb-8  font-sans ">
           Using the App, you can check the current exchange rate for BTC and LTC
           at any time and keep yourself updated.
         </p>
