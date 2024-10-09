@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { features } from "../constants";
 import { motion } from "framer-motion";
-import { pattern ,gradientImg} from "@/assets";
+import { pattern, gradientImg } from "@/assets";
 
 export const Feature = () => {
   const [hovered, setHovered] = useState<number | null>(null);
@@ -32,7 +32,7 @@ export const Feature = () => {
           WHAT DO YOU GET
         </p>
       </div>
-      <div className="flex justify-between space-x-6 mx-20  min-h-[31rem]">
+      <div className="flex justify-between space-x-6   min-h-[31rem] max-w-[80vw] mx-auto">
         {features.map((feature, index) => (
           <motion.div
             key={index}
@@ -106,7 +106,8 @@ export const Feature = () => {
                   hovered === index ? "text-yellow-500" : "text-black"
                 }`}
               >
-                <span> </span>Learn More <span className="text-customYellow">&#62;</span>
+                <span> </span>Learn More{" "}
+                <span className="text-customYellow">&#62;</span>
               </motion.a>
             </div>
           </motion.div>
@@ -115,4 +116,3 @@ export const Feature = () => {
     </div>
   );
 };
-

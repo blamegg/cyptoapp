@@ -1,9 +1,11 @@
-import {Price, NetworkInfo, ContactForm, TestimonialSection} from "@/components";
+import {Price, NetworkInfo, ContactForm, TestimonialSection, Navbar} from "@/components";
 import { TopCarousel ,AppLanding,Feature,Transaction, BitcoinNews, NewsLetter, Downloads, ChooseUs, SsCarousel } from "@/components";
 
+import { SlideProvider } from "@/components/context/SlideContext"; // Adjust the path accordingly
 export default function Home() {
   return (
-    <>
+    <SlideProvider>
+    <Navbar />
       <div id="home">
         <TopCarousel />
       </div>
@@ -43,6 +45,7 @@ export default function Home() {
       <div id="contactForm">
         <ContactForm />
       </div>
-    </>
+    </SlideProvider>
   );
-}
+};
+
