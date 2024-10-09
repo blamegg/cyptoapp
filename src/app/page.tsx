@@ -1,8 +1,8 @@
 
-import AppLanding from "../components/TopSection/AppLanding";
-import TopCarousel from "../components/TopSection/TopCarousel";
-import Feature from "../components/TopSection/Feature";
-import Transaction from "../components/TopSection/Transaction";
+import AppLanding from "../components/AppLanding/AppLanding";
+import TopCarousel from "../components/TopCarousel/TopCarousel";
+import Feature from "../components/Features/Feature";
+import Transaction from "../components/Transaction/Transaction";
 
 import BitcoinNews from "@/components/BitcoinNews";
 import NewsLetter from "@/components/NewsLetter";
@@ -12,7 +12,8 @@ import Price from "@/components/Price/Price";
 
 import Downloads from "@/components/Downloads";
 
-import ChooseUs from "./ChooseUs";
+import ChooseUs from "@/components/ChooseUs";
+import Screenshot from "@/components/Screenshot";
 import TestimonialSection from "@/components/Testimonial/TestimonialSlider";
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
    <NewsLetter/>
    <Downloads/>
    <ChooseUs/>
+   <Screenshot/>
   <Price/>
   <NetworkInfo/>
   <TestimonialSection/>
