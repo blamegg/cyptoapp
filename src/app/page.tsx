@@ -15,6 +15,7 @@ import Downloads from "@/components/Downloads";
 import ChooseUs from "@/components/ChooseUs";
 import Screenshot from "@/components/Screenshot";
 import TestimonialSection from "@/components/Testimonial/TestimonialSlider";
+
 export default function Home() {
   return (
    <>

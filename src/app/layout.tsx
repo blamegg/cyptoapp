@@ -4,6 +4,7 @@ import { Ubuntu } from "next/font/google"
 import "./globals.css";
 import Navbar from "@/components/shared/Header/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
+import Button from "@/components/shared/Button/Button";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${ubuntu.variable}  antialiased`}
       ><Navbar/>
+      <Button/>
         {children}
         <Footer/>
       </body>
