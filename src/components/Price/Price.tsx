@@ -1,12 +1,12 @@
 import React from "react";
-import { price1,price2,price3 } from "@/assets/sharedSection";
+import { price1, price2, price3 } from "@/assets/sharedSection";
 import { FaCheck } from "react-icons/fa";
 import { BsDash } from "react-icons/bs";
 
 const Price = () => {
   const plans = [
     {
-      name: "mycelium",
+      name: "Mycelium",
       logo: price1.src,
       price: "$50",
       features: [
@@ -58,22 +58,21 @@ const Price = () => {
         <p className="text-[#757575] font-opensans text-[13px] my-3">WE WORK FOR YOUR SUCCESS</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {plans.map((plan, index) => (
-          <div
-          key={index}
-          className=" rounded-lg border border-gray-100 p-6 bg-white "
-        >
-          <div className="relative mb-8 ">
-            <div className="border-4 border-transparent p-4  rounded-md mb-4  hover:clip-polygon">
-              <img src={plan.logo} alt={plan.name} className="h-[150px] mx-auto mb-4" />
-              <h3 className="text-[50px] font-bold text-center">{plan.price}</h3>
+          <div key={index} className="rounded-lg border border-gray-100 p-6">
+            <div className="relative mb-8">
+              <div className={`card ${index === 1 ? 'fixed' : ''} `}>
+                <div className="card-content p-5">
+                  <img src={plan.logo} alt={plan.name} className="h-[100px] mx-auto mb-4" />
+                  <h3 className="text-[50px] font-bold text-center">{plan.price}</h3>
+                </div>
+              </div>
             </div>
-          </div>
 
-            <ul className="mb-6 space-y-3 font-sans ">
+            <ul className="mb-6 space-y-3 font-sans">
               {plan.features.map((feature, idx) => (
-                <li key={idx} className="flex items-center space-x-2 ">
+                <li key={idx} className="flex items-center space-x-2">
                   <span className="text-green-500">
                     <FaCheck />
                   </span>
