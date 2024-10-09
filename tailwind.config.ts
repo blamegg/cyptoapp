@@ -8,8 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+
+      margin: {
+        '17': '68px',
+        '18': '72px',
+        '19': '76px', 
+      },
       borderWidth: {
-        '10': '10px',  // Custom border width
+        '10': '10px',  
         '12': '12px',
         '16': '16px',
         '20': '20px',
