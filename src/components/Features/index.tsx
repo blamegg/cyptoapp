@@ -32,7 +32,7 @@ export const Feature = () => {
           WHAT DO YOU GET
         </p>
       </div>
-      <div className="flex justify-between space-x-6 mx-20  min-h-[75vh]">
+      <div className="flex justify-between space-x-6 mx-20  min-h-[31rem]">
         {features.map((feature, index) => (
           <motion.div
             key={index}
