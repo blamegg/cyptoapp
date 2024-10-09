@@ -6,7 +6,6 @@ import "react-circular-progressbar/dist/styles.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { Navbar } from "@/components";
 import {Footer} from "@/components";
 import Button from "@/components/shared/Button";
 
@@ -41,7 +40,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${ubuntu.variable}  antialiased`}
       >
         <Button />
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>

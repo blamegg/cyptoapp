@@ -2,10 +2,12 @@
 import React, { useState } from "react";
 import { logo } from "@/assets/sharedSection";
 import Link from "next/link";
+import { useSlideContext } from "@/components/context/SlideContext";
 
 const Navbar: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
+const { currentIndex } = useSlideContext();
+  console.log("current index", currentIndex);
   return (
     <div className="bg-customGray border-b-[1px] border-gray-700">
       <nav className="w-[80%] mx-auto flex justify-between items-center h-[71px]">

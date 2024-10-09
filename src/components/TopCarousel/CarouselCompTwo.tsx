@@ -4,6 +4,7 @@ import { hand ,bgBlack} from "@/assets";
 import { IoLogoAndroid } from "react-icons/io";
 import { FaApple } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { EffectBlockBottomToTop, EffectBlockTopToBottom } from "./EffectBlock";
 
 const CarouselCompTwo = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -43,12 +44,18 @@ const CarouselCompTwo = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
+        <EffectBlockBottomToTop>
+
           <span className="whitespace-nowrap">
             One App for all your <br />
           </span>
+        </EffectBlockBottomToTop>
+        <EffectBlockTopToBottom bgColor="bg-white">
+
           <span className="text-customYellow whitespace-nowrap">
             Crypto Trading
           </span>
+        </EffectBlockTopToBottom>
         </motion.h1>
 
         <motion.p
@@ -90,7 +97,7 @@ const CarouselCompTwo = () => {
       <div className="relative  min-w-[70vw] h-full flex justify-end">
         <motion.div
           className="absolute -bottom-16"
-          initial={{ y: 600, x: 300, opacity: 0 }}
+          initial={{ y: 600, x: -80, opacity: 0 }}
           animate={{ y: 352, x: -80, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
