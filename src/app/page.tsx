@@ -6,14 +6,14 @@ import Transaction from "../components/TopSection/Transaction";
 
 import BitcoinNews from "@/components/BitcoinNews";
 import NewsLetter from "@/components/NewsLetter";
-import ContactForm from "@/components/shared/ContactForm";
-import NetworkInfo from "@/components/shared/NetworkInfo";
-import Price from "@/components/shared/Price";
+import ContactForm from "@/components/Contact/ContactForm";
+import NetworkInfo from "@/components/Network/NetworkInfo";
+import Price from "@/components/Price/Price";
 
 import Downloads from "@/components/Downloads";
 
 import ChooseUs from "./ChooseUs";
-import TestimonialSection from "@/components/shared/TestimonialSlider";
+import TestimonialSection from "@/components/Testimonial/TestimonialSlider";
 export default function Home() {
   return (
    <>
