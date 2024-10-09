@@ -1,80 +1,71 @@
-
+'use client'
 import React from "react";
-import { profile1, profile2, profile3 } from "@/assets/sharedSection";
+import Slider from "react-slick"; 
 import Image from "next/image";
-
-const testimonials = [
-  {
-    name: "Stephanie Welch",
-    position: "INVISION",
-    quote: "Great to stay on top of the process. Especially liked to play with the financial section when viewing properties. Highly recommended!",
-    image: profile1.src,
-  },
-  {
-    name: "Sylvester Knight",
-    position: "AIRBNB",
-    quote: "Just started flat hunting. Your affordability calculator saved me some serious time to focus on what I can actually buy. Thanks so much.",
-    image: profile2.src,
-  },
-  {
-    name: "Andrew Bradshaw",
-    position: "EVERNOTE",
-    quote: "Thanks Plentific for helping us stay on top of a very stressful process! Finally exchanged and looking forward to complete.",
-    image: profile3.src,
-  },
-  {
-    name: "Stephanie Welch",
-    position: "INVISION",
-    quote: "Great to stay on top of the process. Especially liked to play with the financial section when viewing properties. Highly recommended!",
-    image: profile1.src,
-  },
-  {
-    name: "Sylvester Knight",
-    position: "AIRBNB",
-    quote: "Just started flat hunting. Your affordability calculator saved me some serious time to focus on what I can actually buy. Thanks so much.",
-    image: profile2.src,
-  },
-  {
-    name: "Andrew Bradshaw",
-    position: "EVERNOTE",
-    quote: "Thanks Plentific for helping us stay on top of a very stressful process! Finally exchanged and looking forward to complete.",
-    image: profile3.src,
-  },
-];
+import testimonials from "../constants"; 
+import { quote } from "@/assets/sharedSection";
 
 const TestimonialSection = () => {
+  
+  const settings = {
+    dots: false, 
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,  
+    autoplaySpeed: 3000,  
+    pauseOnHover: false,  
+    arrows: false,  
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <section className="bg-white py-28 ">
-      <div className=" mx-auto  overflow-hidden w-[80%]">
-        <div className="carousel">
+    <section className="bg-white py-32">
+      <div className="mx-auto w-[80%]">
+        <Slider {...settings}>
           {testimonials.map((review, index) => (
             <div
               key={index}
-              className="testimonial-card bg-white-100 p-6 md:p-14 rounded-lg shadow-lg transition-all duration-300 ease-in-out"
+              className="testimonial-card flex flex-col justify-between items-center bg-white px-14 rounded-lg border-r border-gray-200   h-auto mx-5" // Adjusted gap using mx-4
             >
-              <div className="flex flex-col justify-center items-center gap-4 text-center font-sans">
-                <div className="text-[#FEA301] text-[34px]">″</div>
-                <div className="text-gray-400 text-sm flex gap-3">
+              <div className="flex flex-col justify-center items-center text-center gap-5 font-opensans">
+             
+                <div className=" text-crypOrange"><img src={quote.src} alt="quote" height={24} width={24} /></div>
+                <div className="text-gray-500 font-light  overflow-hidden  leading-6">
                   {review.quote}
                 </div>
+              </div>
+              <div className="flex flex-col justify-center items-center ">
                 <Image
                   src={review.image}
                   alt={review.name}
-                  className="rounded-full mb-2"
+                  className="rounded-full my-5"
                   width={88}
                   height={88}
                 />
-                <div>
-                  <h3 className="text-black font-bold pb-2">{review.name}</h3>
-                  <p className="text-gray-400 text-[10px] font-bold font-serif">{review.position}</p>
-                </div>
+                <h3 className="text-black font-bold pb-2">{review.name}</h3>
+                <p className="text-gray-400 text-[10px] font-bold font-serif">{review.position}</p>
               </div>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
-
-   
     </section>
   );
 };
