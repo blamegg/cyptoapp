@@ -14,6 +14,15 @@ const config: Config = {
         '18': '72px',
         '19': '76px', 
       },
+      keyframes: {
+        parallax: {
+          '0%': { backgroundPosition: 'center 50%' },
+          '100%': { backgroundPosition: 'center 100%' },
+        },
+      },
+      animation: {
+        parallax: 'parallax 1s linear infinite',
+      },
       borderWidth: {
         '10': '10px',  
         '12': '12px',
