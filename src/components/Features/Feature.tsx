@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { features } from "./constants";
+import { features } from "../constants";
 import { motion } from "framer-motion";
 import { pattern } from "@/assets";
 
@@ -13,7 +13,7 @@ const Feature = () => {
     setHovered(index);
     setTimeout(() => {
       setDelayedHover(true);
-    }, 400);
+    }, 200);
   };
 
   const handleMouseLeave = () => {
@@ -32,18 +32,18 @@ const Feature = () => {
           WHAT DO YOU GET
         </p>
       </div>
-      <div className="flex justify-between space-x-6 mx-20">
+      <div className="flex justify-between space-x-6 mx-20  min-h-[75vh]">
         {features.map((feature, index) => (
           <motion.div
             key={index}
-            className="relative bg-white p-6 pt-10 py-28 shadow-lg min-h-96 rounded-md text-center overflow-hidden"
+            className="relative bg-white p-6   pt-16  shadow-md shadow-gray-200 min-h-96  text-center overflow-hidden"
             whileHover="hover"
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
             {/* Background Gradient Image */}
             <motion.div
-              className="absolute inset-0 z-0 bg-no-repeat bg-cover"
+              className="absolute  inset-0 z-0 bg-no-repeat bg-cover"
               initial={{ y: "100%" }}
               animate={
                 hovered === index
@@ -67,11 +67,11 @@ const Feature = () => {
               className="absolute inset-0 z-10 w-full h-full object-cover"
             />
             {/* Foreground content */}
-            <div className="relative z-20">
+            <div className="relative z-20 ">
               <motion.img
                 src={feature.icon.src}
                 alt={feature.title}
-                className={`mx-auto mb-4 ${
+                className={`mx-auto  mb-4 ${
                   delayedHover && hovered === index ? "invert" : ""
                 }`}
                 whileHover={{ scale: 1.1 }}
@@ -83,7 +83,7 @@ const Feature = () => {
                 }}
               />
               <motion.h3
-                className={`text-lg font-normal mb-20 transition-colors duration-300 ${
+                className={`text-xl font-normal mb-10 mt-10 transition-colors duration-300 ${
                   delayedHover && hovered === index
                     ? "text-white"
                     : "text-black"
@@ -92,7 +92,7 @@ const Feature = () => {
                 {feature.title}
               </motion.h3>
               <motion.p
-                className={`text-gray-600 text-lg font-light px-4 mb-20 font-sans transition-colors duration-300 ${
+                className={`text-gray-600 text-base font-light px-4 mb-20 font-sans transition-colors duration-300 ${
                   delayedHover && hovered === index
                     ? "text-white"
                     : "text-black"
@@ -102,13 +102,11 @@ const Feature = () => {
               </motion.p>
               <motion.a
                 href="#"
-                className={`text-gray-800 text-sm hover:underline font-sans font-base font-medium transition-colors duration-300 ${
-                  delayedHover && hovered === index
-                    ? "text-yellow-500"
-                    : "text-black"
+                className={`text-gray-800 uppercase mt-10 text-xs font-sans hover:underline   font-medium transition-colors duration-300 ${
+                  hovered === index ? "text-yellow-500" : "text-black"
                 }`}
               >
-                Learn More <span className="text-customYellow">&#62;</span>
+                <span> </span>Learn More <span className="text-customYellow">&#62;</span>
               </motion.a>
             </div>
           </motion.div>

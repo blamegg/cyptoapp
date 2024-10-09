@@ -2,8 +2,8 @@
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import { Parallax } from "react-parallax"; // Parallax library
-import { cryptoData } from "./constants";
+import { Parallax } from "react-parallax"; 
+import { cryptoData } from "../constants";
 
 const CryptoProgress = () => {
   return (

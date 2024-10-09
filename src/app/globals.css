@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;700&family=Open+Sans:wght@100;300;400;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -13,7 +15,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Varela", sans-serif;
+  font-family: var(--font-ubuntu), sans-serif;
   overflow-x: hidden;
 
 }
@@ -23,30 +25,4 @@ body {
     text-wrap: balance;
   }
 }
-
-
-.hover\:clip-polygon {
-  position: relative;
-  transition: all 0.3s ease-in-out;
-  clip-path: polygon(50% 0%, 100% 50%, 100% 80%, 20% 100%, 0% 62%);
- 
-}
-
-.hover\:clip-polygon:hover {
-  animation: openBook 0.6s forwards; /* Trigger the animation on hover */
-  background: #f1f1f1; /* Background color on hover */
-}
-
-@keyframes openBook {
-  0% {
-    clip-path: polygon(50% 0%, 100% 50%, 100% 80%, 20% 100%, 0% 62%); /* Initial pentagon */
-  }
-  50% {
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%, 0% 100%, 100% 100%); /* V-shape (opens) */
-  }
-  100% {
-    clip-path: polygon(50% 0%, 100% 62%, 80% 100%, 20% 100%, 0% 62%); /* Final pentagon */
-  }
-}
-
 
