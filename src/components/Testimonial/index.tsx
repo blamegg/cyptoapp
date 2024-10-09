@@ -1,52 +1,38 @@
-
 import React from "react";
-import { profile1, profile2, profile3 } from "@/assets/sharedSection";
+import Slider from "react-slick"; 
 import Image from "next/image";
-
-const testimonials = [
-  {
-    name: "Stephanie Welch",
-    position: "INVISION",
-    quote: "Great to stay on top of the process. Especially liked to play with the financial section when viewing properties. Highly recommended!",
-    image: profile1.src,
-  },
-  {
-    name: "Sylvester Knight",
-    position: "AIRBNB",
-    quote: "Just started flat hunting. Your affordability calculator saved me some serious time to focus on what I can actually buy. Thanks so much.",
-    image: profile2.src,
-  },
-  {
-    name: "Andrew Bradshaw",
-    position: "EVERNOTE",
-    quote: "Thanks Plentific for helping us stay on top of a very stressful process! Finally exchanged and looking forward to complete.",
-    image: profile3.src,
-  },
-  {
-    name: "Stephanie Welch",
-    position: "INVISION",
-    quote: "Great to stay on top of the process. Especially liked to play with the financial section when viewing properties. Highly recommended!",
-    image: profile1.src,
-  },
-  {
-    name: "Sylvester Knight",
-    position: "AIRBNB",
-    quote: "Just started flat hunting. Your affordability calculator saved me some serious time to focus on what I can actually buy. Thanks so much.",
-    image: profile2.src,
-  },
-  {
-    name: "Andrew Bradshaw",
-    position: "EVERNOTE",
-    quote: "Thanks Plentific for helping us stay on top of a very stressful process! Finally exchanged and looking forward to complete.",
-    image: profile3.src,
-  },
-];
+import testimonials from "../constants"; 
 
 const TestimonialSection = () => {
+  // Slick settings
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <section className="bg-white py-28 ">
-      <div className=" mx-auto  overflow-hidden w-[80%]">
-        <div className="carousel">
+    <section className="bg-white py-28">
+      <div className="mx-auto overflow-hidden w-[80%]">
+        <Slider {...settings}>
           {testimonials.map((review, index) => (
             <div
               key={index}
@@ -71,10 +57,8 @@ const TestimonialSection = () => {
               </div>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
-
-   
     </section>
   );
 };
