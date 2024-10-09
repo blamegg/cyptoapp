@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
 import { cryptoData } from "../constants";
 import { ParallaxImg } from "@/assets";
 
 const CryptoProgress = () => {
   return (
     <div
+    className=""
     style={{
         backgroundImage: `url(${ParallaxImg.src})`,
        backgroundAttachment: 'fixed',
