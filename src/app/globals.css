@@ -26,3 +26,44 @@ body {
   }
 }
 
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  transition: transform 1s ease-in-out;
+  will-change: transform; 
+}
+
+.testimonial-card {
+  flex: 1 0 calc(33.33% - 20px); 
+  min-width: calc(33.33% - 20px); 
+}
+
+.carousel.slide {
+  transform: translateX(-100%); 
+}
+.carousel:hover {
+  transform: translateX(-100%); 
+}
+
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: clip-path 0.5s ease-in-out; 
+  clip-path: polygon(50% 100%, 100% 62%, 100% 0%, 0% 0%, 0% 62%); 
+  background: white;
+}
+
+.card:hover {
+  clip-path: polygon(50% 0%, 100% 62%, 100% 100%, 0% 100%, 0% 62%); 
+  background: #f1f1f1; 
+}
+.fixed {
+  clip-path: polygon(50% 100%, 100% 62%, 100% 0%, 0% 0%, 0% 62%); 
+  background: #f1f1f1;
+  transition: none;
+}
+
+
+
