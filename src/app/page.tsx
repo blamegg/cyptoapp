@@ -1,28 +1,51 @@
+import {Price, NetworkInfo, ContactForm, TestimonialSection, Navbar} from "@/components";
+import { TopCarousel ,AppLanding,Feature,Transaction, BitcoinNews, NewsLetter, Downloads, ChooseUs, SsCarousel } from "@/components";
 
-// Home.tsx or App.tsx
-import React from "react";
 import { SlideProvider } from "@/components/context/SlideContext"; // Adjust the path accordingly
-import { AppLanding, Feature, Transaction, BitcoinNews, NewsLetter, Downloads, ChooseUs, SsCarousel, Price, NetworkInfo, TestimonialSection, ContactForm, Navbar, TopCarousel } from "@/components";
-
-const Home: React.FC = () => {
+export default function Home() {
   return (
     <SlideProvider>
-      <Navbar />
-      <TopCarousel />
-      <AppLanding />
-      <Feature />
-      <Transaction />
-      <BitcoinNews />
-      <NewsLetter />
-      <Downloads />
-      <ChooseUs />
-      <SsCarousel />
-      <Price />
-      <NetworkInfo />
-      <TestimonialSection />
-      <ContactForm />
+    <Navbar />
+      <div id="home">
+        <TopCarousel />
+      </div>
+      <div id="appLanding">
+        <AppLanding />
+      </div>
+      <div id="feature">
+        <Feature />
+      </div>
+      <div id="transaction">
+        <Transaction />
+      </div>
+      <div id="bitcoinNews">
+        <BitcoinNews />
+      </div>
+      <div id="newsletter">
+        <NewsLetter />
+      </div>
+      <div id="downloads">
+        <Downloads />
+      </div>
+      <div id="chooseUs">
+        <ChooseUs />
+      </div>
+      <div id="ssCarousel">
+        <SsCarousel />
+      </div>
+      <div id="price">
+        <Price />
+      </div>
+      <div id="networkInfo">
+        <NetworkInfo />
+      </div>
+      <div id="testimonial">
+        <TestimonialSection />
+      </div>
+      <div id="contactForm">
+        <ContactForm />
+      </div>
     </SlideProvider>
   );
 };
 
-export default Home;

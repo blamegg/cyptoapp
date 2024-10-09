@@ -82,17 +82,16 @@ export const ChooseUs = () => {
             </p>
           </div>
         </div>
-
-        <div className="flex gap-20 p-32 ">
+        <div className="flex gap-10 w-[80vw] mx-auto mt-20   ">
           <div className="w-1/2">
-            <div className="flex justify-evenly">
+            <div className="flex px-4 ">
               <p
                 onClick={headfirst}
                 className={`${
                   headone ? "text-crypOrange" : "text-text"
                 } border-t-4 transition-all duration-500 ${
                   headone ? "border-crypOrange" : "border-Choosebg"
-                }  h-12 text-xl font-semibold p-5 hover:text-crypOrange flex items-center cursor-pointer`}
+                }  h-12 text-xl whitespace-nowrap font-medium p-3 hover:text-crypOrange flex items-center cursor-pointer`}
               >
                 Acquiring Bitcoins
               </p>
@@ -102,7 +101,7 @@ export const ChooseUs = () => {
                   headtwo ? "text-crypOrange" : "text-text"
                 } border-t-4 transition-all duration-500 ${
                   headtwo ? "border-crypOrange" : "border-Choosebg"
-                } h-12 text-xl font-semibold hover:text-crypOrange flex items-center p-5 cursor-pointer`}
+                } h-12 text-xl whitespace-nowrap font-medium hover:text-crypOrange flex items-center p-3 cursor-pointer`}
               >
                 Mining Bitcoins
               </p>
@@ -112,64 +111,62 @@ export const ChooseUs = () => {
                   headthree ? "text-crypOrange" : "text-text"
                 } border-t-4 ${
                   headthree ? "border-crypOrange" : "border-Choosebg"
-                } transition-all duration-500 h-12 text-xl p-5  font-semibold hover:text-crypOrange flex items-center cursor-pointer`}
+                } transition-all whitespace-nowrap duration-500 h-12 text-xl p-3  font-medium hover:text-crypOrange flex items-center cursor-pointer`}
               >
                 Digital Wallet
               </p>
             </div>
             <div className={`${headone ? "block" : "hidden"}`}>
-              <p className=" text-text text-start  flex ml-1 mt-5 leading-7">
-              Alternatively if you have a specific service or question in mind please dont hesitate to contact us to discuss this using the contact details:
+              <p className=" text-text text-start  flex px-4 mt-5 leading-7">
+                Alternatively if you have a specific service or question in mind
+                please dont hesitate to contact us to discuss this using the
+                contact details:
               </p>
-
-              <div className="flex  flex-col  mt-5 gap-3">
+              <div className="flex  flex-col px-3  mt-10 gap-3">
                 <p className="flex items-center gap-2 ">
                   <span className="text-xl  text-crypOrange">
                     <MdOutlineCurrencyBitcoin />
                   </span>
-                  <span className=" text-text">
-                  Crowdfunding
-                </span>
+                  <span className=" text-text">Crowdfunding</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <span className="text-xl text-crypOrange">
                     <MdOutlineCurrencyBitcoin />
                   </span>
-                  <span className=" text-text">
-                  Micro payments
-                  </span>
+                  <span className=" text-text">Micro payments</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <span className="text-xl text-crypOrange">
                     <MdOutlineCurrencyBitcoin />
                   </span>
-                  <span className=" text-text">
-                  Dispute Mediation
-                  </span>
+                  <span className=" text-text">Dispute Mediation</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <span className="text-xl text-crypOrange">
                     <MdOutlineCurrencyBitcoin />
                   </span>
-                  <span className=" text-text">
-                  Multi-signature accounts
-                  </span>
+                  <span className=" text-text">Multi-signature accounts</span>
                 </p>
               </div>
-
-              <div className="flex text-pretty ml-2 mt-5 ">
+              <div className="flex text-pretty  mt-5 px-4 ">
                 <p className=" text-text leading-7">
-                We have a team of writers who specialise in writing end of year reports to<br/> highlight the successes of your business and the forecast for the next<br/> year, which you can distribute to clients and investors, both current and potential. We have the skills and resources to create professional films. Whether you want a corporate promotional film or a record of a conference we can provide the services you require.
+                  We have a team of writers who specialise in writing end of
+                  year reports to
+                  <br /> highlight the successes of your business and the
+                  forecast for the next
+                  <br /> year, which you can distribute to clients and
+                  investors, both current and potential. We have the skills and
+                  resources to create professional films. Whether you want a
+                  corporate promotional film or a record of a conference we can
+                  provide the services you require.
                 </p>
               </div>
             </div>
-
             <div className={`${headtwo ? "block" : "hidden"}`}>
               <p className=" text-text text-start flex ml-1  mt-5  leading-7">
                 xxxxx tincidunt, nisl at porttitor vulputate, justo nulla
-                blandit nisl, ut posuere
-                 metus tortor vel odio. Aenean hendrerit nisi urna, eu
-                pos:
+                blandit nisl, ut posuere metus tortor vel odio. Aenean hendrerit
+                nisi urna, eu pos:
               </p>
 
               <div className="flex  flex-col  mt-5 gap-3">
@@ -177,9 +174,7 @@ export const ChooseUs = () => {
                   <span className="text-xl text-crypOrange">
                     <MdOutlineCurrencyBitcoin />
                   </span>
-                  <span className=" text-text">
-                    Duis aliquam lenb sodales.
-                  </span>
+                  <span className=" text-text">Duis aliquam lenb sodales.</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <span className="text-xl text-crypOrange">
@@ -205,41 +200,32 @@ export const ChooseUs = () => {
                     In luctus arcu urna commodo.
                   </span>
                 </p>
-              </div>
-
+              </div> 
               <div className="flex text-pretty ml-2 mt-5">
                 <p className=" text-text leading-7">
                   Maecenas posuere ac ex vitae fringilla. Fusce pulvinar luctus
-                  elit. Fusce cursus 
-                  lacus vel orci malesuada pharetra. Duis vel imperdiet enim.
-                  Vestibulum dolor
-                  metus, condimentum vitae vehicula et, facilisis a nunc.
-                  Suspendisse potenti.
-                  Fusce ullamcorper ullamcorper convallis. Morbi nec
-                  auctor mauris. Nam et arcu
-                  sit amet justo accumsan tempus vel in ante. Vestibulum
-                  lacinia velit eu lorem
-                   tincidunt vitae.
+                  elit. Fusce cursus lacus vel orci malesuada pharetra. Duis vel
+                  imperdiet enim. Vestibulum dolor metus, condimentum vitae
+                  vehicula et, facilisis a nunc. Suspendisse potenti. Fusce
+                  ullamcorper ullamcorper convallis. Morbi nec auctor mauris.
+                  Nam et arcu sit amet justo accumsan tempus vel in ante.
+                  Vestibulum lacinia velit eu lorem tincidunt vitae.
                 </p>
               </div>
-            </div>
-
+            </div> 
             <div className={`${headthree ? "block" : "hidden"}`}>
               <p className=" text-text text-start flex  mt-5 ml-1  leading-7">
                 yyyyy tincidunt, nisl at porttitor vulputate, justo nulla
                 blandit nisl, ut posuere
                 <br /> metus tortor vel odio. Aenean hendrerit nisi urna, eu
                 pos:
-              </p>
-
+              </p> 
               <div className="flex  flex-col  mt-5 gap-3">
                 <p className="flex items-center gap-2 ">
                   <span className="text-xl  text-crypOrange">
                     <MdOutlineCurrencyBitcoin />
                   </span>
-                  <span className=" text-text">
-                    Duis aliquam lenb sodales.
-                  </span>
+                  <span className=" text-text">Duis aliquam lenb sodales.</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <span className="text-xl text-crypOrange">
@@ -269,16 +255,12 @@ export const ChooseUs = () => {
               <div className="flex text-pretty ml-2 mt-5">
                 <p className=" text-text leading-7">
                   Maecenas posuere ac ex vitae fringilla. Fusce pulvinar luctus
-                  elit. Fusce cursus 
-                  lacus vel orci malesuada pharetra. Duis vel imperdiet enim.
-                  Vestibulum dolor
-                   metus, condimentum vitae vehicula et, facilisis a nunc.
-                  Suspendisse potenti.
-                  Fusce ullamcorper ullamcorper convallis. Morbi nec
-                  auctor mauris. Nam et arcu
-                   sit amet justo accumsan tempus vel in ante. Vestibulum
-                  lacinia velit eu lorem
-                   tincidunt vitae.
+                  elit. Fusce cursus lacus vel orci malesuada pharetra. Duis vel
+                  imperdiet enim. Vestibulum dolor metus, condimentum vitae
+                  vehicula et, facilisis a nunc. Suspendisse potenti. Fusce
+                  ullamcorper ullamcorper convallis. Morbi nec auctor mauris.
+                  Nam et arcu sit amet justo accumsan tempus vel in ante.
+                  Vestibulum lacinia velit eu lorem tincidunt vitae.
                 </p>
               </div>
             </div>
@@ -304,18 +286,17 @@ export const ChooseUs = () => {
                   Unique Design Layous and Features
                 </p>
               </div>
-
               <p
-                className={`ml-16 mt-10 leading-7 mb-10 text-text ${
+                className={`ml-18  leading-7 mb-10 text-text ${
                   first ? "block" : "hidden"
                 } `}
               >
                 We work with clients big and small across a range of sectors
-                <br /> and we utilise all forms of media to get your name out
+                 and we utilise all forms of media to get your name out
                 there in
-                <br /> a way thats right for you. We have the skills and
+                 a way thats right for you. We have the skills and
                 resources to
-                <br /> create professional films.
+                create professional films.
               </p>
             </div>
             <div>
@@ -338,18 +319,17 @@ export const ChooseUs = () => {
                   Easy dashboard integration for all mobile devices
                 </p>
               </div>
-
               <p
-                className={`ml-16 mt-10 leading-7 mb-10 text-text ${
+                className={`ml-18  leading-7 mb-10 text-text ${
                   second ? "block" : "hidden"
                 }`}
               >
                 We work with clients big and small across a range of sectors
-                <br /> and we utilise all forms of media to get your name out
+                and we utilise all forms of media to get your name out
                 there in
-                <br /> a way thats right for you. We have the skills and
+                 a way thats right for you. We have the skills and
                 resources to
-                <br /> create professional films.
+                 create professional films.
               </p>
             </div>
             <div>
@@ -372,18 +352,17 @@ export const ChooseUs = () => {
                   Community Service Forums{" "}
                 </p>
               </div>
-
               <p
-                className={`ml-16 mt-10 leading-7 mb-10 text-text ${
+                className={`ml-18  leading-7 mb-10 text-text ${
                   third ? "block" : "hidden"
                 }`}
               >
                 We work with clients big and small across a range of sectors
-                <br /> and we utilise all forms of media to get your name out
+               and we utilise all forms of media to get your name out
                 there in
-                <br /> a way thats right for you. We have the skills and
+                a way thats right for you. We have the skills and
                 resources to
-                <br /> create professional films.
+               create professional films.
               </p>
             </div>
             <div>
@@ -406,18 +385,17 @@ export const ChooseUs = () => {
                   Find the best jobs For your location
                 </p>
               </div>
-
               <p
-                className={`ml-16 mt-10 leading-7 mb-10 text-text ${
+                className={`ml-18  leading-7 mb-10 text-text ${
                   four ? "block" : "hidden"
                 }`}
               >
                 We work with clients big and small across a range of sectors
-                <br /> and we utilise all forms of media to get your name out
+                 and we utilise all forms of media to get your name out
                 there in
-                <br /> a way thats right for you. We have the skills and
+                a way thats right for you. We have the skills and
                 resources to
-                <br /> create professional films.
+                create professional films.
               </p>
             </div>
             <div>
@@ -440,18 +418,17 @@ export const ChooseUs = () => {
                   Search for talented workers to improve your business
                 </p>
               </div>
-
               <p
-                className={`ml-16 mt-10 leading-7 mb-10 text-text ${
+                className={`ml-18  leading-7 mb-10 text-text ${
                   five ? "block" : "hidden"
                 }`}
               >
                 We work with clients big and small across a range of sectors
-                <br /> and we utilise all forms of media to get your name out
+                 and we utilise all forms of media to get your name out
                 there in
-                <br /> a way thats right for you. We have the skills and
+                 a way thats right for you. We have the skills and
                 resources to
-                <br /> create professional films.
+               create professional films.
               </p>
             </div>
           </div>
@@ -460,4 +437,3 @@ export const ChooseUs = () => {
     </>
   );
 };
-

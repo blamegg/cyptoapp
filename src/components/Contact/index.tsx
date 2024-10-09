@@ -12,8 +12,8 @@ const ContactForm = () => {
       }}
     >
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-[40px]  text-white mb-4 ">
-          Have Any Questions? <span className="text-[#FEA301]">Contact Us</span>
+        <h2 className="text-[40px]  text-white mb-4 font-light">
+          Have Any Questions? <span className="text-[#FEA301] font-bold">Contact Us</span>
         </h2>
         <form className="bg-transparent p-8 rounded-lg shadow-lg">
           <div className="grid grid-cols-1 gap-8 mb-5">
@@ -45,7 +45,7 @@ const ContactForm = () => {
             required
           ></textarea>
           <button className="w-full bg-customYellow text-white py-4  hover:cursor-pointer hover:bg-crypOrange transition duration-300">
-            <p className='font-sans font-bold text-[12px]'>SEND</p>
+            <p className='font-opensans font-bold text-[14px] '>SEND</p>
           </button>
         </form>
       </div>

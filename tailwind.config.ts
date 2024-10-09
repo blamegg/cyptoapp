@@ -8,8 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      aspectRatio: {
-        '9/4': '9 / 4',
+
+      margin: {
+        '17': '68px',
+        '18': '72px',
+        '19': '76px', 
       },
       keyframes: {
         parallax: {
@@ -21,7 +24,7 @@ const config: Config = {
         parallax: 'parallax 1s linear infinite',
       },
       borderWidth: {
-        '10': '10px',  // Custom border width
+        '10': '10px',  
         '12': '12px',
         '16': '16px',
         '20': '20px',
