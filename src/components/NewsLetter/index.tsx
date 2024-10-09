@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaPaperPlane } from "react-icons/fa";
 
-const NewsLetter = () => {
+export const NewsLetter = () => {
   return (
    <>
    <div className='h-450 mt-20 w-full bg-nLetterbg '>
@@ -26,4 +26,4 @@ const NewsLetter = () => {
   );
 }
 
-export default NewsLetter;
+

@@ -4,7 +4,7 @@ import { FaPlus } from "react-icons/fa6";
 import { MdOutlineCurrencyBitcoin } from "react-icons/md";
 import { FaMinus } from "react-icons/fa";
 
-const ChooseUs = () => {
+export const ChooseUs = () => {
   const [first, setFirst] = useState(true);
   const [second, setSecond] = useState(false);
   const [third, setThird] = useState(false);
@@ -460,4 +460,4 @@ const ChooseUs = () => {
     </>
   );
 };
-export default ChooseUs;
+

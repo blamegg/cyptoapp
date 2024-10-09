@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { img01, img02, img03, img04, img05, img06, img07, img08, img09, img10, img11, img12 } from '@/assets/Middle-assests'
 
-export default function Component() {
+export  const SsCarousel =() => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [touchStart, setTouchStart] = useState(0)
   const [touchEnd, setTouchEnd] = useState(0)
