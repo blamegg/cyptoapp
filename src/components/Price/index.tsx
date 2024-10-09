@@ -5,12 +5,12 @@ import { BsDash } from "react-icons/bs";
 
 const Price = () => {
   return (
-    <section className="py-10 bg-white">
-      <div className="text-center mb-10 font-sans">
+    <section className="py-28 bg-white">
+      <div className="text-center mb-20 font-sans">
         <h2 className="text-[40px] text-[#222328]">
           Comes with <span className="text-crypOrange font-bold">Best Price</span>
         </h2>
-        <p className="text-[#757575] font-opensans text-[10px] font-bold my-5 ">
+        <p className="text-[#757575] font-ubuntu text-[12px] font-bold my-3 ">
           WE WORK FOR YOUR SUCCESS
         </p>
       </div>
@@ -19,12 +19,12 @@ const Price = () => {
         {pricingPlans.map((plan, index) => (
           <div key={index} className="rounded-lg border border-gray-100 ">
             <div className="relative h-1/2">
-              <div className={`card ${index === 1 ? "fixed" : ""}`}>
+              <div className={` ${index === 1 ? "card fixed" : "card1 "}`}>
                 <div className="card-content p-10">
                   <img
                     src={plan.logo}
                     alt={plan.name}
-                    className="h-[100px] mx-auto mb-4"
+                    className="h-[100px] mx-auto mb-10"
                   />
                   <h3 className="text-[50px] font-bold text-center">
                     {plan.price}
@@ -44,7 +44,7 @@ const Price = () => {
                       <FaCheck />
                     </span>
                   ) : (
-                    <span className="text-red-500 font-extrabold ">
+                    <span className="text-red-500 font-extrabold  ">
                       <BsDash />
                     </span>
                   )}
