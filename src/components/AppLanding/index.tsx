@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Applanding, appleStore, googlePlayStore } from "@/assets";
 
-export const AppLanding=()=> {
+export const AppLanding = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between bg-white py-8 px-4 lg:px-28 max-w-7xl mx-auto">
       {/* Left Section with App Image */}
@@ -18,10 +18,7 @@ export const AppLanding=()=> {
       {/* Right Section with Text and Download Buttons */}
       <div className="lg:w-1/2 max-w-lg leading-8">
         <h1 className="text-4xl lg:text-4xl  mb-4 font-ubuntu">
-        <span>
-
-          App For Bitcoin With
-        </span >
+          <span>App For Bitcoin With</span>
           <span className="block text-customYellow font-ubuntu font-bold">
             Functional Wallet
           </span>
@@ -52,4 +49,4 @@ export const AppLanding=()=> {
       </div>
     </div>
   );
-}
+};

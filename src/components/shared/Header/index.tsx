@@ -1,8 +1,12 @@
+"use client";
 import React from "react";
 import { logo } from "@/assets/sharedSection";
 import Link from "next/link";
+import { useSlideContext } from "@/components/context/SlideContext";
 
 const Navbar: React.FC = () => {
+  const { currentIndex } = useSlideContext();
+  console.log("current index", currentIndex);
   return (
     <div className="bg-customGray border-b-[1px] border-gray-700">
       <nav className="w-[80%] mx-auto flex justify-between items-center  h-[71px]">
@@ -13,22 +17,36 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
 
-       
         <div className="hidden md:flex space-x-8 text-[16px] font-light ">
-          {["Home", "Features", "Blog", "Faq", "Gallery", "Pricing", "Mail us", "Widgets"].map((item,i) => (
-            <Link key={item} href={`/${item.toLowerCase().replace(" ", "")}`} className="relative group">
-            
-            
-            <div className="h-auto">
-            <span className={` mt-5 block text-[#FEA301] transition-transform duration-300 group-hover:-translate-y-3 group-hover:opacity-0   hover:text-[#FEA301]  ${i===0 ?"text-[#FEA301] hover:text-white": "text-white "} `}>
-                {item}
-              </span>
-              <span className={`  transition-transform duration-500 transform translate-y-full opacity-0 hover:text-[#FEA301] group-hover:translate-y-1 group-hover:opacity-0 `}>
-                {item}
-              </span>
-
-            </div>
-             
+          {[
+            "Home",
+            "Features",
+            "Blog",
+            "Faq",
+            "Gallery",
+            "Pricing",
+            "Mail us",
+            "Widgets",
+          ].map((item, i) => (
+            <Link
+              key={item}
+              href={`/${item.toLowerCase().replace(" ", "")}`}
+              className="relative group"
+            >
+              <div className="h-auto">
+                <span
+                  className={` mt-5 block text-[#FEA301] transition-transform duration-300 group-hover:-translate-y-3 group-hover:opacity-0   hover:text-[#FEA301]  ${
+                    i === 0 ? "text-[#FEA301] hover:text-white" : "text-white "
+                  } `}
+                >
+                  {item}
+                </span>
+                <span
+                  className={`  transition-transform duration-500 transform translate-y-full opacity-0 hover:text-[#FEA301] group-hover:translate-y-1 group-hover:opacity-0 `}
+                >
+                  {item}
+                </span>
+              </div>
             </Link>
           ))}
         </div>

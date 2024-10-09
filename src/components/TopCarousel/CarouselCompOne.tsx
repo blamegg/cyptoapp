@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { verticalScreen, horizontalScreen } from "@/assets";
 import { CarouselData } from "../constants";
 import ScatteredCrypto from "./ScatteredCrypto";
+import { EffectBlock } from "./EffectBlock";
 
 export default function CarouselCompOne() {
   return (
@@ -17,15 +18,18 @@ export default function CarouselCompOne() {
             animate={{ opacity: 1, x: 0, backgroundColor: "#00000000" }}
             transition={{ duration: 1 }}
           >
+          <EffectBlock bgColor="bg-white">
+
             App with Awesome Features
+          </EffectBlock>
           </motion.h2>
           <motion.h1
             className="text-5xl font-bold mb-4 w-fit"
-            initial={{ opacity: 1, y: 0, backgroundColor: "#fea301" }}
-            animate={{ opacity: 1, y: 0, backgroundColor: "#00000000" }}
-            transition={{ duration: 1, delay: 0.2 }}
           >
+          <EffectBlock bgColor="bg-customYellow" delay={.5}>
+
             CryptoCurrency App
+          </EffectBlock>
           </motion.h1>
 
           <div className="flex gap-8 mb-6 mt-10">

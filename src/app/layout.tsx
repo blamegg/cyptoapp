@@ -41,7 +41,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${ubuntu.variable}  antialiased`}
       >
         <Button />
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>

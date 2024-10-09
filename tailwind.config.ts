@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      aspectRatio: {
+        '9/4': '9 / 4',
+      },
       keyframes: {
         parallax: {
           '0%': { backgroundPosition: 'center 50%' },
