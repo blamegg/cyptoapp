@@ -2,7 +2,6 @@
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import { Parallax } from "react-parallax"; 
 import { cryptoData } from "../constants";
 import { ParallaxImg } from "@/assets";
 
