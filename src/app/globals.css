@@ -65,7 +65,7 @@ body {
   z-index: 1; 
 }
 
-.fixed {
+.fixed1 {
   clip-path: polygon(50% 100%, 100% 62%, 100% 0%, 0% 0%, 0% 62%); 
   background: #f1f1f1;
   transition: none;

@@ -19,7 +19,7 @@ const Price = () => {
         {pricingPlans.map((plan, index) => (
           <div key={index} className="rounded-lg border border-gray-100 ">
             <div className="relative h-1/2 cursor-pointer">
-              <div className={` ${index === 1 ? "card fixed" : "card1 "}`}>
+              <div className={` ${index === 1 ? "card fixed1" : "card1 "}`}>
                 <div className="card-content p-10">
                   <img
                     src={plan.logo}
