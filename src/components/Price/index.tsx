@@ -18,7 +18,7 @@ const Price = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-7 max-w-6xl mx-auto ">
         {pricingPlans.map((plan, index) => (
           <div key={index} className="rounded-lg border border-gray-100 ">
-            <div className="relative h-1/2">
+            <div className="relative h-1/2 cursor-pointer">
               <div className={` ${index === 1 ? "card fixed" : "card1 "}`}>
                 <div className="card-content p-10">
                   <img
