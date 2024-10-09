@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { l1, l2, l3, l4, l5, l6, l7, l8 } from "@/assets";
-import { positions } from "./constants";
+import { positions } from "../constants";
 
 const images = [l1, l2, l3, l4, l5, l6, l7, l8];
 

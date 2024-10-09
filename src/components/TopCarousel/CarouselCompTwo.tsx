@@ -20,16 +20,16 @@ const CarouselCompTwo = () => {
         backgroundPosition: "center",
         color: "white",
       }}
-      className="relative bg-black text-white py-16 md:pb-24 flex items-center justify-stretch min-h-[55rem]"
+      className="relative bg-black text-white py-16 md:pb-24 flex items-center justify-stretch min-h-[50rem]"
     >
       {/* Left Text Section */}
-      <div className="w-full md:w-1/2 pl-4 md:pl-16 lg:pl-24 xl:pl-32 pr-8">
+      <div className="w-full md:w-[45vw] pl-4 md:pl-16 lg:pl-24 xl:pl-32 flex flex-col space-y-6 pr-8">
         <motion.h2
-          className={`text-xl mb-2 transition-colors duration-500 ${
+          className={`text-xl mb-2 transition-colors duration-500 font-sans font-thin ${
             isVisible ? "text-white" : "text-black"
           }`}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -120 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
           CROSS-PLATFORM, SECURE & FLEXIBLE
@@ -65,9 +65,9 @@ const CarouselCompTwo = () => {
           theme.
         </motion.p>
 
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 translate-y-6">
           <motion.button
-            className="bg-customYellow hover:bg-white hover:text-black whitespace-nowrap flex items-center font-bold gap-4 text-white px-6 py-3 rounded"
+            className="bg-customYellow hover:bg-white hover:text-black whitespace-nowrap flex items-center font-bold gap-4 text-white px-6 py-3 "
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -76,7 +76,7 @@ const CarouselCompTwo = () => {
           </motion.button>
 
           <motion.button
-            className="border-2 border-white text-white hover:bg-white hover:text-black flex items-center gap-4 font-bold px-6 py-3 rounded"
+            className="border-2 border-white text-white hover:bg-white hover:text-black flex items-center gap-4 font-bold px-6 py-3 "
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -87,17 +87,17 @@ const CarouselCompTwo = () => {
       </div>
 
       {/* Right Image Section */}
-      <div className="relative w-1/2 h-full flex justify-end">
+      <div className="relative  min-w-[70vw] h-full flex justify-end">
         <motion.div
           className="absolute -bottom-16"
           initial={{ y: 600, x: 300, opacity: 0 }}
-          animate={{ y: 392, x: 120, opacity: 1 }}
+          animate={{ y: 352, x: -80, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
           <img
             src={hand.src}
             alt="Crypto App Interface"
-            className="h-full w-full object-cover"
+            className="h-[90vh] w-auto object-contain"
           />
         </motion.div>
       </div>
@@ -105,4 +105,4 @@ const CarouselCompTwo = () => {
   );
 };
 
-export default CarouselCompTwo;
+export default CarouselCompTwo;  
