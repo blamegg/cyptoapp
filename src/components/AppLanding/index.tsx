@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Applanding, appleStore, googlePlayStore } from "@/assets";
 
-export default function AppLanding() {
+export const AppLanding=()=> {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between bg-white py-8 px-4 lg:px-28 max-w-7xl mx-auto">
       {/* Left Section with App Image */}

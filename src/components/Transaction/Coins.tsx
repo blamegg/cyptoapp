@@ -2,15 +2,19 @@
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import { Parallax } from "react-parallax"; 
 import { cryptoData } from "../constants";
+import { ParallaxImg } from "@/assets";
 
 const CryptoProgress = () => {
   return (
-    <Parallax
-      bgImage="https://cryptapp.wpenginepowered.com/wp-content/uploads/2018/03/parallax.jpg"
-      strength={300}
-      className="flex items-center min-w[100vh] h-[22rem] justify-center"
+    <div
+    style={{
+        backgroundImage: `url(${ParallaxImg.src})`,
+       backgroundAttachment: 'fixed',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center', 
+    }}
+     
     >
       <div className="flex justify-between items-center text-center !bg-gray-900 min-w-[100vw] px-32 min-h-[22rem] bg-transparent !bg-opacity-90">
         {cryptoData.map((crypto, index) => (
@@ -32,7 +36,7 @@ const CryptoProgress = () => {
           </div>
         ))}
       </div>
-    </Parallax>
+    </div>
   );
 };
 

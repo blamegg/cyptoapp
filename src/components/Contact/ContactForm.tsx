@@ -6,9 +6,9 @@ const ContactForm:React.FC = () => {
       className="bg-cover bg-center py-16 "
       style={{
         backgroundImage: `url(${contact.src})`,
-        backgroundAttachment: 'fixed',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundAttachment: "fixed",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <div className="max-w-2xl mx-auto text-center">
@@ -45,12 +45,12 @@ const ContactForm:React.FC = () => {
             required
           ></textarea>
           <button className="w-full bg-[#FEA301] text-white py-4  hover:cursor-pointer transition duration-300">
-            <p className='font-sans font-bold text-[12px]'>SEND</p>
+            <p className="font-sans font-bold text-[12px]">SEND</p>
           </button>
         </form>
       </div>
     </div>
-  )
+  );
 }
 
 export default ContactForm

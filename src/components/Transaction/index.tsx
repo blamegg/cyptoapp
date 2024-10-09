@@ -2,7 +2,7 @@ import React from "react";
 import { mobile } from "@/assets";
 import CryptoProgress from "./Coins";
 
-const Transaction = () => {
+export const Transaction = () => {
   return (
     <div className="">
       <div className="text-center mb-20 mt-20">
@@ -27,4 +27,3 @@ const Transaction = () => {
   );
 };
 
-export default Transaction;

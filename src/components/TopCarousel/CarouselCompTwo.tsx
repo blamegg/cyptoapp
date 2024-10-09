@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { hand } from "@/assets";
+import { hand ,bgBlack} from "@/assets";
 import { IoLogoAndroid } from "react-icons/io";
 import { FaApple } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -15,7 +15,7 @@ const CarouselCompTwo = () => {
   return (
     <div
       style={{
-        backgroundImage: `url('https://cryptapp.wpenginepowered.com/wp-content/uploads/2018/03/bg.jpg')`,
+        backgroundImage: `url(${bgBlack.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         color: "white",
