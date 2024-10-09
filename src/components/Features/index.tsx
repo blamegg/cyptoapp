@@ -5,7 +5,7 @@ import { features } from "../constants";
 import { motion } from "framer-motion";
 import { pattern ,gradientImg} from "@/assets";
 
-const Feature = () => {
+export const Feature = () => {
   const [hovered, setHovered] = useState<number | null>(null);
   const [delayedHover, setDelayedHover] = useState<boolean>(false);
 
@@ -116,4 +116,3 @@ const Feature = () => {
   );
 };
 
-export default Feature;
