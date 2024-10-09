@@ -4,11 +4,12 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { Parallax } from "react-parallax"; 
 import { cryptoData } from "../constants";
+import { ParallaxImg } from "@/assets";
 
 const CryptoProgress = () => {
   return (
     <Parallax
-      bgImage="https://cryptapp.wpenginepowered.com/wp-content/uploads/2018/03/parallax.jpg"
+      bgImage={ParallaxImg.src}
       strength={300}
       className="flex items-center min-w[100vh] h-[22rem] justify-center"
     >

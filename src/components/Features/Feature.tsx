@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { features } from "../constants";
 import { motion } from "framer-motion";
-import { pattern } from "@/assets";
+import { pattern ,gradientImg} from "@/assets";
 
 const Feature = () => {
   const [hovered, setHovered] = useState<number | null>(null);
@@ -55,7 +55,7 @@ const Feature = () => {
               }
               transition={{ duration: 0.6, ease: "easeInOut" }}
               style={{
-                backgroundImage: `url('https://xmple.com/wallpaper/linear-blue-black-gradient-1080x1920-c2-010204-080b2b-a-225-f-14.svg')`,
+                backgroundImage: `url(${gradientImg.src})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
