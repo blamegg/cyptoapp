@@ -3,7 +3,7 @@ import React from 'react';
 import { FaRegCircleUser } from "react-icons/fa6";
 import { TiMessages } from "react-icons/ti";
 
-const BitcoinNews = () => {
+export const BitcoinNews = () => {
   return (
     <>
     <div className='flex justify-center items-center flex-col mt-24'>
@@ -94,4 +94,4 @@ const BitcoinNews = () => {
   );
 }
 
-export default BitcoinNews;
+

@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Ubuntu } from "next/font/google"
+import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import "react-circular-progressbar/dist/styles.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Navbar from "@/components/shared/Header/Navbar";
-import Footer from "@/components/shared/Footer/Footer";
+import { Navbar } from "@/components";
+import {Footer} from "@/components";
+import Button from "@/components/shared/Button";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,9 +39,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${ubuntu.variable}  antialiased`}
-      ><Navbar/>
+      >
+        <Navbar />
+        <Button />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

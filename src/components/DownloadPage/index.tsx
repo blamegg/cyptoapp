@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { img4, img5, img6 } from '@/assets/Middle-assests';
 
-const Downloads = () => {
+export const Downloads = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const Downloads = () => {
   );
 }
 
-export default Downloads;
+
 
 
 

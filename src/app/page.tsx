@@ -1,16 +1,5 @@
-
-import BitcoinNews from "@/components/BitcoinNews";
-import NewsLetter from "@/components/NewsLetter";
-import ContactForm from "@/components/Contact/ContactForm";
-import NetworkInfo from "@/components/Network/NetworkInfo";
-import Price from "@/components/Price/Price";
-
-import Downloads from "@/components/Downloads";
-
-import ChooseUs from "@/components/ChooseUs";
-import Screenshot from "@/components/Screenshot";
-import TestimonialSection from "@/components/Testimonial/TestimonialSlider";
-import { TopCarousel ,AppLanding,Feature,Transaction} from "@/components";
+import {Price, NetworkInfo, ContactForm, TestimonialSection} from "@/components"
+import { TopCarousel ,AppLanding,Feature,Transaction, BitcoinNews, NewsLetter, Downloads, ChooseUs, SsCarousel} from "@/components";
 export default function Home() {
   return (
     <>
@@ -23,7 +12,7 @@ export default function Home() {
       <NewsLetter />
       <Downloads />
       <ChooseUs />
-      <Screenshot />
+      <SsCarousel />
       <Price />
       <NetworkInfo />
       <TestimonialSection />

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { footerlogo } from "@/assets/sharedSection";
 import { FaFacebookF, FaGooglePlus, FaTwitter } from "react-icons/fa";
 import { IoLogoFlickr } from "react-icons/io";
 
@@ -116,11 +116,11 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-400 opacity-30 my-12" />
         <div className="text-center mt-10 ">
           <div className="mb-4">
-            <a href="https://cryptapp.wpengine.com/" rel="home">
+            <a href="https://cryptapp.wpengine.com/" >
               <img
-                src="https://cryptapp.wpenginepowered.com/wp-content/themes/cryptapp/images/logo.png"
+                src={footerlogo.src}
                 alt="CryptApp WordPress Theme"
-                className="mx-auto "
+                className="w-[180px] mx-auto"
               />
             </a>
           </div>
