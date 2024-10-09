@@ -1,6 +1,6 @@
 import React from 'react'
 import { contact } from '@/assets/sharedSection'
-const ContactForm:React.FC = () => {
+const ContactForm = () => {
   return (
     <div
       className="bg-cover bg-center py-16 "
@@ -20,32 +20,32 @@ const ContactForm:React.FC = () => {
             <input
               type="email"
               placeholder="text@domain.com"
-              className="p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-[#FEA301]"
+              className="p-3 border border-gray-300  focus:outline-none focus:border-[#FEA301] focus:shadow-[0_0_10px_#FEA301]"
               required
             />
             <div className="flex gap-3 mb-2">
               <input
                 type="text"
                 placeholder="John"
-                className="p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-[#FEA301] w-1/2"
+                className="p-3 border border-gray-300  focus:outline-none focus:border-[#FEA301] focus:shadow-[0_0_10px_#FEA301] w-1/2"
                 required
               />
               <input
                 type="text"
                 placeholder="Christopher"
-                className="p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-[#FEA301] w-1/2"
+                className="p-3 border border-gray-300  focus:outline-none focus:border-[#FEA301] focus:shadow-[0_0_10px_#FEA301] w-1/2"
                 required
               />
             </div>
           </div>
           <textarea
             placeholder="Your message..."
-            className="w-full p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-[#FEA301] mb-9"
+            className="w-full p-3 border border-gray-300  focus:outline-none focus:border-[#FEA301] focus:shadow-[0_0_10px_#FEA301] mb-9"
             rows={4}
             required
           ></textarea>
-          <button className="w-full bg-[#FEA301] text-white py-4  hover:cursor-pointer transition duration-300">
-            <p className="font-sans font-bold text-[12px]">SEND</p>
+          <button className="w-full bg-customYellow text-white py-4  hover:cursor-pointer hover:bg-crypOrange transition duration-300">
+            <p className='font-sans font-bold text-[12px]'>SEND</p>
           </button>
         </form>
       </div>

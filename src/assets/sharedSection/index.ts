@@ -7,5 +7,7 @@ import background from './img.png';
 import price1 from './pricing-logo-1.webp';
 import price2 from './pricing-logo-2.webp';
 import price3 from './pricing-logo-3.webp';
-
-export{logo, profile1,profile2,profile3,contact, background, price1, price2, price3}
+import button1 from './totop.webp';
+import button2 from './totop-after.webp';
+import footerlogo from './logo.webp'
+export{logo, profile1,profile2,profile3,contact, background, price1, price2, price3, button1, button2,footerlogo}
