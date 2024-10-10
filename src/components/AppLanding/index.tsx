@@ -16,7 +16,7 @@ export const AppLanding = () => {
       </div>
 
       {/* Right Section with Text and Download Buttons */}
-      <div className="lg:w-1/2 max-w-lg leading-8 md:ml-0 sm:ml-16">
+      <div className="lg:w-1/2 max-w-lg leading-8 md:ml-0 sm:ml-16 md:p-0 p-5">
         <h1 className="text-4xl lg:text-4xl  mb-4 font-ubuntu">
           <span>App For Bitcoin With</span>
           <span className="block text-customYellow font-ubuntu md:text-4xl font-bold">
@@ -30,7 +30,7 @@ export const AppLanding = () => {
         <h2 className="text-2xl font-semibold mb-4 text-gray-800">
           Download the App on
         </h2>
-        <div className="flex space-x-4">
+        <div className="flex md:flex-row flex-col gap-2">
           <Image
             src={appleStore}
             alt="Download on App Store"
