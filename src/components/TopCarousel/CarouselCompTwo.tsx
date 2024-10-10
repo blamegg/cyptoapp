@@ -26,7 +26,7 @@ const CarouselCompTwo = () => {
       {/* Left Text Section */}
       <div className="w-full md:w-[45vw] pl-4 md:pl-16 lg:pl-24 xl:pl-32 flex flex-col space-y-6 pr-8">
         <motion.h2
-          className={`text-xl mb-2 transition-colors duration-500 font-sans font-thin ${
+          className={`md:text-xl text-10  md:mb-2 transition-colors duration-500 font-sans font-thin ${
             isVisible ? "text-white" : "text-black"
           }`}
           initial={{ opacity: 0, x: -120 }}
@@ -37,7 +37,7 @@ const CarouselCompTwo = () => {
         </motion.h2>
 
         <motion.h1
-          className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-4 transition-colors duration-500 ${
+          className={`text-31 md:text-5xl lg:text-6xl font-bold mb-4 transition-colors duration-500 ${
             isVisible ? "text-white" : "text-black"
           }`}
           initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,7 @@ const CarouselCompTwo = () => {
         </motion.h1>
 
         <motion.p
-          className={`text-lg mb-6 font-thin font-sans transition-colors duration-500 ${
+          className={`md:text-lg text-10 mb-6 font-thin font-sans transition-colors duration-500 ${
             isVisible ? "text-white" : "text-black"
           }`}
           initial={{ opacity: 0, y: 20 }}
@@ -67,14 +67,14 @@ const CarouselCompTwo = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           Get the <span className="font-bold">BEST APP</span> with in-built
-          Wallet. Create Crypto Currency{" "}
+          Wallet. Create Crypto<br className="md:hidden block"/> Currency{" "}
           <span className="font-bold">Landing Website</span> with the best
           theme.
         </motion.p>
 
         <div className="flex space-x-4 translate-y-6">
           <motion.button
-            className="bg-customYellow hover:bg-white hover:text-black whitespace-nowrap flex items-center font-bold gap-4 text-white px-6 py-3 "
+            className="bg-customYellow md:text-sm text-8 hover:bg-white hover:text-black whitespace-nowrap flex items-center font-bold gap-4 text-white px-6 py-3 "
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}

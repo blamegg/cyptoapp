@@ -5,7 +5,7 @@ import { SlideProvider } from "@/components/context/SlideContext"; // Adjust the
 export default function Home() {
   return (
     <SlideProvider>
-    <Navbar />
+     <Navbar /> 
       <div id="home">
         <TopCarousel />
       </div>
@@ -18,7 +18,7 @@ export default function Home() {
       <div id="transaction">
         <Transaction />
       </div>
-      <div id="bitcoinNews">
+       <div id="bitcoinNews">
         <BitcoinNews />
       </div>
       <div id="newsletter">
@@ -29,8 +29,8 @@ export default function Home() {
       </div>
       <div id="chooseUs">
         <ChooseUs />
-      </div>
-      <div id="ssCarousel">
+      </div> 
+       <div id="ssCarousel">
         <SsCarousel />
       </div>
       <div id="price">
@@ -44,7 +44,7 @@ export default function Home() {
       </div>
       <div id="contactForm">
         <ContactForm />
-      </div>
+      </div> 
     </SlideProvider>
   );
 };

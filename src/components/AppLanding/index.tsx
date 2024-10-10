@@ -3,7 +3,7 @@ import { Applanding, appleStore, googlePlayStore } from "@/assets";
 
 export const AppLanding = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between bg-white py-8 px-4 lg:px-28 max-w-7xl mx-auto">
+    <div className="flex flex-col lg:flex-row  items-center justify-between bg-white py-8 px-4 lg:px-28 max-w-7xl mx-auto">
       {/* Left Section with App Image */}
       <div className="lg:w-1/2 mb-8 lg:mb-0">
         <Image
@@ -16,10 +16,10 @@ export const AppLanding = () => {
       </div>
 
       {/* Right Section with Text and Download Buttons */}
-      <div className="lg:w-1/2 max-w-lg leading-8">
+      <div className="lg:w-1/2 max-w-lg leading-8 md:ml-0 sm:ml-16">
         <h1 className="text-4xl lg:text-4xl  mb-4 font-ubuntu">
           <span>App For Bitcoin With</span>
-          <span className="block text-customYellow font-ubuntu font-bold">
+          <span className="block text-customYellow font-ubuntu md:text-16 font-bold">
             Functional Wallet
           </span>
         </h1>

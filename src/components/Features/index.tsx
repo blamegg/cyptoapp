@@ -32,11 +32,11 @@ export const Feature = () => {
           WHAT DO YOU GET
         </p>
       </div>
-      <div className="flex justify-between space-x-6   min-h-[31rem] max-w-[80vw] mx-auto">
+      <div className="flex justify-between items-center md:gap-0 gap-12 md:flex-row flex-col md:space-x-6   min-h-[31rem] max-w-[80vw] mx-auto">
         {features.map((feature, index) => (
           <motion.div
             key={index}
-            className="relative bg-white p-6   pt-16  shadow-md shadow-gray-200 min-h-96  text-center overflow-hidden"
+            className="relative  bg-white p-6  max-w-96   pt-16  shadow-md shadow-gray-200 min-h-96  text-center overflow-hidden"
             whileHover="hover"
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
