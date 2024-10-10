@@ -15,7 +15,7 @@ const TestimonialSection = () => {
     slidesToScroll: 1,
     autoplay: true,  
     autoplaySpeed: 3000,  
-    pauseOnHover: false,  
+    pauseOnHover: true,  
     arrows: false,  
     responsive: [
       {
@@ -26,7 +26,7 @@ const TestimonialSection = () => {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -36,18 +36,18 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="bg-white py-32">
-      <div className="mx-auto w-[80%]">
+    <section className="bg-white py-32 mx-5 lg:mx-0">
+      <div className="mx-auto lg:w-[80%] w-full">
         <Slider {...settings}>
           {testimonials.map((review, index) => (
             <div
               key={index}
-              className="testimonial-card flex flex-col justify-between items-center bg-white px-14 rounded-lg border-r border-gray-200   h-auto mx-5" // Adjusted gap using mx-4
+              className="testimonial-card flex flex-col justify-between items-center bg-white px-14 rounded-lg border-l border-gray-200   h-auto mx-5" // Adjusted gap using mx-4
             >
-              <div className="flex flex-col justify-center items-center text-center gap-5 font-opensans">
+              <div className="flex flex-col justify-center items-center text-center gap-5 font-sans">
              
                 <div className=" text-crypOrange"><img src={quote.src} alt="quote" height={24} width={24} /></div>
-                <div className="text-gray-500 font-light  overflow-hidden  leading-6">
+                <div className="text-[16px] font-light mb-7 text-textG overflow-hidden  leading-7">
                   {review.quote}
                 </div>
               </div>
