@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css"
 
 export const SsCarousel = () => {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
- 
+  
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const [currentSlide, setCurrentSlide] = useState(0)
   const sliderRef = useRef<Slider>(null)
@@ -53,19 +53,8 @@ export const SsCarousel = () => {
     },
   }
 
-  const goToPrev = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickPrev()
-    }
-    setIsAutoPlaying(false)
-  }
 
-  const goToNext = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickNext()
-    }
-    setIsAutoPlaying(false)
-  }
+  
 
   const goToSlide = (index: number) => {
     if (sliderRef.current) {
