@@ -6,10 +6,10 @@ import { IoLogoFlickr } from "react-icons/io";
 const Footer: React.FC = () => {
   return (
     <footer className="text-[#757575] py-10 bg-white font-sans">
-      <div className="w-[80%] mx-auto ">
+      <div className="lg:w-[80%] mx-auto md:w-[90%] w-[80%] ">
         <div className="flex flex-wrap justify-between mx-5 md:mx-0">
           <div className="w-full md:w-1/4 mb-9 ">
-            <h3 className="text-lg font-medium mb-7 text-black">PRODUCTS</h3>
+            <h3 className="text-xl font-medium mb-7 text-black">PRODUCTS</h3>
             <ul className="space-y-5 font-light">
               <li>
                 <a href="#" className="hover:text-[#FEA301]">
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/4 mb-6 ">
-            <h3 className="text-lg font-medium mb-7 text-black">SUPPORT</h3>
+            <h3 className="text-xl font-medium mb-7 text-black">SUPPORT</h3>
             <ul className="space-y-5 font-light">
               <li>
                 <a href="#" className="hover:text-[#FEA301]">
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/4 mb-6 ">
-            <h3 className="text-lg font-medium mb-7 text-black">COMPANY</h3>
+            <h3 className="text-xl font-medium mb-7 text-black">COMPANY</h3>
             <ul className="space-y-5 font-light">
               <li>
                 <a href="#" className="hover:text-[#FEA301]">
@@ -83,30 +83,30 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full md:w-1/4 mb-6">
-            <h3 className="text-lg font-medium mb-7 text-black">SOCIAL</h3>
-            <div className="flex space-x-2 ">
+          <div className="w-full md:w-1/5 mb-6">
+            <h3 className="text-xl font-medium mb-7 text-black">SOCIAL</h3>
+            <div className="flex flex-wrap gap-1 ">
               <a
                 href="#"
-                className=" border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
+                className=" border-[1px] border-[#FEA301] rounded-full p-2 text-[#FEA301]"
               >
                 <FaFacebookF />
               </a>
               <a
                 href="#"
-                className=" border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
+                className="border-[1px] border-[#FEA301] rounded-full p-2 text-[#FEA301]"
               >
                 <FaTwitter />
               </a>
               <a
                 href="#"
-                className=" border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
+                className=" border-[1px] border-[#FEA301] rounded-full p-2 text-[#FEA301]"
               >
                 <FaGooglePlus />
               </a>
               <a
                 href="#"
-                className=" border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
+                className=" border-[1px] border-[#FEA301] rounded-full p-2 text-[#FEA301]"
               >
                 <IoLogoFlickr />
               </a>
@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
           </div>
           <p>
             Copyright © 2018{" "}
-            <a href="#" className="hover:text-[#FEA301] text-">
+            <a href="#" className="hover:text-[#FEA301] ">
               designthemes
             </a>{" "}
             | All Rights Reserved

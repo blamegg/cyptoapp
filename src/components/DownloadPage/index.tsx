@@ -31,7 +31,7 @@ export const Downloads = () => {
     <>
       <div
         ref={ref}
-        className="flex  md:flex-row flex-col justify-center items-center mb-20"
+        className="flex lg:flex-row flex-col justify-center items-center mb-20"
       >
         <div className="w-1/2 justify-center ml-32 items-center h-auto relative">
            <div
@@ -62,12 +62,12 @@ export const Downloads = () => {
           <div className="mb-20 text-40">
             <p className="text-bitBlack">
               The Superior
-              <span className="text-crypOrange font-bold"> Alternative</span>
+              <span className="text-crypOrange font-bold  "> Alternative</span>
             </p>
           </div>
 
           <div>
-            <p className="text-text leading-7 text-base opacity-70">
+            <p className="text-text leading-7 text-base opacity-70 ">
               Maecenas posuere ac ex vitae fringilla. Fusce pulvinar luctus
               elit. Fusce <br /> cursus lacus vel orci malesuada pharetra. Duis
               vel imperdiet enim. Vestibulum dolor metus. Condimentum vitae
