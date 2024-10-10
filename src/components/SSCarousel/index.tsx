@@ -1,14 +1,19 @@
 'use client'
 
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
+import Slider from 'react-slick'
 import { img01, img02, img03, img04, img05, img06, img07, img08, img09, img10, img11, img12 } from '@/assets/Middle-assests'
 
-export  const SsCarousel =() => {
-  const [currentSlide, setCurrentSlide] = useState(0)
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+
+export const SsCarousel = () => {
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true)
   const [touchStart, setTouchStart] = useState(0)
   const [touchEnd, setTouchEnd] = useState(0)
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const sliderRef = useRef<Slider>(null)
 
   const screenshot = [
     img01.src, img02.src, img03.src, img04.src, img05.src, img06.src,
@@ -16,53 +21,13 @@ export  const SsCarousel =() => {
   ]
 
   const slides = []
-  for (let i = 0; i < screenshot.length; i += 2) {
+  for (let i = 0; i < screenshot.length; i += 4) {
     slides.push(screenshot.slice(i, i + 4))
-  }
-
-  const nextSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length)
-  }, [slides.length])
-
-  const prevSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
-  }, [slides.length])
-
-  const handleImageClick = (imageIndex: number) => {
-    if (imageIndex === 0) {
-      prevSlide()
-    } else {
-      nextSlide()
-    }
-    setIsAutoPlaying(false)
-  }
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    setTouchStart(e.targetTouches[0].clientX)
-    setIsAutoPlaying(false)
-  }
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX)
-  }
-
-  const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 75) {
-      nextSlide()
-    }
-
-    if (touchStart - touchEnd < -75) {
-      prevSlide()
-    }
   }
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'ArrowLeft') {
-        prevSlide()
-        setIsAutoPlaying(false)
-      } else if (event.key === 'ArrowRight') {
-        nextSlide()
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
         setIsAutoPlaying(false)
       }
     }
@@ -72,23 +37,44 @@ export  const SsCarousel =() => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown)
     }
-  }, [nextSlide, prevSlide])
+  }, [])
 
-  useEffect(() => {
-    let intervalId: NodeJS.Timeout | null = null;
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: isAutoPlaying,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
+    beforeChange: (oldIndex: number, newIndex: number) => {
+      setCurrentSlide(newIndex)
+      setIsAutoPlaying(false)
+    },
+  }
 
-    if (isAutoPlaying) {
-      intervalId = setInterval(() => {
-        nextSlide()
-      }, 5000)
+  const goToPrev = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev()
     }
+    setIsAutoPlaying(false)
+  }
 
-    return () => {
-      if (intervalId) {
-        clearInterval(intervalId)
-      }
+  const goToNext = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext()
     }
-  }, [isAutoPlaying, nextSlide])
+    setIsAutoPlaying(false)
+  }
+
+  const goToSlide = (index: number) => {
+    if (sliderRef.current) {
+      sliderRef.current.slickGoTo(index)
+    }
+    setCurrentSlide(index)
+    setIsAutoPlaying(false)
+  }
 
   return (
     <div className="mt-20">
@@ -102,22 +88,16 @@ export  const SsCarousel =() => {
         </p>
       </div>
 
-      <div className="w-full max-w-6xl h-auto mx-auto overflow-hidden mt-20">
-        <div
-          className="flex transition-transform duration-300 ease-in-out"
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
-        >
+      <div className="w-full max-w-6xl h-auto mx-auto overflow-hidden mt-20 relative">
+        <Slider ref={sliderRef} {...settings}>
           {slides.map((slide, slideIndex) => (
-            <div key={slideIndex} className="w-full flex-shrink-0">
-              <div className="md:grid sm:grid-cols-4 flex  gap-4 p-6">
+            <div key={slideIndex}>
+              <div className="md:grid sm:grid-cols-4 flex gap-4 p-6">
                 {slide.map((image, imageIndex) => (
                   <div
                     key={imageIndex}
-                    className="aspect-square md:min-w-auto min-w-[20rem] relative  cursor-pointer "
-                    onClick={() => handleImageClick(imageIndex)}
+                    className="aspect-square md:min-w-auto min-w-[20rem] relative cursor-pointer"
+                    onClick={() => setIsAutoPlaying(false)}
                   >
                     <img
                       src={image}
@@ -129,16 +109,13 @@ export  const SsCarousel =() => {
               </div>
             </div>
           ))}
-        </div>
+        </Slider>
 
         <div className="mt-20 flex justify-center space-x-2">
           {slides.map((_, index) => (
             <button
               key={index}
-              onClick={() => {
-                setCurrentSlide(index)
-                setIsAutoPlaying(false)
-              }}
+              onClick={() => goToSlide(index)}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               className={`w-4 h-4 rounded-full transition-all duration-300 ease-in-out ${
