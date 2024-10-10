@@ -67,7 +67,7 @@ export const ChooseUs = () => {
   return (
     <>
       <div className="bg-Choosebg ">
-        <div className="flex justify-center flex-col items-center ">
+        <div className="flex justify-center flex-col items-center mb-20">
           <div className="mt-20">
             <p>
               <span className="text-40 text-bitBlack">Why?</span>{" "}
@@ -82,7 +82,7 @@ export const ChooseUs = () => {
             </p>
           </div>
         </div>
-        <div className="flex gap-10 w-[80vw] mx-auto mt-20 md:flex-row flex-col  ">
+        <div className="flex  mt-0 md:mt-20 lg:mt-0 gap-10 w-[80vw] mx-auto md:flex-row flex-col">
           <div className="md:w-1/2 w-full">
             <div className="flex px-4 md:flex-row flex-col md:gap-0 gap-4 text-center items-center">
               <p
@@ -200,7 +200,7 @@ export const ChooseUs = () => {
                     In luctus arcu urna commodo.
                   </span>
                 </p>
-              </div> 
+              </div>
               <div className="flex text-pretty ml-2 mt-5">
                 <p className=" text-text leading-7">
                   Maecenas posuere ac ex vitae fringilla. Fusce pulvinar luctus
@@ -212,14 +212,14 @@ export const ChooseUs = () => {
                   Vestibulum lacinia velit eu lorem tincidunt vitae.
                 </p>
               </div>
-            </div> 
+            </div>
             <div className={`${headthree ? "block" : "hidden"}`}>
               <p className=" text-text text-start flex  mt-5 ml-1  leading-7">
                 yyyyy tincidunt, nisl at porttitor vulputate, justo nulla
                 blandit nisl, ut posuere
                 <br /> metus tortor vel odio. Aenean hendrerit nisi urna, eu
                 pos:
-              </p> 
+              </p>
               <div className="flex  flex-col  mt-5 gap-3">
                 <p className="flex items-center gap-2 ">
                   <span className="text-xl  text-crypOrange">
@@ -265,7 +265,7 @@ export const ChooseUs = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 w-full">
+          <div className="md:w-1/2 w-full lg:mt-0 md:mt-20 sm:mt-0 ">
             <div className="transition-all duration-300">
               <div className="flex items-center gap-8 mb-10 ">
                 <div
@@ -279,6 +279,7 @@ export const ChooseUs = () => {
                   </span>
                 </div>
                 <p
+                  onClick={one}
                   className={`font-semibold hover:text-crypOrange ${
                     first ? "text-crypOrange" : "text-bitBlack"
                   } cursor-pointer `}
@@ -291,11 +292,9 @@ export const ChooseUs = () => {
                   first ? "block" : "hidden"
                 } `}
               >
-                We work with clients big and small across a range of sectors
-                 and we utilise all forms of media to get your name out
-                there in
-                 a way thats right for you. We have the skills and
-                resources to
+                We work with clients big and small across a range of sectors and
+                we utilise all forms of media to get your name out there in a
+                way thats right for you. We have the skills and resources to
                 create professional films.
               </p>
             </div>
@@ -312,6 +311,7 @@ export const ChooseUs = () => {
                   </span>
                 </div>
                 <p
+                  onClick={two}
                   className={`font-semibold hover:text-crypOrange ${
                     second ? "text-crypOrange" : "text-bitBlack"
                   } cursor-pointer`}
@@ -324,12 +324,10 @@ export const ChooseUs = () => {
                   second ? "block" : "hidden"
                 }`}
               >
-                We work with clients big and small across a range of sectors
-                and we utilise all forms of media to get your name out
-                there in
-                 a way thats right for you. We have the skills and
-                resources to
-                 create professional films.
+                We work with clients big and small across a range of sectors and
+                we utilise all forms of media to get your name out there in a
+                way thats right for you. We have the skills and resources to
+                create professional films.
               </p>
             </div>
             <div>
@@ -345,6 +343,7 @@ export const ChooseUs = () => {
                   </span>
                 </div>
                 <p
+                  onClick={three}
                   className={`font-semibold hover:text-crypOrange ${
                     third ? "text-crypOrange" : "text-bitBlack"
                   } cursor-pointer `}
@@ -357,12 +356,10 @@ export const ChooseUs = () => {
                   third ? "block" : "hidden"
                 }`}
               >
-                We work with clients big and small across a range of sectors
-               and we utilise all forms of media to get your name out
-                there in
-                a way thats right for you. We have the skills and
-                resources to
-               create professional films.
+                We work with clients big and small across a range of sectors and
+                we utilise all forms of media to get your name out there in a
+                way thats right for you. We have the skills and resources to
+                create professional films.
               </p>
             </div>
             <div>
@@ -378,6 +375,7 @@ export const ChooseUs = () => {
                   </span>
                 </div>
                 <p
+                  onClick={fourth}
                   className={`font-semibold hover:text-crypOrange ${
                     four ? "text-crypOrange" : "text-bitBlack"
                   } cursor-pointer`}
@@ -390,11 +388,9 @@ export const ChooseUs = () => {
                   four ? "block" : "hidden"
                 }`}
               >
-                We work with clients big and small across a range of sectors
-                 and we utilise all forms of media to get your name out
-                there in
-                a way thats right for you. We have the skills and
-                resources to
+                We work with clients big and small across a range of sectors and
+                we utilise all forms of media to get your name out there in a
+                way thats right for you. We have the skills and resources to
                 create professional films.
               </p>
             </div>
@@ -411,6 +407,7 @@ export const ChooseUs = () => {
                   </span>
                 </div>
                 <p
+                  onClick={fifth}
                   className={`font-semibold hover:text-crypOrange ${
                     five ? "text-crypOrange" : "text-bitBlack"
                   } cursor-pointer`}
@@ -423,12 +420,10 @@ export const ChooseUs = () => {
                   five ? "block" : "hidden"
                 }`}
               >
-                We work with clients big and small across a range of sectors
-                 and we utilise all forms of media to get your name out
-                there in
-                 a way thats right for you. We have the skills and
-                resources to
-               create professional films.
+                We work with clients big and small across a range of sectors and
+                we utilise all forms of media to get your name out there in a
+                way thats right for you. We have the skills and resources to
+                create professional films.
               </p>
             </div>
           </div>

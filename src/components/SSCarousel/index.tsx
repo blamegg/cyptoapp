@@ -93,7 +93,7 @@ export  const SsCarousel =() => {
   return (
     <div className="mt-20">
       <div className="flex flex-col justify-center items-center">
-        <h2 className="text-4xl">
+        <h2 className="text-4xl text-center">
           <span>Cryptap</span>{' '}
           <span className="text-crypOrange font-semibold">Live Screenshots</span>
         </h2>
