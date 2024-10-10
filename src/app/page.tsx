@@ -1,7 +1,7 @@
 import {Price, NetworkInfo, ContactForm, TestimonialSection, Navbar} from "@/components";
 import { TopCarousel ,AppLanding,Feature,Transaction, BitcoinNews, NewsLetter, Downloads, ChooseUs, SsCarousel } from "@/components";
 
-import { SlideProvider } from "@/components/context/SlideContext"; // Adjust the path accordingly
+import { SlideProvider } from "@/components/context/SlideContext"; 
 export default function Home() {
   return (
     <SlideProvider>
