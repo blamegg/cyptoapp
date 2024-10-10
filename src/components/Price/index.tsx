@@ -1,7 +1,7 @@
 import React from "react";
 import { pricingPlans } from "../constants"; 
-import { FaCheck } from "react-icons/fa";
-import { BsDash } from "react-icons/bs";
+import { FaCheck, FaMinus } from "react-icons/fa";
+
 
 const Price = () => {
   return (
@@ -44,8 +44,8 @@ const Price = () => {
                       <FaCheck />
                     </span>
                   ) : (
-                    <span className="text-red-500 font-extrabold  ">
-                      <BsDash />
+                    <span className="text-red-500 ">
+                      <FaMinus/>
                     </span>
                   )}
                   <span className="text-[16px] text-text">
