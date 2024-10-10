@@ -16,7 +16,7 @@ export  const SsCarousel =() => {
   ]
 
   const slides = []
-  for (let i = 0; i < screenshot.length; i += 4) {
+  for (let i = 0; i < screenshot.length; i += 2) {
     slides.push(screenshot.slice(i, i + 4))
   }
 
@@ -112,11 +112,11 @@ export  const SsCarousel =() => {
         >
           {slides.map((slide, slideIndex) => (
             <div key={slideIndex} className="w-full flex-shrink-0">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6">
+              <div className="md:grid sm:grid-cols-4 flex  gap-4 p-6">
                 {slide.map((image, imageIndex) => (
                   <div
                     key={imageIndex}
-                    className="aspect-square relative cursor-pointer"
+                    className="aspect-square md:min-w-auto min-w-[20rem] relative  cursor-pointer "
                     onClick={() => handleImageClick(imageIndex)}
                   >
                     <img

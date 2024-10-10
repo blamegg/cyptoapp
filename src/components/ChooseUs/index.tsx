@@ -82,9 +82,9 @@ export const ChooseUs = () => {
             </p>
           </div>
         </div>
-        <div className="flex gap-10 w-[80vw] mx-auto mt-20   ">
-          <div className="w-1/2">
-            <div className="flex px-4 ">
+        <div className="flex gap-10 w-[80vw] mx-auto mt-20 md:flex-row flex-col  ">
+          <div className="md:w-1/2 w-full">
+            <div className="flex px-4 md:flex-row flex-col md:gap-0 gap-4 text-center items-center">
               <p
                 onClick={headfirst}
                 className={`${
@@ -265,12 +265,12 @@ export const ChooseUs = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="md:w-1/2 w-full">
             <div className="transition-all duration-300">
               <div className="flex items-center gap-8 mb-10 ">
                 <div
                   onClick={one}
-                  className={`h-10 w-10 rounded-full  ${
+                  className={`min-h-10 min-w-10 rounded-full  ${
                     first ? "bg-crypOrange" : "bg-bitBlack"
                   } flex items-center`}
                 >
@@ -303,11 +303,11 @@ export const ChooseUs = () => {
               <div className="flex items-center gap-8  mb-10">
                 <div
                   onClick={two}
-                  className={`h-10 w-10 rounded-full ${
+                  className={`min-h-10 flex text-center items-center justify-center  min-w-10 rounded-full ${
                     second ? "bg-crypOrange" : "bg-bitBlack"
                   }  flex items-center`}
                 >
-                  <span className="text-white flex justify-center translate-x-3">
+                  <span className="text-white w-10 h-10 flex justify-center translate-y-3">
                     {second ? <FaMinus /> : <FaPlus />}
                   </span>
                 </div>
@@ -336,7 +336,7 @@ export const ChooseUs = () => {
               <div className="flex items-center gap-8 mb-10">
                 <div
                   onClick={three}
-                  className={`h-10 w-10 rounded-full ${
+                  className={`min-h-10 min-w-10  rounded-full ${
                     third ? "bg-crypOrange" : "bg-bitBlack"
                   }  flex items-center`}
                 >
@@ -369,7 +369,7 @@ export const ChooseUs = () => {
               <div className="flex items-center gap-8 mb-10">
                 <div
                   onClick={fourth}
-                  className={`h-10 w-10 rounded-full ${
+                  className={`min-h-10 min-w-10 rounded-full ${
                     four ? "bg-crypOrange" : "bg-bitBlack"
                   }  flex items-center`}
                 >
@@ -402,7 +402,7 @@ export const ChooseUs = () => {
               <div className="flex items-center gap-8 mb-10">
                 <div
                   onClick={fifth}
-                  className={`h-10 w-10 rounded-full ${
+                  className={`min-h-10 min-w-10 rounded-full ${
                     five ? "bg-crypOrange" : "bg-bitBlack"
                   }  flex items-center`}
                 >
