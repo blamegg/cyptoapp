@@ -6,11 +6,11 @@ import { IoLogoFlickr } from "react-icons/io";
 const Footer: React.FC = () => {
   return (
     <footer className="text-[#757575] py-10 bg-white font-sans">
-      <div className="w-[80%] mx-auto">
-        <div className="flex flex-wrap justify-between px-5 ">
-          <div className="w-full sm:w-1/4 mb-9">
+      <div className="w-[80%] mx-auto ">
+        <div className="flex flex-wrap justify-between mx-5 md:mx-0">
+          <div className="w-full md:w-1/4 mb-9 ">
             <h3 className="text-lg font-medium mb-7 text-black">PRODUCTS</h3>
-            <ul className="space-y-5">
+            <ul className="space-y-5 font-light">
               <li>
                 <a href="#" className="hover:text-[#FEA301]">
                   Zen Features
@@ -33,9 +33,9 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full sm:w-1/4 mb-6 ">
+          <div className="w-full md:w-1/4 mb-6 ">
             <h3 className="text-lg font-medium mb-7 text-black">SUPPORT</h3>
-            <ul className="space-y-5">
+            <ul className="space-y-5 font-light">
               <li>
                 <a href="#" className="hover:text-[#FEA301]">
                   Support Portal
@@ -58,9 +58,9 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full sm:w-1/4 mb-6 ">
+          <div className="w-full md:w-1/4 mb-6 ">
             <h3 className="text-lg font-medium mb-7 text-black">COMPANY</h3>
-            <ul className="space-y-5">
+            <ul className="space-y-5 font-light">
               <li>
                 <a href="#" className="hover:text-[#FEA301]">
                   About Us
@@ -83,9 +83,9 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full sm:w-1/4 mb-6">
+          <div className="w-full md:w-1/4 mb-6">
             <h3 className="text-lg font-medium mb-7 text-black">SOCIAL</h3>
-            <div className="flex space-x-2">
+            <div className="flex space-x-2 ">
               <a
                 href="#"
                 className=" border-2 border-[#FEA301] rounded-full p-2 text-[#FEA301]"
