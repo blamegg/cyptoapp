@@ -9,8 +9,7 @@ import "slick-carousel/slick/slick-theme.css"
 
 export const SsCarousel = () => {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
-  const [touchStart, setTouchStart] = useState(0)
-  const [touchEnd, setTouchEnd] = useState(0)
+ 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const [currentSlide, setCurrentSlide] = useState(0)
   const sliderRef = useRef<Slider>(null)
