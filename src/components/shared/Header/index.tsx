@@ -77,7 +77,7 @@ const toggleSidebar = () => {
         </div>
       </nav>
       <div
-        className={`fixed top-0 right-0 h-full md:w-[250px] w-full  bg-white  transition-transform transform duration-500 z-10 ${
+        className={`fixed top-0 right-0 h-full md:w-[250px] w-full  bg-white  transition-transform transform duration-500 z-[999] ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
         } lg:hidden`}
       >
@@ -104,6 +104,12 @@ const toggleSidebar = () => {
           ))}
         </div>
       </div>
+      {isSidebarOpen && (
+  <div
+    className="fixed inset-0 bg-black bg-opacity-75 transition-opacity duration-500 ease-in-out z-[998]"
+    onClick={toggleSidebar}
+  ></div>
+)}
     </div>
     
   );
