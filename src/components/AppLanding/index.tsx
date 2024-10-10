@@ -19,7 +19,7 @@ export const AppLanding = () => {
       <div className="lg:w-1/2 max-w-lg leading-8 md:ml-0 sm:ml-16">
         <h1 className="text-4xl lg:text-4xl  mb-4 font-ubuntu">
           <span>App For Bitcoin With</span>
-          <span className="block text-customYellow font-ubuntu md:text-16 font-bold">
+          <span className="block text-customYellow font-ubuntu md:text-4xl font-bold">
             Functional Wallet
           </span>
         </h1>

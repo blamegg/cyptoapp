@@ -114,6 +114,7 @@ const config: Config = {
         crypOrange: "#FEA301",
         bitBlack: "#222328",
         text: "#353535",
+        textG:"#757575",
         nLetterbg: "#1F202D",
         customYellow:"#fea301",
         Choosebg: "#FAFAFA",

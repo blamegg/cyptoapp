@@ -5,9 +5,9 @@ import { BsDash } from "react-icons/bs";
 
 const Price = () => {
   return (
-    <section className="py-28 bg-white">
+    <section className="py-14 bg-white md:mx-0 mx-10">
       <div className="text-center mb-20 font-sans">
-        <h2 className="text-[40px] text-[#222328]">
+        <h2 className="text-[40px] text-[#222328] md:w-auto w-56 mx-auto leading-tight">
           Comes with <span className="text-crypOrange font-bold">Best Price</span>
         </h2>
         <p className="text-[#757575] font-ubuntu text-[12px] font-bold my-3 ">
@@ -15,7 +15,7 @@ const Price = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-7 max-w-6xl mx-auto ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:gap-7 gap-12 max-w-6xl mx-auto p-8 lg:p-0">
         {pricingPlans.map((plan, index) => (
           <div key={index} className="rounded-lg border border-gray-100 ">
             <div className="relative h-1/2 cursor-pointer">
@@ -33,11 +33,11 @@ const Price = () => {
               </div>
             </div>
 
-            <ul className="mb-6 space-y-3 font-sans p-6 ">
+            <ul className="mb-6 space-y-3 font-sans font-light p-6 ">
               {plan.features.map((feature, idx) => (
                 <li
                   key={idx}
-                  className="flex items-center space-x-2 text-[#353535]"
+                  className="flex items-center space-x-2 text-text"
                 >
                   {feature.status === "check" ? (
                     <span className="text-green-500">
@@ -48,7 +48,7 @@ const Price = () => {
                       <BsDash />
                     </span>
                   )}
-                  <span className="text-[16px] text-[#353535]">
+                  <span className="text-[16px] text-text">
                     {feature.text}
                   </span>
                 </li>

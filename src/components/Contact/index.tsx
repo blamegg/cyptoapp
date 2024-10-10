@@ -3,7 +3,7 @@ import { contact } from '@/assets/sharedSection'
 const ContactForm = () => {
   return (
     <div
-      className="bg-cover bg-center py-16 "
+      className="bg-cover bg-center py-16 lg:mx-0 mx-10"
       style={{
         backgroundImage: `url(${contact.src})`,
         backgroundAttachment: "fixed",
