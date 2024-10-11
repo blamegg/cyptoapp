@@ -13,6 +13,8 @@ const config: Config = {
         'cxs': '375px', 
         'csm': '423px', 
         'ms' : '769px',
+        'clg': '1135px', 
+
       },
       margin: {
         '17': '68px',

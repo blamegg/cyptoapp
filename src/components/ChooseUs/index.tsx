@@ -12,6 +12,7 @@ export const ChooseUs = () => {
   const [activeTag, setActiveTag] = useState("headone");
   const handleActiveTag = (tag:string) => {
     setActiveTag(tag);
+
   };
     return (
     <>
@@ -222,7 +223,7 @@ export const ChooseUs = () => {
             </div>
           </div>
 
-          <div className="lg:w-1/2 w-full xl:mt-0 md:mt-20 sm:mt-0">
+          <div className="lg:w-1/2 w-full xl:mt-0 md:mt-20 sm:mt-0 ">
             {sections.map((section) => (
               <div key={section.id} className="transition-all duration-300">
                 <div className="flex items-center gap-8 mb-10">

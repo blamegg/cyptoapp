@@ -30,23 +30,23 @@ const NetworkInfo = () => {
 
         {/* Right Section - Text Content */}
         <div className="w-full lg:w-2/3 text-left ">
-          <h3 className="text-4xl text-bitBlack leading-tight">
+          <h3 className="text-40 text-text font-Ubuntu  leading-tight">
             Innovative Payment{" "}
             <span className="text-crypOrange font-bold">Network</span>
           </h3>
 
-          <h2 className="text-bitBlack text-2xl mt-4 font-sans ">
+          <h2 className="text-text text-2xl mt-4 font-sans ">
             Simple & secure access to buy, sell{" "} <span className="block">and use Bitcoin.</span> 
           </h2>
           
-          <p className="mt-4  font-light leading-7 text-[17px] text-textG font-sans">
+          <p className="mt-4  font-light leading-7 text-[17px] text-text font-sans">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             sagittis nisl porttitor, eleifend tortor sed, auctor libero.
             Proin quis purus eu mi fermentum blandit. Nam eget nisi ipsum. Nullam
             vitae nunc ac eros laoreet egestas.
           </p>
           
-          <button className="bg-crypOrange text-white font-semibold text-sm py-3 px-6 mt-6 lg:mt-8">
+          <button className="bg-crypOrange text-white font-medium  py-3 px-6 mt-6 lg:mt-8 font-sans text-13">
             READ MORE
           </button>
         </div>
