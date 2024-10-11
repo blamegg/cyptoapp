@@ -1,57 +1,78 @@
-'use client'
+"use client";
 
-import React, { useState, useEffect, useRef } from 'react'
-import Slider from 'react-slick'
-import { img01, img02, img03, img04, img05, img06, img07, img08, img09, img10, img11, img12 } from '@/assets/Middle-assests'
+import React, { useState, useEffect, useRef } from "react";
+import Slider from "react-slick";
+import {
+  img01,
+  img02,
+  img03,
+  img04,
+  img05,
+  img06,
+  img07,
+  img08,
+  img09,
+  img10,
+  img11,
+  img12,
+} from "@/assets/Middle-assests";
 
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const SsCarousel = () => {
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true)
-  
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const sliderRef = useRef<Slider>(null)
- const [isMobile, setIsMobile] = useState(false);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const sliderRef = useRef<Slider>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    handleResize(); 
-    window.addEventListener("resize", handleResize); 
-    return () => window.removeEventListener("resize", handleResize); 
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
   const handleResize = () => {
-    setIsMobile(window.innerWidth <= 768); 
+    setIsMobile(window.innerWidth <= 768);
   };
   const screenshot = [
-    img01.src, img02.src, img03.src, img04.src, img05.src, img06.src,
-    img07.src, img08.src, img09.src, img10.src, img11.src, img12.src,
-  ]
+    img01.src,
+    img02.src,
+    img03.src,
+    img04.src,
+    img05.src,
+    img06.src,
+    img07.src,
+    img08.src,
+    img09.src,
+    img10.src,
+    img11.src,
+    img12.src,
+  ];
 
-  const slides = []
+  const slides = [];
   for (let i = 0; i < screenshot.length; i += 4) {
-    if(isMobile){
-      
-    slides.push(screenshot.slice(i, i + 1))
-    }else{
-
-      slides.push(screenshot.slice(i, i + 4))
+    if (isMobile) {
+      slides.push(screenshot.slice(i, i + 1));
+    } else {
+      slides.push(screenshot.slice(i, i + 4));
     }
   }
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
-        setIsAutoPlaying(false)
+      if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+        setIsAutoPlaying(false);
       }
-    }
+    };
 
-    window.addEventListener('keydown', handleKeyDown)
+    window.addEventListener("keydown", handleKeyDown);
 
     return () => {
-      window.removeEventListener('keydown', handleKeyDown)
-    }
-  }, [])
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   const settings = {
     dots: false,
@@ -63,28 +84,27 @@ export const SsCarousel = () => {
     autoplaySpeed: 5000,
     pauseOnHover: true,
     beforeChange: (oldIndex: number, newIndex: number) => {
-      setCurrentSlide(newIndex)
-      setIsAutoPlaying(false)
+      setCurrentSlide(newIndex);
+      setIsAutoPlaying(false);
     },
-  }
-
-
-  
+  };
 
   const goToSlide = (index: number) => {
     if (sliderRef.current) {
-      sliderRef.current.slickGoTo(index)
+      sliderRef.current.slickGoTo(index);
     }
-    setCurrentSlide(index)
-    setIsAutoPlaying(false)
-  }
+    setCurrentSlide(index);
+    setIsAutoPlaying(false);
+  };
 
   return (
     <div className="mt-20">
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-4xl text-center">
-          <span>Cryptap</span>{' '}
-          <span className="text-crypOrange font-semibold">Live Screenshots</span>
+          <span>Cryptap</span>{" "}
+          <span className="text-crypOrange font-semibold">
+            Live Screenshots
+          </span>
         </h2>
         <p className="text-sm font-semibold opacity-55 mt-2">
           CRYPTAP WORKS FOR YOUR SUCCESS
@@ -122,10 +142,11 @@ export const SsCarousel = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               className={`w-4 h-4 rounded-full transition-all duration-300 ease-in-out ${
-                currentSlide === index ? 'bg-crypOrange' : 'bg-gray-300'
+                currentSlide === index ? "bg-crypOrange" : "bg-gray-300"
               } hover:bg-crypOrange`}
               style={{
-                transform: hoveredIndex === index ? 'rotateY(180deg)' : 'rotateY(0deg)',
+                transform:
+                  hoveredIndex === index ? "rotateY(180deg)" : "rotateY(0deg)",
               }}
               aria-label={`Go to slide ${index + 1}`}
             />
@@ -133,5 +154,5 @@ export const SsCarousel = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
