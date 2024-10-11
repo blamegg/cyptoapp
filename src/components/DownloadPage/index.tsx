@@ -58,8 +58,8 @@ export const Downloads = () => {
           />
         </div>
 
-        <div className="md:w-1/2 min-h-full md:mr-32 md:mt-0 mt-20 md:mx-0 mx-10">
-          <div className="mb-20 text-40">
+        <div className="lg:w-1/2 min-h-full md:mr-32 lg:mt-0 mt-20 mx-10 ">
+          <div className="mb-16 text-40 ">
             <p className="text-bitBlack">
               The Superior
               <span className="text-crypOrange font-bold  "> Alternative</span>
