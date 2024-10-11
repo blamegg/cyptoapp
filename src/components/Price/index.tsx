@@ -14,8 +14,7 @@ const Price = () => {
           WE WORK FOR YOUR SUCCESS
         </p>
       </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-3 md:gap-7 gap-12 max-w-6xl mx-auto p-8 lg:p-0">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:gap-7 gap-12 max-w-6xl mx-auto px-8 lg:p-0">
         {pricingPlans.map((plan, index) => (
           <div key={index} className="rounded-lg border border-gray-100 ">
             <div className="relative h-1/2 cursor-pointer">
@@ -37,14 +36,14 @@ const Price = () => {
               {plan.features.map((feature, idx) => (
                 <li
                   key={idx}
-                  className="flex items-center space-x-2 text-text"
+                  className="flex  space-x-2 text-text"
                 >
                   {feature.status === "check" ? (
-                    <span className="text-green-500">
+                    <span className="text-green-500 mt-[5px]">
                       <FaCheck />
                     </span>
                   ) : (
-                    <span className="text-red-500 ">
+                    <span className="text-red-500 mt-[5px] ">
                       <FaMinus/>
                     </span>
                   )}
