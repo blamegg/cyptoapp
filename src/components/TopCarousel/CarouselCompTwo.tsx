@@ -21,7 +21,7 @@ const CarouselCompTwo = () => {
         backgroundPosition: "center",
         color: "white",
       }}
-      className="relative bg-black text-white py-16 md:pb-24 flex items-center justify-stretch min-h-[50rem]"
+      className="relative bg-black text-white py-16 md:pb-24 flex items-center justify-stretch md:min-h-[50rem] min-h-[30rem]"
     >
       {/* Left Text Section */}
       <div className="w-full md:w-[45vw] pl-4 md:pl-16 lg:pl-24 xl:pl-32 flex flex-col space-y-6 pr-8">
@@ -74,7 +74,7 @@ const CarouselCompTwo = () => {
 
         <div className="flex space-x-4 translate-y-6">
           <motion.button
-            className="bg-customYellow md:text-sm text-8 hover:bg-white hover:text-black whitespace-nowrap flex items-center font-bold gap-4 text-white px-6 py-3 "
+            className="bg-customYellow md:text-sm text-8 hover:bg-white hover:text-black whitespace-nowrap flex items-center font-bold gap-4 text-white md:px-6 md:py-3 px-3 py-2"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -83,12 +83,12 @@ const CarouselCompTwo = () => {
           </motion.button>
 
           <motion.button
-            className="border-2 border-white text-white hover:bg-white hover:text-black flex items-center gap-4 font-bold px-6 py-3 "
+            className="border-2 border-white md:text-sm text-8 text-white hover:bg-white hover:text-black flex items-center gap-4 font-bold md:px-6 md:py-3 whitespace-nowrap px-2 py-0"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            DOWNLOAD APP <FaApple />
+            DOWNLOAD APP<FaApple />
           </motion.button>
         </div>
       </div>
