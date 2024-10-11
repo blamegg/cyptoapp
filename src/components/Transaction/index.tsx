@@ -19,7 +19,7 @@ export const Transaction = () => {
           malesuada pharetra. Duis vel imperdiet enim. Vestibulum dolor metus.
         </p>
       </div>
-      <div className="text-center min-w-full md:pl-0 pl-16 md:pr-0 pr-16  flex items-start justify-center ">
+      <div className="text-center min-w-full pl-16 pr-16 md:pl-14 md:pr-14      flex items-start justify-center ">
         <img src={mobile.src} alt="" />
       </div>
       <CryptoProgress />
