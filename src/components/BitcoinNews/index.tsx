@@ -1,4 +1,3 @@
-import { img1, img2, img3 } from "@/assets/Middle-assests";
 import React from "react";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { TiMessages } from "react-icons/ti";

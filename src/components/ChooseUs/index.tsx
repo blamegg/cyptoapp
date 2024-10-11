@@ -10,7 +10,7 @@ export const ChooseUs = () => {
     setOpenSection(id);
   };
   const [activeTag, setActiveTag] = useState("headone");
-  const handleActiveTag = (tag: any) => {
+  const handleActiveTag = (tag:string) => {
     setActiveTag(tag);
   };
     return (
@@ -76,7 +76,7 @@ export const ChooseUs = () => {
             <div className={`${activeTag === "headone" ? "block" : "hidden"}`}>
               <p className="text-text text-base font-light font-sans text-start flex px-4 mt-5 leading-7">
                 Alternatively if you have a specific service or question in mind
-                please don't hesitate to contact us using the contact details:
+                please dont hesitate to contact us using the contact details:
               </p>
               <div className="flex flex-col px-3 mt-10 gap-3  text-base font-light font-sans">
                 <p className="flex items-center gap-2">
