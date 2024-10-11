@@ -12,6 +12,7 @@ const config: Config = {
         'cxxs': '300px',   
         'cxs': '375px', 
         'csm': '423px', 
+        'ms' : '769px',
       },
       margin: {
         '17': '68px',
