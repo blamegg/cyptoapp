@@ -108,6 +108,7 @@ const config: Config = {
         '49': '49px',
         '50': '50px',
       },
+      
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
