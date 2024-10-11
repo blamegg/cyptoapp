@@ -2,6 +2,7 @@ import { img1, img2, img3 } from "@/assets/Middle-assests";
 import React from "react";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { TiMessages } from "react-icons/ti";
+import {contentArray} from "../constants";
 
 export const BitcoinNews = () => {
   return (
@@ -20,138 +21,54 @@ export const BitcoinNews = () => {
         </div>
       </div>
 
-      <div className="flex  md:flex-row flex-wrap flex-col  items-center justify-center gap-7   mt-20 ">
-        <div className="max-w-[370px] h-500 md:mb-20 mb-52  ">
-          <div className=" ">
-            <img
-              src={img1.src}
-              className="md:h-60 md:w-full w-[70%] h-auto mx-auto cursor-pointer"
-            ></img>
-          </div>
-          <div className="md:flex justify-start mx-4 md:mx-0  md:text-start text-justify border-t md:gap-0 gap-4 ">
-            <div className="flex border-t md:mx-0 md:mr-4 mx-10 border-crypOrange mt-10 border-b md:h-20 h-10 ">
-              <p className="flex md:flex-col md:gap-0 gap-4 md:mx-0  mx-auto  flex-row items-center">
-                <span>18th </span>
-                <span>september</span>
-                <span> 2015</span>
-              </p>
-            </div>
-            <div className="mt-10 md:mx-0 mx-10">
-              <p className="hover:text-crypOrange transition-all duration-500 cursor-pointer">
-                THE AMAZING SAGA OF
-                <br /> BITCOIN CRYPTOCURRENCY
-              </p>
-              <p className="text-text leading-8 mt-5 font-opensans  ">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-                repellendus alias harum provident debitis autem illum
-                consequuntur nemo possimus sit ratione ipsam voluptatem
-                similique numquam non ipsum, iure amet recusandae...
-              </p>
-              <div className="flex justify-between">
-                <span className="flex gap-4 items-center">
-                  <FaRegCircleUser />
-                  <p>Ram</p>
-                </span>
-                <span className="flex gap-5 items-center cursor-pointer">
-                  <TiMessages />
-                  <p>1</p>
-                </span>
-                <span className="flex items-center gap-4">
-                  <FaRegCircleUser />
-                  <p>blockchain</p>
-                </span>
-              </div>
-            </div>
-          </div>
+      
+<div className="max-w-[100vw] overflow-x-hidden min-h-screen  scroll-container flex md:flex-row flex-wrap flex-col items-center justify-center gap-7 mt-20">
+  {contentArray.map((content, index) => (
+    <div key={index} className="max-w-[370px] overflow-x-hidden h-auto md:mb-10 mb-20 lg:px-0 md:px-4 px-0">
+      <div>
+        <img
+          src={content.imgSrc}
+          className="md:h-60 md:w-full  w-[70%] h-auto mx-auto cursor-pointer"
+        />
+      </div>
+      <div className="md:flex justify-start  md:mx-0 md:text-start text-justify md:gap-0 gap-4">
+        <div className="flex border-t md:mx-0 text-xs   font-sans md:mr-4 mx-10 border-crypOrange mt-10 border-b md:h-20 h-10">
+          <p className="flex md:flex-col md:gap-2 my-auto gap-4 md:mx-0 mx-auto flex-row items-center">
+            <span>{content.date.split(" ")[0]} </span>
+            <span>{content.date.split(" ")[1]}</span>
+            <span> {content.date.split(" ")[2]}</span>
+          </p>
         </div>
-
-        <div className="max-w-[370px] h-500 md:mb-20 mb-52  ">
-          <div className=" ">
-            <img
-              src={img2.src}
-              className="md:h-60 md:w-full w-[70%] h-auto mx-auto cursor-pointer"
-            ></img>
-          </div>
-          <div className="md:flex justify-start mx-4 md:mx-0  md:text-start text-justify border-t md:gap-0 gap-4 ">
-            <div className="flex border-t md:mx-0 md:mr-4 mx-10 border-crypOrange mt-10 border-b md:h-20 h-10 ">
-              <p className="flex md:flex-col md:gap-0 gap-4 md:mx-0  mx-auto  flex-row items-center">
-                <span>18th </span>
-                <span>september</span>
-                <span> 2015</span>
-              </p>
-            </div>
-            <div className="mt-10 md:mx-0 mx-10">
-              <p className="hover:text-crypOrange transition-all duration-500 cursor-pointer">
-                BLOCKCHAIN IS PUBLIC
-                <br /> DISTRIBUTED LEDGER
-              </p>
-              <p className="text-text leading-8 mt-5 font-opensans  ">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-                repellendus alias harum provident debitis autem illum
-                consequuntur nemo possimus sit ratione ipsam voluptatem
-                similique numquam non ipsum, iure amet recusandae...
-              </p>
-              <div className="flex justify-between">
-                <span className="flex gap-4 items-center">
-                  <FaRegCircleUser />
-                  <p>Ram</p>
-                </span>
-                <span className="flex gap-5 items-center cursor-pointer">
-                  <TiMessages />
-                  <p>1</p>
-                </span>
-                <span className="flex items-center gap-4">
-                  <FaRegCircleUser />
-                  <p>blockchain</p>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="max-w-[370px] h-500 md:mb-20 mb-52  ">
-          <div className=" ">
-            <img
-              src={img3.src}
-              className="md:h-60 md:w-full w-[70%] h-auto mx-auto cursor-pointer"
-            ></img>
-          </div>
-          <div className="md:flex justify-start mx-4 md:mx-0  md:text-start text-justify border-t md:gap-0 gap-4 ">
-            <div className="flex border-t md:mx-0 md:mr-4 mx-10 border-crypOrange mt-10 border-b md:h-20 h-10 ">
-              <p className="flex md:flex-col md:gap-0 gap-4 md:mx-0  mx-auto  flex-row items-center">
-                <span>18th </span>
-                <span>september</span>
-                <span> 2015</span>
-              </p>
-            </div>
-            <div className="mt-10 md:mx-0 mx-10">
-              <p className="hover:text-crypOrange transition-all duration-500 cursor-pointer">
-              WHAT IS PUBLIC KEY<br/> CRYPTOGRAPHY SYSTEM?
-              </p>
-              <p className="text-text leading-8 mt-5 font-opensans  ">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-                repellendus alias harum provident debitis autem illum
-                consequuntur nemo possimus sit ratione ipsam voluptatem
-                similique numquam non ipsum, iure amet recusandae...
-              </p>
-              <div className="flex justify-between">
-                <span className="flex gap-4 items-center">
-                  <FaRegCircleUser />
-                  <p>Ram</p>
-                </span>
-                <span className="flex gap-5 items-center cursor-pointer">
-                  <TiMessages />
-                  <p>1</p>
-                </span>
-                <span className="flex items-center gap-4">
-                  <FaRegCircleUser />
-                  <p>blockchain</p>
-                </span>
-              </div>
-            </div>
+        <div className="mt-10 md:mx-0 mx-10">
+          <p className="hover:text-crypOrange transition-all duration-500 font-sans font-light cursor-pointer">
+            {content.title}
+          </p>
+          <p className="text-text leading-8 mt-5 text-base font-light font-sans">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+            repellendus alias harum provident debitis autem illum consequuntur nemo
+            possimus sit ratione ipsam voluptatem similique numquam non ipsum, iure
+            amet recusandae...
+          </p>
+          <div className="flex justify-between text-base font-light font-sans mt-4">
+            <span className="flex gap-4 items-center">
+              <FaRegCircleUser className="text-gray-700"/>
+              <p>{content.author}</p>
+            </span>
+            <span className="flex gap-5 items-center cursor-pointer">
+              <TiMessages className="text-gray-700"/>
+              <p>1</p>
+            </span>
+            <span className="flex items-center gap-4">
+              <FaRegCircleUser  className="text-gray-500"/>
+              <p>{content.category}</p>
+            </span>
           </div>
         </div>
       </div>
+    </div>
+  ))}
+</div>
+;
     </>
   );
 };

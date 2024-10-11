@@ -2,6 +2,7 @@ import { bitcoin, iota, omigo, ripple, zcash } from "@/assets";
 
 import { introIcon1, introIcon2, introIcon3 } from "@/assets";
 
+import { img1, img2, img3 } from "@/assets/Middle-assests";
 import { price1, price2, price3,profile1,profile2,profile3 } from "@/assets/sharedSection";
 
 export const CarouselData = [
@@ -169,3 +170,58 @@ const testimonials = [
 ];
 
 export default testimonials;
+export const sections = [
+  {
+    id: 1,
+    title: "Unique Design Layouts and Features",
+    content:
+      "We work with clients big and small across a range of sectors and we utilise all forms of media to get your name out there in a way that's right for you. We have the skills and resources to create professional films.",
+  },
+  {
+    id: 2,
+    title: "Easy dashboard integration for all mobile devices",
+    content:
+      "We work with clients big and small across a range of sectors and we utilise all forms of media to get your name out there in a way that's right for you. We have the skills and resources to create professional films.",
+  },
+  {
+    id: 3,
+    title: "Community Service Forums",
+    content:
+      "We work with clients big and small across a range of sectors and we utilise all forms of media to get your name out there in a way that's right for you. We have the skills and resources to create professional films.",
+  },
+  {
+    id: 4,
+    title: "Find the best jobs for your location",
+    content:
+      "We work with clients big and small across a range of sectors and we utilise all forms of media to get your name out there in a way that's right for you. We have the skills and resources to create professional films.",
+  },
+  {
+    id: 5,
+    title: "Search for talented workers to improve your business",
+    content:
+      "We work with clients big and small across a range of sectors and we utilise all forms of media to get your name out there in a way that's right for you. We have the skills and resources to create professional films.",
+  },
+];
+export const contentArray = [
+  {
+    imgSrc: img1.src,
+    title: "THE AMAZING SAGA OF BITCOIN CRYPTOCURRENCY",
+    date: "18th September 2015",
+    author: "ram",
+    category: "blockchain",
+  },
+  {
+    imgSrc: img2.src,
+    title: "BLOCKCHAIN IS PUBLIC DISTRIBUTED LEDGER",
+    date: "18th September 2015",
+    author: "ram",
+    category: "blockchain",
+  },
+  {
+    imgSrc: img3.src,
+    title: "WHAT IS PUBLIC KEY CRYPTOGRAPHY SYSTEM?",
+    date: "18th September 2015",
+    author: "ram",
+    category: "blockchain",
+  },
+];

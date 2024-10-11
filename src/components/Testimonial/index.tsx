@@ -3,7 +3,7 @@ import React from "react";
 import Slider from "react-slick"; 
 import Image from "next/image";
 import testimonials from "../constants"; 
-import { quote } from "@/assets/sharedSection";
+
 
 const TestimonialSection = () => {
   
@@ -45,8 +45,10 @@ const TestimonialSection = () => {
               className="testimonial-card flex flex-col justify-between items-center bg-white px-14 rounded-lg border-l border-gray-200   h-auto mx-5" // Adjusted gap using mx-4
             >
               <div className="flex flex-col justify-center items-center text-center gap-5 font-sans">
-             
-                <div className=" text-crypOrange"><img src={quote.src} alt="quote" height={24} width={24} /></div>
+              <div className="text-4xl text-crypOrange font-serif font-extrabold">
+    &ldquo;
+</div>
+                {/* <div className=" text-crypOrange"><img src={quote.src} alt="quote" height={24} width={24} /></div> */}
                 <div className="text-[16px] font-light mb-7 text-textG overflow-hidden  leading-7">
                   {review.quote}
                 </div>

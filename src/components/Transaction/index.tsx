@@ -5,7 +5,7 @@ import CryptoProgress from "./Coins";
 export const Transaction = () => {
   return (
     <div className="">
-      <div className="text-center mb-20 mt-20">
+      <div className="text-center mb-20 mt-20 md:p-0 p-10">
         <h2 className="font-normal text-4xl mb-4">
           Transparent{" "}
           <span className="font-bold text-customYellow">Transactions</span>
@@ -19,7 +19,7 @@ export const Transaction = () => {
           malesuada pharetra. Duis vel imperdiet enim. Vestibulum dolor metus.
         </p>
       </div>
-      <div className="text-center min-w-full  flex items-start justify-center ">
+      <div className="text-center min-w-full md:pl-0 pl-16 md:pr-0 pr-16  flex items-start justify-center ">
         <img src={mobile.src} alt="" />
       </div>
       <CryptoProgress />
