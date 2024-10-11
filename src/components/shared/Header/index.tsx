@@ -4,7 +4,7 @@ import { logo } from "@/assets/sharedSection";
 import Link from "next/link";
 import { useSlideContext } from "@/context/SlideContext";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaTimes } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
 
 
 const Navbar: React.FC = () => {
@@ -83,7 +83,7 @@ const toggleSidebar = () => {
       >
         <div className="p-4 flex justify-end ">
           <button onClick={toggleSidebar}>
-          <FaTimes size={20}  />
+          <RxCross2 size={20} />
           </button>
         </div>
         <div className="flex flex-col items-start  border-t border-gray-100 space-y-2  py-1 ">
