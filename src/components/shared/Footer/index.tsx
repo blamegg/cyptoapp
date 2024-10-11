@@ -5,12 +5,14 @@ import { IoLogoFlickr } from "react-icons/io";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-textG py-10 bg-white font-sans">
+    <footer className="text-textG py-10 bg-white font-sans font-light">
       <div className="lg:w-[80%] mx-auto md:w-[90%] w-[80%] ">
         <div className="flex flex-wrap justify-between mx-5 md:mx-0">
           <div className="w-full md:w-1/4 mb-9 ">
-            <h3 className="text-xl font-medium mb-7 text-black">PRODUCTS</h3>
-            <ul className="space-y-5 font-light">
+            <h3 className="text-xl font-medium mb-7 font-Ubuntu text-black">
+              PRODUCTS
+            </h3>
+            <ul className="space-y-5 ">
               <li>
                 <a href="#" className="hover:text-crypOrange">
                   Zen Features
@@ -34,8 +36,10 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/4 mb-6 ">
-            <h3 className="text-xl font-medium mb-7 text-black">SUPPORT</h3>
-            <ul className="space-y-5 font-light">
+            <h3 className="text-xl font-medium mb-7 font-Ubuntu text-black">
+              SUPPORT
+            </h3>
+            <ul className="space-y-5">
               <li>
                 <a href="#" className="hover:text-crypOrange">
                   Support Portal
@@ -59,8 +63,10 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/4 mb-6 ">
-            <h3 className="text-xl font-medium mb-7 text-black">COMPANY</h3>
-            <ul className="space-y-5 font-light">
+            <h3 className="text-xl font-medium mb-7 font-Ubuntu text-black">
+              COMPANY
+            </h3>
+            <ul className="space-y-5">
               <li>
                 <a href="#" className="hover:text-crypOrange">
                   About Us
@@ -84,7 +90,9 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/5 mb-6">
-            <h3 className="text-xl font-medium mb-7 text-black">SOCIAL</h3>
+            <h3 className="text-xl font-medium mb-7 font-Ubuntu text-black">
+              SOCIAL
+            </h3>
             <div className="flex flex-wrap gap-1 ">
               <a
                 href="#"
@@ -116,7 +124,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-400 opacity-30 my-12" />
         <div className="text-center mt-10 ">
           <div className="mb-4">
-            <a href="https://cryptapp.wpengine.com/" >
+            <a href="https://cryptapp.wpengine.com/">
               <img
                 src={footerlogo.src}
                 alt="CryptApp WordPress Theme"

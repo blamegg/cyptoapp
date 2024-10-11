@@ -26,7 +26,7 @@ const toggleSidebar = () => {
           </Link>
         </div>
 
-        <div className="hidden lg:flex space-x-11 text-[16px] font-light">
+        <div className="hidden lg:flex space-x-11 text-[16px] font-medium">
           {[
             { name: "Home", href: "#home" },
             { name: "Features", href: "#feature" },

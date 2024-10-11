@@ -30,7 +30,7 @@ const NetworkInfo = () => {
 
         {/* Right Section - Text Content */}
         <div className="w-full lg:w-2/3 text-left ">
-          <h3 className="text-4xl text-bitBlack font-light leading-tight">
+          <h3 className="text-40 text-text font-Ubuntu  leading-tight">
             Innovative Payment{" "}
             <span className="text-crypOrange font-bold">Network</span>
           </h3>

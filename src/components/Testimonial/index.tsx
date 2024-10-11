@@ -61,7 +61,7 @@ const TestimonialSection = () => {
                   width={88}
                   height={88}
                 />
-                <h3 className="text-black font-bold pb-2">{review.name}</h3>
+                <h3 className="text-black font-bold font-ubuntu pb-2">{review.name}</h3>
                 <p className="text-gray-400 text-12 font-bold font-ubuntu tracking-widest">{review.position}</p>
               </div>
             </div>
