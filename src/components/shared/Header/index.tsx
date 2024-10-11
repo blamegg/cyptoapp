@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { logo } from "@/assets/sharedSection";
 import Link from "next/link";
-import { useSlideContext } from "@/components/context/SlideContext";
+import { useSlideContext } from "@/context/SlideContext";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 
