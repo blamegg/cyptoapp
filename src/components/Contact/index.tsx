@@ -3,7 +3,7 @@ import { contact } from '@/assets/sharedSection'
 const ContactForm = () => {
   return (
     <div
-      className="bg-cover bg-center py-16 lg:mx-0 mx-10"
+      className="bg-cover bg-center py-16 "
       style={{
         backgroundImage: `url(${contact.src})`,
         backgroundAttachment: "fixed",
@@ -11,7 +11,7 @@ const ContactForm = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="max-w-2xl mx-auto text-center">
+      <div className="max-w-2xl lg:mx-auto mx-10 text-center">
         <h2 className="text-[40px]  text-white mb-4 font-light">
           Have Any Questions? <span className="text-crypOrange font-bold">Contact Us</span>
         </h2>
