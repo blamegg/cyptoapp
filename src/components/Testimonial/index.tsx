@@ -36,13 +36,13 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="bg-white py-32 mx-5 lg:mx-0">
+    <section className="bg-white py-32 mx-10 lg:mx-0">
       <div className="mx-auto lg:w-[80%] w-full">
         <Slider {...settings}>
           {testimonials.map((review, index) => (
             <div
               key={index}
-              className="testimonial-card flex flex-col justify-between items-center bg-white px-14 rounded-lg border-l border-gray-200   h-auto mx-5" // Adjusted gap using mx-4
+              className="testimonial-card flex flex-col justify-between items-center bg-white px-14 rounded-lg border-r border-gray-200   h-auto " // Adjusted gap using mx-4
             >
               <div className="flex flex-col justify-center items-center text-center gap-5 font-sans">
               <div className="text-4xl text-crypOrange font-serif font-extrabold">
