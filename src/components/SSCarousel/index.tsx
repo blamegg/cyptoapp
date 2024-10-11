@@ -13,7 +13,16 @@ export const SsCarousel = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const [currentSlide, setCurrentSlide] = useState(0)
   const sliderRef = useRef<Slider>(null)
+ const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    handleResize(); 
+    window.addEventListener("resize", handleResize); 
+    return () => window.removeEventListener("resize", handleResize); 
+  }, []);
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768); 
+  };
   const screenshot = [
     img01.src, img02.src, img03.src, img04.src, img05.src, img06.src,
     img07.src, img08.src, img09.src, img10.src, img11.src, img12.src,
@@ -21,7 +30,13 @@ export const SsCarousel = () => {
 
   const slides = []
   for (let i = 0; i < screenshot.length; i += 4) {
-    slides.push(screenshot.slice(i, i + 4))
+    if(isMobile){
+      
+    slides.push(screenshot.slice(i, i + 1))
+    }else{
+
+      slides.push(screenshot.slice(i, i + 4))
+    }
   }
 
   useEffect(() => {
@@ -90,7 +105,7 @@ export const SsCarousel = () => {
                     <img
                       src={image}
                       alt={`Screenshot ${slideIndex * 4 + imageIndex + 1}`}
-                      className="rounded-lg object-cover h-[550px] w-[250px]"
+                      className="rounded-lg object-cover h-[550px] w-[250px] sm:ml-[30vw] lg:ml-0  cxs:ml-[10vw] csm:ml-[15vw] cxxs:ml-[5vw] border-red-500"
                     />
                   </div>
                 ))}

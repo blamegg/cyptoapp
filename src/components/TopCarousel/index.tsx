@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import CarouselCompOne from "./CarouselCompOne";
 import CarouselCompTwo from "./CarouselCompTwo";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
-import { useSlideContext } from "../context/SlideContext"; 
+import { useSlideContext } from "../../context/SlideContext"; 
 
 interface ArrowProps {
   onClick: () => void;

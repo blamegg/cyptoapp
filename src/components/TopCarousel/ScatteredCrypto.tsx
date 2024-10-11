@@ -33,7 +33,7 @@ const ScatteredCrypto = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative w-[54vw] min-h-[80vh]">
+    <div ref={containerRef} className="relative md:w-[54vw] min-h-[20rem] md:min-h-[80vh] md:scale-100 scale-50">
       {images.map((img, index) => (
         <motion.img
           key={index}

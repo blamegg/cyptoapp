@@ -29,7 +29,7 @@ export const NewsLetter = () => {
             />
             <input
               placeholder="Email"
-              className="h-12 md:w-400 w-[100%] p-5 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:shadow-lg focus:shadow-yellow-500/50"
+              className="h-12 md:w-400 w-[100%] p-2 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:shadow-lg focus:shadow-yellow-500/50"
             />
             <button className=" bg-crypOrange h-10 md:w-52 w-fit p-6 flex justify-center items-center gap-5 text-white font-medium tracking-widest">
               SUBSCRIBE{" "}
