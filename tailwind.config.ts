@@ -8,7 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-
+ screens: {
+        'cxxs': '300px',   
+        'cxs': '375px', 
+        'csm': '423px', 
+      },
       margin: {
         '17': '68px',
         '18': '72px',

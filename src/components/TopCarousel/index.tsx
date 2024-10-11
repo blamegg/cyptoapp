@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import CarouselCompOne from "./CarouselCompOne";
 import CarouselCompTwo from "./CarouselCompTwo";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
-import { useSlideContext } from "../context/SlideContext"; 
+import { useSlideContext } from "../../context/SlideContext"; 
 
 interface ArrowProps {
   onClick: () => void;
@@ -46,7 +46,7 @@ export const TopCarousel: React.FC = () => {
 
 const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
   <button
-    className="absolute right-2 z-50 text-white top-1/2 transform -translate-y-1/2 bg-black opacity-60 hover:opacity-100 text-2xl p-2"
+    className="absolute right-2 z-50 text-white top-1/2 transform md:-translate-y-1/2 -translate-y-40 bg-black opacity-60 hover:opacity-100 text-2xl p-2"
     onClick={onClick}
   >
     <GoChevronRight />
@@ -55,7 +55,7 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
 
 const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
   <button
-    className="absolute left-2 z-50 text-white top-1/2 transform -translate-y-1/2 bg-black opacity-60 hover:opacity-100 text-2xl p-2"
+    className="absolute left-2 z-50 text-white top-1/2  transform md:-translate-y-1/2 -translate-y-40 bg-black opacity-60 hover:opacity-100 text-2xl p-2"
     onClick={onClick}
   >
     <GoChevronLeft />

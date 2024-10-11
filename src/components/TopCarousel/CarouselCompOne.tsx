@@ -8,8 +8,8 @@ import { EffectBlock } from "./EffectBlock";
 
 export default function CarouselCompOne() {
   return (
-    <div className="bg-customGray  md:min-h-[50rem] min-h-[30rem]    text-white md:p-8  flex justify-between items-center ">
-      <div className="flex md:w-[80%] md:gap-auto gap-5   mx-auto">
+    <div className="bg-customGray  md:min-h-[50rem] min-h-[30rem]    text-white md:p-8  flex justify-between items-center">
+      <div className="flex md:w-[80%] md:gap-auto gap-5    md:mx-auto sm:mx-0   md:pt-0  pt-20">
         {/* Left section with text */}
         <div className="w-1/2 md:-mt-20 mt-0">
           <motion.h2
@@ -60,7 +60,7 @@ export default function CarouselCompOne() {
 
           <div className="space-x-4 whitespace-nowrap">
             <motion.button
-              className="bg-customYellow text-white text-8 md:text-16 font-bold px-8 py-3 hover:bg-white hover:text-black"
+              className="bg-customYellow text-white text-8 md:text-16 font-bold md:px-8 px-5 py-2 md:py-3 hover:bg-white hover:text-black"
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -69,7 +69,7 @@ export default function CarouselCompOne() {
             </motion.button>
 
             <motion.button
-              className="border-2 border-white py-3 px-8 text-8 md:text-16  hover:bg-white hover:text-black font-bold"
+              className="border-2 border-white md:px-8 px-5 py-2 md:py-3 text-8 md:text-16  hover:bg-white hover:text-black font-bold"
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.4, delay: 0.8 }}
@@ -79,11 +79,11 @@ export default function CarouselCompOne() {
           </div>
         </div>
         {/* Right Section  */}
-        <div className="relative w-1/2 mt-20">
+        <div className="relative w-1/2 md:mt-20 mt-28 md:translate-x-0 -translate-x-6 translate-y-10 ">
           <motion.div
             initial={{ x: -100, opacity: 1 }}
             animate={{ x: -100, y: -359, opacity: 1 }}
-            className="z-40 min-h-[180vh]    absolute bg-transparent left-10 top-1/2 -translate-y-1/2 min-w-[50vw] "
+            className="z-40 min-h-[180vh] md:block hidden    absolute bg-transparent left-10 top-1/2 -translate-y-1/2 min-w-[50vw] "
           >
             <ScatteredCrypto />
           </motion.div>
@@ -97,16 +97,16 @@ export default function CarouselCompOne() {
             <img
               src={horizontalScreen.src}
               alt="Horizontal Screen"
-              className="md:min-w-[48vw]  min-w-[130%] "
+              className="md:min-w-[48vw]  min-w-[130%] md:pl-0 pl-20 -translate-x-8 md:translate-x-0 sm:-translate-x-10 sm:-translate-y-14 -translate-y-12 "
             />
           </motion.div>
           <motion.div
             initial={{ y: -700, opacity: 0 }}
             animate={{ y: -380, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.3 }}
-            className="absolute top-52 md:top-1/2 md:left-auto left-24 md:right-0 md:transform -translate-y-1/2 "
+            className="absolute top-52 sm:top-44 md:top-1/2 md:left-auto left-24 md:right-0 md:transform -translate-y-1/2  "
           >
-            <img src={verticalScreen.src} className=" md:h-auto md:w-auto h-96 " alt="Vertical Screen" />
+            <img src={verticalScreen.src} className=" md:h-auto md:w-auto h-96 md:pt-0 pt-20 md:pb-0 sm:pb-0 pb-20 -translate-x-6 md:translate-x-0 translate-y-1 sm:-translate-y-14 md:translate-y-0  " alt="Vertical Screen" />
           </motion.div>{" "}
         </div>
       </div>

@@ -2,6 +2,7 @@ import { bitcoin, iota, omigo, ripple, zcash } from "@/assets";
 
 import { introIcon1, introIcon2, introIcon3 } from "@/assets";
 
+import { img1, img2, img3 } from "@/assets/Middle-assests";
 import { price1, price2, price3,profile1,profile2,profile3 } from "@/assets/sharedSection";
 
 export const CarouselData = [
@@ -47,7 +48,7 @@ export const features = [
   },
 ];
 
-export const positions = [
+ export const positions = [
   { top: "0%", left: "8%", width: "40px", rotation: "10deg" },
   { top: "0%", left: "40%", width: "60px", rotation: "20deg" },
   { top: "16%", left: "5%", width: "40px", rotation: "30deg" },
@@ -57,6 +58,18 @@ export const positions = [
   { top: "30%", left: "90%", width: "65px", rotation: "35deg" },
   { top: "100%", left: "30%", width: "145px", rotation: "45deg" },
 ];
+ 
+/* export const positions = [
+  { top: "0%", left: "8%", width: "20px", rotation: "10deg" },
+  { top: "0%", left: "40%", width: "30px", rotation: "20deg" },
+  { top: "16%", left: "5%", width: "20px", rotation: "30deg" },
+  { top: "6%", left: "20%", width: "10px", rotation: "15deg" },
+  { top: "25%", left: "10%", width: "35px", rotation: "25deg" },
+  { top: "28%", left: "40%", width: "20px", rotation: "5deg" },
+  { top: "30%", left: "90%", width: "25px", rotation: "35deg" },
+  { top: "100%", left: "30%", width: "35px", rotation: "45deg" },
+];
+ */
 
 export const cryptoData = [
   { name: "BITCOIN", percentage: 76, color: "#FFA500" },
@@ -157,3 +170,58 @@ const testimonials = [
 ];
 
 export default testimonials;
+export const sections = [
+  {
+    id: 1,
+    title: "Unique Design Layouts and Features",
+    content:
+      "We work with clients big and small across a range of sectors and we utilise all forms of media to get your name out there in a way that's right for you. We have the skills and resources to create professional films.",
+  },
+  {
+    id: 2,
+    title: "Easy dashboard integration for all mobile devices",
+    content:
+      "We work with clients big and small across a range of sectors and we utilise all forms of media to get your name out there in a way that's right for you. We have the skills and resources to create professional films.",
+  },
+  {
+    id: 3,
+    title: "Community Service Forums",
+    content:
+      "We work with clients big and small across a range of sectors and we utilise all forms of media to get your name out there in a way that's right for you. We have the skills and resources to create professional films.",
+  },
+  {
+    id: 4,
+    title: "Find the best jobs for your location",
+    content:
+      "We work with clients big and small across a range of sectors and we utilise all forms of media to get your name out there in a way that's right for you. We have the skills and resources to create professional films.",
+  },
+  {
+    id: 5,
+    title: "Search for talented workers to improve your business",
+    content:
+      "We work with clients big and small across a range of sectors and we utilise all forms of media to get your name out there in a way that's right for you. We have the skills and resources to create professional films.",
+  },
+];
+export const contentArray = [
+  {
+    imgSrc: img1.src,
+    title: "THE AMAZING SAGA OF BITCOIN CRYPTOCURRENCY",
+    date: "18th September 2015",
+    author: "ram",
+    category: "blockchain",
+  },
+  {
+    imgSrc: img2.src,
+    title: "BLOCKCHAIN IS PUBLIC DISTRIBUTED LEDGER",
+    date: "18th September 2015",
+    author: "ram",
+    category: "blockchain",
+  },
+  {
+    imgSrc: img3.src,
+    title: "WHAT IS PUBLIC KEY CRYPTOGRAPHY SYSTEM?",
+    date: "18th September 2015",
+    author: "ram",
+    category: "blockchain",
+  },
+];
