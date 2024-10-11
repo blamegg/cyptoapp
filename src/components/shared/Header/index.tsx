@@ -20,7 +20,7 @@ const toggleSidebar = () => {
     <div className={`font-sans ${currentIndex===0?"bg-customGray":"bg-black"} border-b-[1px] border-gray-700 `}>
       <nav className="lg:w-[80%] w-[92%] mx-auto flex md:flex-row  flex-col justify-center md:justify-between items-center lg:h-[71px] md:h-14 sm:h-auto gap-5 md:gap-0 p-5 md:p-0">
         {/* Logo Section */}
-        <div className="text-xl font-bold h-auto w-[180px]">
+        <div className=" h-auto sm:w-[180px] md:w-[160px] lg:w-200">
           <Link href="/">
             <img src={logo.src} alt="logo" />
           </Link>
@@ -70,7 +70,7 @@ const toggleSidebar = () => {
         {/* Mobile Hamburger Icon */}
         <div className="lg:hidden flex items-center justify-center bg-crypOrange w-40 gap-4 h-[50px] md:h-full text-black" onClick={toggleSidebar}>
           <button className=" focus:outline-none " >
-          <GiHamburgerMenu size={28}/>
+          <GiHamburgerMenu size={22}/>
          
           </button>
           <span className="font-bold text-xl">MENU</span>

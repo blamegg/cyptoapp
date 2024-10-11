@@ -5,9 +5,9 @@ import { FaCheck, FaMinus } from "react-icons/fa";
 
 const Price = () => {
   return (
-    <section className="py-14 bg-white md:mx-0 mx-10">
+    <section className="py-28 bg-white md:mx-0 mx-10">
       <div className="text-center mb-20 font-sans">
-        <h2 className="text-[40px] text-[#222328] md:w-auto w-56 mx-auto leading-tight">
+        <h2 className="text-[40px] text-bitBlack  md:w-auto w-56 mx-auto leading-tight">
           Comes with <span className="text-crypOrange font-bold">Best Price</span>
         </h2>
         <p className="text-[#757575] font-ubuntu text-[12px] font-bold my-3 ">
@@ -32,11 +32,11 @@ const Price = () => {
               </div>
             </div>
 
-            <ul className="mb-6 space-y-3 font-sans font-light p-6 ">
+            <ul className="mb-6 space-y-3 font-light p-6 ">
               {plan.features.map((feature, idx) => (
                 <li
                   key={idx}
-                  className="flex  space-x-2 text-text"
+                  className="flex  space-x-3 text-text"
                 >
                   {feature.status === "check" ? (
                     <span className="text-green-500 mt-[5px]">
@@ -47,7 +47,7 @@ const Price = () => {
                       <FaMinus/>
                     </span>
                   )}
-                  <span className="text-[16px] text-text">
+                  <span className="text-[16px]">
                     {feature.text}
                   </span>
                 </li>

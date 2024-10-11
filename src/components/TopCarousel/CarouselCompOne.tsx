@@ -8,7 +8,7 @@ import { EffectBlock } from "./EffectBlock";
 
 export default function CarouselCompOne() {
   return (
-    <div className="bg-customGray  md:min-h-[50rem] min-h-[30rem]    text-white md:p-8  flex justify-between items-center">
+    <div className="bg-customGray  md:min-h-[50rem] min-h-[30rem]    text-white md:p-8  flex justify-between items-center ">
       <div className="flex md:w-[80%] md:gap-auto gap-5   mx-auto">
         {/* Left section with text */}
         <div className="w-1/2 md:-mt-20 mt-0">

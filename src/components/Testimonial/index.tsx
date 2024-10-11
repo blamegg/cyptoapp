@@ -42,14 +42,14 @@ const TestimonialSection = () => {
           {testimonials.map((review, index) => (
             <div
               key={index}
-              className="testimonial-card flex flex-col justify-between items-center bg-white px-14 rounded-lg border-r border-gray-200   h-auto " // Adjusted gap using mx-4
+              className="testimonial-card flex flex-col justify-between items-center bg-white px-14 border-0 lg:border-r border-gray-200   h-auto   " 
             >
               <div className="flex flex-col justify-center items-center text-center gap-5 font-sans">
               <div className="text-4xl text-crypOrange font-serif font-extrabold">
     &ldquo;
 </div>
                 {/* <div className=" text-crypOrange"><img src={quote.src} alt="quote" height={24} width={24} /></div> */}
-                <div className="text-[16px] font-light mb-7 text-textG overflow-hidden  leading-7">
+                <div className="text-16 font-light mb-7 text-textG overflow-hidden  leading-7">
                   {review.quote}
                 </div>
               </div>
@@ -62,7 +62,7 @@ const TestimonialSection = () => {
                   height={88}
                 />
                 <h3 className="text-black font-bold pb-2">{review.name}</h3>
-                <p className="text-gray-400 text-[10px] font-bold font-serif">{review.position}</p>
+                <p className="text-gray-400 text-12 font-bold font-ubuntu tracking-widest">{review.position}</p>
               </div>
             </div>
           ))}
