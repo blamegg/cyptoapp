@@ -29,17 +29,17 @@ const NetworkInfo = () => {
         </div>
 
         {/* Right Section - Text Content */}
-        <div className="w-full lg:w-2/3 text-left font-sans">
+        <div className="w-full lg:w-2/3 text-left ">
           <h3 className="text-4xl text-bitBlack leading-tight">
             Innovative Payment{" "}
-            <span className="text-[#FEA301] font-bold">Network</span>
+            <span className="text-crypOrange font-bold">Network</span>
           </h3>
 
-          <h2 className="text-bitBlack text-2xl mt-4 ">
+          <h2 className="text-bitBlack text-2xl mt-4 font-sans ">
             Simple & secure access to buy, sell{" "} <span className="block">and use Bitcoin.</span> 
           </h2>
           
-          <p className="mt-4  font-light leading-7 text-[17px] ">
+          <p className="mt-4  font-light leading-7 text-[17px] text-textG font-sans">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             sagittis nisl porttitor, eleifend tortor sed, auctor libero.
             Proin quis purus eu mi fermentum blandit. Nam eget nisi ipsum. Nullam

@@ -77,7 +77,7 @@ const toggleSidebar = () => {
         </div>
       </nav>
       <div
-        className={`fixed top-0 right-0 h-full md:w-[250px] w-full  bg-white  transition-transform transform duration-500 z-[999] ${
+        className={`fixed top-0 right-0 h-full md:w-[250px] w-full  bg-white  transition-transform transform duration-700 z-[999] ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
         } lg:hidden`}
       >

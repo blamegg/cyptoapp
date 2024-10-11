@@ -250,14 +250,14 @@ export const ChooseUs = () => {
                   </p>
                 </div>
                 <div
-                  className={`ml-18 sm:mb-0 mb-4 transition-max-height duration-300 ease-in-out overflow-hidden ${
+                  className={`ml-18 sm:mb-0 mb-12 transition-max-height duration-300 ease-in-out overflow-hidden ${
                     openSection === section.id
                       ? "max-h-40 opacity-100"
                       : "max-h-0 opacity-0"
                   }`}
                   style={{ transitionProperty: "max-height, opacity" }}
                 >
-                  <p className="leading-7 mb-10 text-text text-base font-light font-sans">{section.content}</p>
+                  <p className="leading-7  text-text  text-sm font-light font-sans ">{section.content}</p>
                 </div>
               </div>
             ))}
