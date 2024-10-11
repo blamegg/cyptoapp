@@ -47,7 +47,7 @@ export const features = [
   },
 ];
 
-export const positions = [
+ export const positions = [
   { top: "0%", left: "8%", width: "40px", rotation: "10deg" },
   { top: "0%", left: "40%", width: "60px", rotation: "20deg" },
   { top: "16%", left: "5%", width: "40px", rotation: "30deg" },
@@ -57,6 +57,18 @@ export const positions = [
   { top: "30%", left: "90%", width: "65px", rotation: "35deg" },
   { top: "100%", left: "30%", width: "145px", rotation: "45deg" },
 ];
+ 
+/* export const positions = [
+  { top: "0%", left: "8%", width: "20px", rotation: "10deg" },
+  { top: "0%", left: "40%", width: "30px", rotation: "20deg" },
+  { top: "16%", left: "5%", width: "20px", rotation: "30deg" },
+  { top: "6%", left: "20%", width: "10px", rotation: "15deg" },
+  { top: "25%", left: "10%", width: "35px", rotation: "25deg" },
+  { top: "28%", left: "40%", width: "20px", rotation: "5deg" },
+  { top: "30%", left: "90%", width: "25px", rotation: "35deg" },
+  { top: "100%", left: "30%", width: "35px", rotation: "45deg" },
+];
+ */
 
 export const cryptoData = [
   { name: "BITCOIN", percentage: 76, color: "#FFA500" },

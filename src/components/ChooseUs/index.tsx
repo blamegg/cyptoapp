@@ -82,8 +82,8 @@ export const ChooseUs = () => {
             </p>
           </div>
         </div>
-        <div className="flex  mt-0 md:mt-20 lg:mt-0 gap-10 w-[80vw] mx-auto md:flex-row flex-col">
-          <div className="md:w-1/2 w-full">
+        <div className="flex  mt-0 md:mt-20 lg:mt-0 gap-10 w-[80vw] mx-auto lg:flex-row flex-col">
+          <div className="lg:w-1/2 w-full">
             <div className="flex px-4 md:flex-row flex-col md:gap-0 gap-4 text-center items-center">
               <p
                 onClick={headfirst}
@@ -265,12 +265,12 @@ export const ChooseUs = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 w-full lg:mt-0 md:mt-20 sm:mt-0 ">
+          <div className="lg:w-1/2 w-full lg:mt-0 md:mt-20 sm:mt-0 ">
             <div className="transition-all duration-300">
               <div className="flex items-center gap-8 mb-10 ">
                 <div
                   onClick={one}
-                  className={`min-h-10 min-w-10 rounded-full  ${
+                  className={`min-h-10 min-w-10 rounded-full cursor-pointer ${
                     first ? "bg-crypOrange" : "bg-bitBlack"
                   } flex items-center`}
                 >
@@ -284,27 +284,30 @@ export const ChooseUs = () => {
                     first ? "text-crypOrange" : "text-bitBlack"
                   } cursor-pointer `}
                 >
-                  Unique Design Layous and Features
+                  Unique Design Layouts and Features
                 </p>
               </div>
-              <p
-                className={`ml-18  leading-7 mb-10 text-text ${
-                  first ? "block" : "hidden"
-                } `}
+              <div
+                className={`ml-18 transition-max-height duration-300 ease-in-out overflow-hidden ${
+                  first ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+                }`}
+                style={{ transitionProperty: "max-height, opacity" }}
               >
-                We work with clients big and small across a range of sectors and
-                we utilise all forms of media to get your name out there in a
-                way thats right for you. We have the skills and resources to
-                create professional films.
-              </p>
+                <p className="leading-7 mb-10 text-text">
+                  We work with clients big and small across a range of sectors
+                  and we utilise all forms of media to get your name out there
+                  in a way that's right for you. We have the skills and
+                  resources to create professional films.
+                </p>
+              </div>
             </div>
-            <div>
-              <div className="flex items-center gap-8  mb-10">
+            <div className="transition-all duration-300">
+              <div className="flex items-center gap-8 mb-10">
                 <div
                   onClick={two}
-                  className={`min-h-10 flex text-center items-center justify-center  min-w-10 rounded-full ${
+                  className={`min-h-10 min-w-10 rounded-full cursor-pointer ${
                     second ? "bg-crypOrange" : "bg-bitBlack"
-                  }  flex items-center`}
+                  } flex items-center justify-center`}
                 >
                   <span className="text-white w-10 h-10 flex justify-center translate-y-3">
                     {second ? <FaMinus /> : <FaPlus />}
@@ -319,26 +322,29 @@ export const ChooseUs = () => {
                   Easy dashboard integration for all mobile devices
                 </p>
               </div>
-              <p
-                className={`ml-18  leading-7 mb-10 text-text ${
-                  second ? "block" : "hidden"
+              <div
+                className={`ml-18 transition-max-height duration-300 ease-in-out overflow-hidden ${
+                  second ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                 }`}
+                style={{ transitionProperty: "max-height, opacity" }}
               >
-                We work with clients big and small across a range of sectors and
-                we utilise all forms of media to get your name out there in a
-                way thats right for you. We have the skills and resources to
-                create professional films.
-              </p>
+                <p className="leading-7 mb-10 text-text">
+                  We work with clients big and small across a range of sectors
+                  and we utilise all forms of media to get your name out there
+                  in a way that's right for you. We have the skills and
+                  resources to create professional films.
+                </p>
+              </div>
             </div>
-            <div>
+            <div className="transition-all duration-300">
               <div className="flex items-center gap-8 mb-10">
                 <div
                   onClick={three}
-                  className={`min-h-10 min-w-10  rounded-full ${
+                  className={`min-h-10 min-w-10 rounded-full cursor-pointer ${
                     third ? "bg-crypOrange" : "bg-bitBlack"
-                  }  flex items-center`}
+                  } flex items-center justify-center`}
                 >
-                  <span className="text-white flex justify-center translate-x-3">
+                  <span className="text-white w-10 h-10 flex justify-center translate-y-3">
                     {third ? <FaMinus /> : <FaPlus />}
                   </span>
                 </div>
@@ -346,31 +352,34 @@ export const ChooseUs = () => {
                   onClick={three}
                   className={`font-semibold hover:text-crypOrange ${
                     third ? "text-crypOrange" : "text-bitBlack"
-                  } cursor-pointer `}
+                  } cursor-pointer`}
                 >
-                  Community Service Forums{" "}
+                  Community Service Forums
                 </p>
               </div>
-              <p
-                className={`ml-18  leading-7 mb-10 text-text ${
-                  third ? "block" : "hidden"
+              <div
+                className={`ml-18 transition-max-height duration-300 ease-in-out overflow-hidden ${
+                  third ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                 }`}
+                style={{ transitionProperty: "max-height, opacity" }}
               >
-                We work with clients big and small across a range of sectors and
-                we utilise all forms of media to get your name out there in a
-                way thats right for you. We have the skills and resources to
-                create professional films.
-              </p>
+                <p className="leading-7 mb-10 text-text">
+                  We work with clients big and small across a range of sectors
+                  and we utilise all forms of media to get your name out there
+                  in a way that's right for you. We have the skills and
+                  resources to create professional films.
+                </p>
+              </div>
             </div>
-            <div>
+            <div className="transition-all duration-300">
               <div className="flex items-center gap-8 mb-10">
                 <div
                   onClick={fourth}
-                  className={`min-h-10 min-w-10 rounded-full ${
+                  className={`min-h-10 min-w-10 rounded-full cursor-pointer ${
                     four ? "bg-crypOrange" : "bg-bitBlack"
-                  }  flex items-center`}
+                  } flex items-center justify-center`}
                 >
-                  <span className="text-white flex justify-center translate-x-3">
+                  <span className="text-white w-10 h-10 flex justify-center translate-y-3">
                     {four ? <FaMinus /> : <FaPlus />}
                   </span>
                 </div>
@@ -380,19 +389,22 @@ export const ChooseUs = () => {
                     four ? "text-crypOrange" : "text-bitBlack"
                   } cursor-pointer`}
                 >
-                  Find the best jobs For your location
+                  Find the best jobs for your location
                 </p>
               </div>
-              <p
-                className={`ml-18  leading-7 mb-10 text-text ${
-                  four ? "block" : "hidden"
+              <div
+                className={`ml-18 transition-max-height duration-300 ease-in-out overflow-hidden ${
+                  four ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                 }`}
+                style={{ transitionProperty: "max-height, opacity" }}
               >
-                We work with clients big and small across a range of sectors and
-                we utilise all forms of media to get your name out there in a
-                way thats right for you. We have the skills and resources to
-                create professional films.
-              </p>
+                <p className="leading-7 mb-10 text-text">
+                  We work with clients big and small across a range of sectors
+                  and we utilise all forms of media to get your name out there
+                  in a way that's right for you. We have the skills and
+                  resources to create professional films.
+                </p>
+              </div>
             </div>
             <div>
               <div className="flex items-center gap-8 mb-10">
