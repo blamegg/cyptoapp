@@ -37,14 +37,14 @@ const Price = () => {
               {plan.features.map((feature, idx) => (
                 <li
                   key={idx}
-                  className="flex items-center space-x-2 text-text"
+                  className="flex  space-x-2 text-text"
                 >
                   {feature.status === "check" ? (
-                    <span className="text-green-500">
+                    <span className="text-green-500 mt-1">
                       <FaCheck />
                     </span>
                   ) : (
-                    <span className="text-red-500 ">
+                    <span className="text-red-500 mt-1 ">
                       <FaMinus/>
                     </span>
                   )}
