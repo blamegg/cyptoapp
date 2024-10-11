@@ -97,7 +97,7 @@ export default function CarouselCompOne() {
             <img
               src={horizontalScreen.src}
               alt="Horizontal Screen"
-              className="md:min-w-[48vw]  min-w-[130%] md:pl-0 pl-20 -translate-x-8 md:translate-x-0 sm:-translate-x-10 sm:-translate-y-14 -translate-y-12 "
+              className="md:min-w-[48vw]  min-w-[130%] md:pl-0 pl-20 -translate-x-10 md:translate-x-0 sm:-translate-x-10 sm:-translate-y-20 -translate-y-14 "
             />
           </motion.div>
           <motion.div
@@ -106,7 +106,7 @@ export default function CarouselCompOne() {
             transition={{ duration: 0.6, delay: 1.3 }}
             className="absolute top-52 sm:top-44 md:top-1/2 md:left-auto left-24 md:right-0 md:transform -translate-y-1/2  "
           >
-            <img src={verticalScreen.src} className=" md:h-auto md:w-auto h-96 md:pt-0 pt-20 md:pb-0 sm:pb-0 pb-20 -translate-x-6 md:translate-x-0 translate-y-1 sm:-translate-y-14 md:translate-y-0  " alt="Vertical Screen" />
+            <img src={verticalScreen.src} className=" md:h-auto md:w-auto h-96 md:pt-0 pt-20 md:pb-0 sm:pb-0 pb-20 -translate-x-6 md:translate-x-0 -translate-y-5 sm:-translate-y-12 md:translate-y-0  " alt="Vertical Screen" />
           </motion.div>{" "}
         </div>
       </div>

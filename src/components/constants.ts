@@ -72,10 +72,10 @@ export const features = [
  */
 
 export const cryptoData = [
-  { name: "BITCOIN", percentage: 76, color: "#FFA500" },
-  { name: "ETHERIUM", percentage: 69, color: "#00FF99" },
-  { name: "RIPPLE", percentage: 57, color: "#FF0080" },
-  { name: "ZCASH", percentage: 67, color: "#00FFFF" },
+  { name: "BITCOIN", percentage: 76, color: "#FFA500",rotation: 0.25 },
+  { name: "ETHERIUM", percentage: 69, color: "#00FF99",rotation: 0.32 },
+  { name: "RIPPLE", percentage: 57, color: "#FF0080",rotation : 0.43 },
+  { name: "ZCASH", percentage: 67, color: "#00FFFF",rotation : 0.33 },
 ];
 
 

@@ -24,7 +24,7 @@ const CarouselCompTwo = () => {
       className="relative bg-black text-white py-16 md:pb-24 flex items-center justify-stretch md:min-h-[50rem] min-h-[30rem]"
     >
       {/* Left Text Section */}
-      <div className="w-full md:w-[45vw] pl-4 md:pl-16 lg:pl-24 xl:pl-32 flex flex-col space-y-6 pr-8">
+      <div className="w-full md:w-[45vw]  md:pl-16 lg:pl-24 xl:pl-32 flex flex-col space-y-6 pr-8">
         <motion.h2
           className={`md:text-xl text-10  md:mb-2 transition-colors duration-500 font-sans font-thin ${
             isVisible ? "text-white" : "text-black"
@@ -94,7 +94,7 @@ const CarouselCompTwo = () => {
       </div>
 
       {/* Right Image Section */}
-      <div className="relative  min-w-[70vw] h-full flex justify-end">
+      <div className="relative  md:min-w-[70vw] min-w-[80vw] h-full flex justify-end md:translate-y-0 translate-y-24">
         <motion.div
           className="absolute -bottom-16"
           initial={{ y: 600, x: -80, opacity: 0 }}

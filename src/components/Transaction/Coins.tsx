@@ -16,7 +16,7 @@ const CryptoProgress = () => {
     }}
      
     >
-      <div className="flex justify-between md:flex-row md:gap-5 gap-20  flex-col items-center text-center !bg-gray-900 min-w-[100vw] lg:px-32 p-20 min-h-[22rem] bg-transparent !bg-opacity-90">
+      <div className="flex justify-between md:flex-row md:gap-5 gap-20  flex-col items-center text-center !bg-gray-900 min-w-[100vw] lg:px-32 sm:p-20 min-h-[22rem] bg-transparent !bg-opacity-90">
         {cryptoData.map((crypto, index) => (
           <div key={index} className="flex flex-col items-center">
             <div className="w-36 h-36 mb-2">
@@ -28,7 +28,8 @@ const CryptoProgress = () => {
                   textColor: "#ffffff",
                   trailColor: "#2B2B2B",
                   pathTransitionDuration: 0.5,
-                  rotation: 0.3,
+                  rotation: crypto.rotation,
+                  strokeLinecap: "butt",
                 })}
               />
             </div>
