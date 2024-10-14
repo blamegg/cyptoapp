@@ -20,20 +20,20 @@ const ContactForm = () => {
             <input
               type="email"
               placeholder="text@domain.com"
-              className="p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_crypOrange]"
+              className="p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_#FEA301]"
               required
             />
             <div className="flex flex-col md:flex-row gap-8 md:gap-3  mb-2">
               <input
                 type="text"
                 placeholder="John"
-                className="p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_crypOrange] w-full md:w-1/2"
+                className="p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_#FEA301] w-full md:w-1/2"
                 required
               />
               <input
                 type="text"
                 placeholder="Christopher"
-                className="p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_crypOrange] w-full  md:w-1/2"
+                className="p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_#FEA301] w-full  md:w-1/2"
                 required
               />
             </div>
