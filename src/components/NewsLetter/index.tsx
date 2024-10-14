@@ -31,7 +31,7 @@ export const NewsLetter = () => {
               placeholder="Email"
               className="h-12 md:w-400 w-[100%] p-2 focus:outline-none focus:ring-2 focus:ring-pink focus:shadow-[0_0_10px_#A4165A]"
             />
-            <button className=" bg-crypOrange h-10 md:w-52 w-fit p-6 flex justify-center items-center gap-5 text-white font-medium tracking-widest">
+            <button className=" bg-buttonColor h-10 md:w-52 w-fit p-6 flex justify-center items-center gap-5 text-white font-medium tracking-widest">
               SUBSCRIBE{" "}
               <span className="text-white md:block hidden">
                 <FaPaperPlane />

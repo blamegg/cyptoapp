@@ -60,7 +60,7 @@ export default function CarouselCompOne() {
 
           <div className="space-x-4 whitespace-nowrap">
             <motion.button
-              className="bg-customYellow text-white text-8 md:text-16 font-bold md:px-8 px-5 py-2 md:py-3 hover:bg-white hover:text-black"
+              className="bg-buttonColor text-white text-8 md:text-16 font-bold md:px-8 px-5 py-2 md:py-3 hover:bg-white hover:text-black"
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.6 }}
