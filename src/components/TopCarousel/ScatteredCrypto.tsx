@@ -1,12 +1,9 @@
 "use client";
-
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { l1, l2, l3, l4, l5, l6, l7, l8 } from "@/assets";
 import { positions } from "../constants";
-
 const images = [l1, l2, l3, l4, l5, l6, l7, l8];
-
 const ScatteredCrypto = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -24,14 +21,11 @@ const ScatteredCrypto = () => {
         y: (e.clientY - centerY) / rect.height,
       });
     };
-
     container.addEventListener("mousemove", handleMouseMove);
-
     return () => {
       container.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-
   return (
     <div ref={containerRef} className="relative md:w-[54vw] min-h-[20rem] md:min-h-[80vh] md:scale-100 scale-50">
       {images.map((img, index) => (
@@ -69,5 +63,4 @@ const ScatteredCrypto = () => {
     </div>
   );
 };
-
 export default ScatteredCrypto;

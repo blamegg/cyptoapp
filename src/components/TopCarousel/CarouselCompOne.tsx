@@ -36,9 +36,9 @@ export default function CarouselCompOne() {
             {CarouselData.map((crypto, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: index % 2 === 0 ? -20 : 20 }}
+                initial={{ opacity: 0, y: index % 2 === 0 ? -40 : 40 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.4,stiffness:800 ,type:'spring',damping:20 }}
               >
                 <img src={crypto.image.src} className=" md:h-auto md:w-auto xl:h-auto xl:w-auto h-10 w-8" alt="" />
               </motion.div>
@@ -49,7 +49,7 @@ export default function CarouselCompOne() {
             className="mb-6 font-sans font-thin md:text-16 text-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 1.4 }}
           >
             Get to know the live rates of all the{" "}
             <strong className="font-bold">crypto currency</strong> without any{" "}
@@ -64,16 +64,16 @@ export default function CarouselCompOne() {
              
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              transition={{ duration: 0.6, delay: 1.6 }}
             >
               GET STARTED
             </motion.button>
 
             <motion.button
               className="border-2 border-white md:px-8 xl:px-8 px-5 py-2 md:py-3 xl:py-3 text-8 md:text-16 xl:text-16  hover:bg-white hover:text-black font-bold"
-              initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.4, delay: 0.8 }}
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.4, delay: 2 }}
             >
               HOW IT WORKS
             </motion.button>

@@ -225,3 +225,51 @@ export const contentArray = [
     category: "blockchain",
   },
 ];
+export   const ChooseUssections = [
+    {
+      tag: "headone",
+      label: "Acquiring Bitcoins",
+      paragraphs: [
+        "Alternatively if you have a specific service or question in mind please dont hesitate to contact us using the contact details:",
+      ],
+      items: [
+        "Crowdfunding",
+        "Micro payments",
+        "Dispute Mediation",
+        "Multi-signature accounts",
+      ],
+      extraContent:
+        "We have a team of writers who specialise in writing end of year reports to highlight the successes of your business and the forecast for the next year, which you can distribute to clients and investors, both current and potential. We have the skills and resources to create professional films. Whether you want a corporate promotional film or a record of a conference we can provide the services you require.",
+    },
+    {
+      tag: "headtwo",
+      label: "Mining Bitcoins",
+      paragraphs: [
+        "xxxxx tincidunt, nisl at porttitor vulputate, justo nulla blandit nisl, ut posuere metus tortor vel odio...",
+      ],
+      items: [
+        "Duis aliquam lenb sodales.",
+        "Mauris aliquam sapien pharetra.",
+        "Fusce sed mi scelerisque est.",
+        "In luctus arcu urna commodo.",
+      ],
+      extraContent:
+        "Maecenas posuere ac ex vitae fringilla. Fusce pulvinar luctus elit. Fusce cursus lacus vel orci malesuada pharetra. Duis vel imperdiet enim. Vestibulum dolor metus, condimentum vitae vehicula et, facilisis a nunc. Suspendisse potenti. Fusce ullamcorper ullamcorper convallis. Morbi nec auctor mauris. Nam et arcu sit amet justo accumsan tempus vel in ante. Vestibulum lacinia velit eu lorem tincidunt vitae.",
+    },
+    {
+      tag: "headthree",
+      label: "Digital Wallet",
+      paragraphs: [
+        "yyyyy tincidunt, nisl at porttitor vulputate, justo nulla blandit nisl, ut posuere metus tortor vel odio...",
+      ],
+      items: [
+        "Duis aliquam lenb sodales.",
+        "Mauris aliquam sapien pharetra.",
+        "Fusce sed mi scelerisque est.",
+        "In luctus arcu urna commodo.",
+      ],
+      extraContent:
+        "Maecenas posuere ac ex vitae fringilla. Fusce pulvinar luctus elit. Fusce cursus lacus vel orci malesuada pharetra. Duis vel imperdiet enim. Vestibulum dolor metus, condimentum vitae vehicula et, facilisis a nunc. Suspendisse potenti. Fusce ullamcorper ullamcorper convallis. Morbi nec auctor mauris. Nam et arcu sit amet justo accumsan tempus vel in ante. Vestibulum lacinia velit eu lorem tincidunt vitae.",
+    },
+  ];
+
