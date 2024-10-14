@@ -14,6 +14,7 @@ const config: Config = {
         'csm': '423px', 
         'ms' : '769px',
         'clg': '1135px', 
+        'clmd': '1095px',
 
       },
       margin: {
