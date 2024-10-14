@@ -18,7 +18,7 @@ const RightSection = () => {
             <div
               onClick={() => handleClick(section.id)}
               className={`min-h-10 min-w-10 rounded-full cursor-pointer ${
-                openSection === section.id ? "bg-crypOrange" : "bg-bitBlack"
+                openSection === section.id ? "bg-buttonColor" : "bg-bitBlack"
               } flex items-center justify-center`}
             >
               <span className="text-white w-10 h-10 flex justify-center translate-y-3">
@@ -27,8 +27,8 @@ const RightSection = () => {
             </div>
             <p
               onClick={() => handleClick(section.id)}
-              className={`font-semibold hover:text-crypOrange ${
-                openSection === section.id ? "text-crypOrange" : "text-bitBlack"
+              className={`font-semibold hover:text-blue ${
+                openSection === section.id ? "text-blue" : "text-bitBlack"
               } cursor-pointer`}
             >
               {section.title}
