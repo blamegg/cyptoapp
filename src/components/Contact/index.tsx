@@ -20,27 +20,27 @@ const ContactForm = () => {
             <input
               type="email"
               placeholder="text@domain.com"
-              className="p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_#FEA301]"
+              className="p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_#A4165A] "
               required
             />
             <div className="flex flex-col md:flex-row gap-8 md:gap-3  mb-2">
               <input
                 type="text"
                 placeholder="John"
-                className="p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_#FEA301] w-full md:w-1/2"
+                className="p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_#A4165A] w-full md:w-1/2"
                 required
               />
               <input
                 type="text"
                 placeholder="Christopher"
-                className="p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_#FEA301] w-full  md:w-1/2"
+                className="p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_#A4165A] w-full  md:w-1/2"
                 required
               />
             </div>
           </div>
           <textarea
             placeholder="Your message..."
-            className="w-full p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_#FEA301] mb-9"
+            className="w-full p-3 border border-gray-300  focus:outline-none focus:border-crypOrange focus:shadow-[0_0_10px_#A4165A] mb-9"
             rows={4}
             required
           ></textarea>
