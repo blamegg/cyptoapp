@@ -31,10 +31,10 @@ const Navbar: React.FC = () => {
     <div className={`font-sans ${currentIndex === 0 ? "bg-customGray" : "bg-black"} border-b-[1px] border-gray-700 `}>
       <nav className=" w-[92%] clg:w-[80%] mx-auto flex md:flex-row flex-col justify-center md:justify-between items-center lg:h-[71px] md:h-14 sm:h-auto gap-5 md:gap-0 p-5 md:p-0">
         {/* Logo Section */}
-        <div className="flex items-center font-bold text-3xl font-opensans">
+        <div className="flex items-center text-3xl font-opensans">
          
             <img src={logo2.src} alt="logo"   className="h-14 w-14 "/>
-            <span className="text-white ">Crypt<span className="text-pink s ">App</span></span>
+            <span className="text-white">Crypt<span className="text-pink font-bold">App</span></span>
          
         </div>
 
