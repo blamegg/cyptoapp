@@ -13,7 +13,7 @@ export default function CarouselCompOne() {
         {/* Left section with text */}
         <div className="w-1/2 md:-mt-20 mt-0">
           <motion.h2
-            className="text-yellow-500 w-fit text-2xl mb-2 font-opensans "
+            className="text-customYellow w-fit text-2xl mb-2 font-opensans "
             initial={{ opacity: 1, x: 0, backgroundColor: "#ffffff" }}
             animate={{ opacity: 1, x: 0, backgroundColor: "#00000000" }}
             transition={{ duration: 1 }}

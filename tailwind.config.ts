@@ -119,14 +119,18 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        crypOrange: "#FEA301",
+       // crypOrange: "#FEA301",
+       crypOrange:"#A4165A",
         bitBlack: "#222328",
         text: "#353535",
         textG:"#757575",
         nLetterbg: "#1F202D",
-        customYellow:"#fea301",
+        //customYellow:"#fea301",
+        customYellow:"#C71E6F",
         Choosebg: "#FAFAFA",
-        customGray:"rgb(34 35 47)"
+        customGray:"rgb(34 35 47)",
+        // pink:"#A4165A",
+        // blue:"#2265AA",
       },
       fontFamily: {
         varela: ['Varela', 'sans-serif'],

@@ -45,10 +45,10 @@ const Navbar: React.FC = () => {
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <div className="h-[28px] flex items-center overflow-hidden relative">
+              <div className="h-[28px] flex items-center overflow-hidden relative whitespace-nowrap">
                 {/* Hidden title that translates upwards */}
                 <span
-                  className={`absolute left-0 transition-transform duration-300 transform text-crypOrange ${
+                  className={`absolute left-0 transition-transform duration-300 transform  text-crypOrange ${
                     hoveredIndex === i ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
                   }`}
                 >
