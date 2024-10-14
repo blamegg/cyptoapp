@@ -44,7 +44,7 @@ const ContactForm = () => {
             rows={4}
             required
           ></textarea>
-          <button className="w-full bg-buttonColor text-white py-4  hover:cursor-pointer hover:bg-crypOrange transition duration-300">
+          <button className="w-full bg-buttonColor text-white py-4  hover:cursor-pointer hover:bg-buttonColor transition duration-300">
             <p className='font-Ubuntu font-medium text-14 tracking-widest '>SEND</p>
           </button>
         </form>
