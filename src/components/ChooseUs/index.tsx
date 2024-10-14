@@ -231,7 +231,7 @@ export const ChooseUs = () => {
                     onClick={() => handleClick(section.id)}
                     className={`min-h-10 min-w-10 rounded-full cursor-pointer ${
                       openSection === section.id
-                        ? "bg-crypOrange"
+                        ? "bg-buttonColor"
                         : "bg-bitBlack"
                     } flex items-center justify-center`}
                   >

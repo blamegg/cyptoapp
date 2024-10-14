@@ -74,7 +74,7 @@ const CarouselCompTwo = () => {
 
         <div className="flex space-x-4 translate-y-6">
           <motion.button
-            className="bg-customYellow md:text-sm text-8 hover:bg-white hover:text-black whitespace-nowrap flex items-center font-bold gap-4 text-white md:px-6 md:py-3 px-3 py-2"
+            className="bg-buttonColor md:text-sm text-8 hover:bg-white hover:text-black whitespace-nowrap flex items-center font-bold gap-4 text-white md:px-6 md:py-3 px-3 py-2"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}

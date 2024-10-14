@@ -129,8 +129,9 @@ const config: Config = {
         customYellow:"#C71E6F",
         Choosebg: "#FAFAFA",
         customGray:"rgb(34 35 47)",
-        // pink:"#A4165A",
-        // blue:"#2265AA",
+         pink:"#A4165A",
+         blue:"#2265AA",
+         buttonColor:" #1669D4"
       },
       fontFamily: {
         varela: ['Varela', 'sans-serif'],
