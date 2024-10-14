@@ -241,9 +241,9 @@ export const ChooseUs = () => {
                   </div>
                   <p
                     onClick={() => handleClick(section.id)}
-                    className={`font-semibold hover:text-crypOrange ${
+                    className={`font-semibold hover:text-buttonColor ${
                       openSection === section.id
-                        ? "text-crypOrange"
+                        ? "text-buttonColor"
                         : "text-bitBlack"
                     } cursor-pointer`}
                   >

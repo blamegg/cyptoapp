@@ -1,10 +1,11 @@
 'use client';
 import React, { useState } from "react";
-import { logo } from "@/assets/sharedSection";
+
 import Link from "next/link";
 import { useSlideContext } from "@/context/SlideContext";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
+import { logo2 } from "@/assets/sharedSection";
 
 const NAV_ITEMS = [
   { name: "Home", href: "#home" },
@@ -28,13 +29,15 @@ const Navbar: React.FC = () => {
 
   return (
     <div className={`font-sans ${currentIndex === 0 ? "bg-customGray" : "bg-black"} border-b-[1px] border-gray-700 `}>
-      <nav className="lg:w-[80%] w-[92%] mx-auto flex md:flex-row flex-col justify-center md:justify-between items-center lg:h-[71px] md:h-14 sm:h-auto gap-5 md:gap-0 p-5 md:p-0">
+      <nav className=" w-[92%] clg:w-[80%] mx-auto flex md:flex-row flex-col justify-center md:justify-between items-center lg:h-[71px] md:h-14 sm:h-auto gap-5 md:gap-0 p-5 md:p-0">
         {/* Logo Section */}
-        <div className=" h-auto sm:w-[180px] md:w-[160px] lg:w-200">
-          <Link href="/">
-            <img src={logo.src} alt="logo" />
-          </Link>
+        <div className="flex items-center font-bold text-3xl font-opensans">
+         
+            <img src={logo2.src} alt="logo"   className="h-14 w-14 "/>
+            <span className="text-white ">Crypt<span className="text-pink s ">App</span></span>
+         
         </div>
+
 
         <div className="hidden lg:flex space-x-11 text-[16px] font-medium">
           {NAV_ITEMS.map((item, i) => (
@@ -48,7 +51,7 @@ const Navbar: React.FC = () => {
               <div className="h-[28px] flex items-center overflow-hidden relative whitespace-nowrap">
                 {/* Hidden title that translates upwards */}
                 <span
-                  className={`absolute left-0 transition-transform duration-300 transform  text-crypOrange ${
+                  className={`absolute left-0 transition-transform duration-300 transform  text-customYellow ${
                     hoveredIndex === i ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
                   }`}
                 >
@@ -57,7 +60,7 @@ const Navbar: React.FC = () => {
 
                 {/* Visible title that appears below */}
                 <span
-                  className={`block transition-transform duration-300 transform ${i === 0 ? "text-crypOrange" : "text-white"} ${
+                  className={`block transition-transform duration-300 transform ${i === 0 ? "text-customYellow" : "text-white"} ${
                     hoveredIndex === i ? "-translate-y-7" : ""
                   }`}
                 >
@@ -69,7 +72,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Hamburger Icon */}
-        <div className="lg:hidden flex items-center justify-center bg-crypOrange w-40 gap-4 h-[50px] md:h-full text-black" onClick={toggleSidebar}>
+        <div className="lg:hidden flex items-center justify-center bg-customYellow w-40 gap-4 h-[50px] md:h-full text-black" onClick={toggleSidebar}>
           <button className="focus:outline-none">
             <GiHamburgerMenu size={22} />
           </button>
@@ -92,7 +95,7 @@ const Navbar: React.FC = () => {
             <div key={item.name} className="w-full border-b border-gray-100 pb-2 pl-3">
               <a
                 href={item.href}
-                className={`text-[17px] font-light ${index === 0 ? "text-crypOrange" : "text-textG"}`}
+                className={`text-[17px] font-light ${index === 0 ? "text-customYellow" : "text-textG"}`}
                 onClick={toggleSidebar}
               >
                 {item.name}
