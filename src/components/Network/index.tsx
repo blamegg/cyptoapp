@@ -46,7 +46,7 @@ const NetworkInfo = () => {
             vitae nunc ac eros laoreet egestas.
           </p>
           
-          <button className="bg-crypOrange text-white font-medium  py-3 px-6 mt-6 lg:mt-8 font-sans text-13">
+          <button className="bg-buttonColor text-white font-medium  py-3 px-6 mt-6 lg:mt-8 font-sans text-13">
             READ MORE
           </button>
         </div>

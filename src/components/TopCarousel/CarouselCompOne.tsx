@@ -13,7 +13,7 @@ export default function CarouselCompOne() {
         {/* Left section with text */}
         <div className="w-1/2 md:-mt-20 xl:-mt-20 mt-0 sm:p-10 md:p-10 lg:p-10 xl:p-0 p-5">
           <motion.h2
-            className="text-yellow-500 w-fit text-2xl mb-2 font-opensans "
+            className="text-customYellow w-fit text-2xl mb-2 font-opensans "
             initial={{ opacity: 1, x: 0, backgroundColor: "#ffffff" }}
             animate={{ opacity: 1, x: 0, backgroundColor: "#00000000" }}
             transition={{ duration: 1 }}
@@ -60,7 +60,8 @@ export default function CarouselCompOne() {
 
           <div className="space-x-4 whitespace-nowrap">
             <motion.button
-              className="bg-customYellow text-white text-8 md:text-16 xl:text-16 font-bold md:px-8 xl:px-8 px-5 py-2 md:py-3 xl:py-3 hover:bg-white hover:text-black"
+              className="bg-buttonColor text-white text-8 md:text-16 xl:text-16 font-bold md:px-8 xl:px-8 px-5 py-2 md:py-3 xl:py-3 hover:bg-white hover:text-black"
+             
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.6 }}

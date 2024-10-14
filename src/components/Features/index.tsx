@@ -103,7 +103,7 @@ export const Feature = () => {
               <motion.a
                 href="#"
                 className={`text-gray-800 uppercase mt-10 text-xs font-sans hover:underline   font-medium transition-colors duration-300 ${
-                  hovered === index ? "text-yellow-500" : "text-black"
+                  hovered === index ? "text-pink" : "text-black"
                 }`}
               >
                 <span> </span>Learn More{" "}
