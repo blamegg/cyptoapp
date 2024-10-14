@@ -1,5 +1,5 @@
 import React from "react";
-import { footerlogo, logo1 } from "@/assets/sharedSection";
+import {  logo1 } from "@/assets/sharedSection";
 import { FaFacebookF, FaGooglePlus, FaTwitter } from "react-icons/fa";
 import { IoLogoFlickr } from "react-icons/io";
 
