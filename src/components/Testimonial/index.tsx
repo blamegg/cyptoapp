@@ -36,8 +36,8 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="bg-white py-32 mx-10 lg:mx-0">
-      <div className="mx-auto lg:w-[80%] w-full">
+    <section className="bg-white py-32 mx-10 clg:mx-0">
+      <div className="mx-auto clg:w-[80%] w-full">
         <Slider {...settings}>
           {testimonials.map((review, index) => (
             <div

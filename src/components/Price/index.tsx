@@ -7,14 +7,14 @@ const Price = () => {
   return (
     <section className="py-28 bg-white md:mx-0 mx-10">
       <div className="text-center mb-20 font-sans">
-        <h2 className="text-[40px] text-bitBlack  md:w-auto w-56 mx-auto leading-tight">
+        <h2 className="text-40 text-bitBlack  md:w-auto w-56 mx-auto leading-tight">
           Comes with <span className="text-crypOrange font-bold">Best Price</span>
         </h2>
         <p className="text-[#757575] font-ubuntu text-[12px] font-bold my-3 tracking-widest">
           WE WORK FOR YOUR SUCCESS
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 md:gap-7 gap-12 max-w-6xl mx-auto px-8 lg:p-0">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:gap-7 gap-12 max-w-6xl mx-auto px-8 clg:p-0">
         {pricingPlans.map((plan, index) => (
           <div key={index} className="rounded-lg border border-gray-100 ">
             <div className="relative h-1/2 cursor-pointer">
@@ -25,7 +25,7 @@ const Price = () => {
                     alt={plan.name}
                     className="h-[100px] mx-auto mb-10"
                   />
-                  <h3 className="text-[50px] font-bold text-center">
+                  <h3 className="text-50 font-bold text-center">
                     {plan.price}
                   </h3>
                 </div>
@@ -47,7 +47,7 @@ const Price = () => {
                       <FaMinus/>
                     </span>
                   )}
-                  <span className="text-[16px]  text-black font-sans  font-light">
+                  <span className="text-16  text-black font-sans  font-light">
                     {feature.text}
                   </span>
                 </li>

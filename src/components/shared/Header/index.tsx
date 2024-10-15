@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
             <div key={item.name} className="w-full border-b border-gray-100 pb-2 pl-3">
               <a
                 href={item.href}
-                className={`text-[17px] font-light ${index === 0 ? "text-customYellow" : "text-textG"}`}
+                className={`text-17 font-light ${index === 0 ? "text-customYellow" : "text-textG"}`}
                 onClick={toggleSidebar}
               >
                 {item.name}
