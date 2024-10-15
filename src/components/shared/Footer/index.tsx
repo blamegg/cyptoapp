@@ -123,11 +123,11 @@ const Footer: React.FC = () => {
         </div>
         <div className="border-t border-gray-400 opacity-30 my-12" />
         <div className="text-center mt-10 ">
-          <div className="mb-4 flex justify-center">
+          <div className="p-3 flex justify-center font-opensans">
         
          
          <img src={logo1.src} alt="logo"   className="h-12 w-12"/>
-         <span className="text-black font-bold text-3xl mt-2">Crypt<span className="text-pink font-bold ">App</span></span>
+         <span className="text-black text-3xl mt-2">Crypt<span className="text-pink font-bold ">App</span></span>
       
   
 
