@@ -12,7 +12,7 @@ const ContactForm = () => {
       }}
     >
       <div className="max-w-2xl lg:mx-auto mx-10 text-center">
-        <h2 className="text-[40px]  text-white mb-4 font-light">
+        <h2 className="text-40  text-white mb-4 font-light">
           Have Any Questions? <span className="text-crypOrange font-bold">Contact Us</span>
         </h2>
         <form className="bg-transparent p-8 rounded-lg shadow-lg">
