@@ -14,4 +14,5 @@ import quote from './quote.png'
 import logo1 from './logo-crop.png'
 import logo2 from './light-logo-crop.png'
 import logoNew from './logoNew.png'
-export{logo, profile1,profile2,profile3,contact, background, price1, price2, price3, button1, button2,footerlogo,quote ,logo1,logo2,logoNew}
+import logoN from './logoN.png'
+export{logo,logoN, profile1,profile2,profile3,contact, background, price1, price2, price3, button1, button2,footerlogo,quote ,logo1,logo2,logoNew}
