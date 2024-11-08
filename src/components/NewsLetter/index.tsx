@@ -4,9 +4,9 @@ import { FaPaperPlane } from "react-icons/fa";
 export const NewsLetter = () => {
   return (
     <>
-      <div className="md:h-450 grid place-items-center text-center mt-20 w-full bg-nLetterbg ">
+      <div className="md:h-350 grid place-items-center text-center mt-20 w-full bg-nLetterbg ">
         <div className="flex justify-center items-center flex-col ">
-          <div className="whitespace-break-spaces mt-20">
+          <div className="whitespace-break-spaces mt-10 sm:mt-4">
             <span className="text-white text-40 font-thin ">
               Sign Into Our{" "}
               <span className="text-crypOrange text-40 font-semibold">
@@ -21,8 +21,8 @@ export const NewsLetter = () => {
           </div>
         </div>
 
-        <div className="flex justify-center  items-center mt-20   ">
-          <div className="flex md:flex-row  sm:w-[80vw] text-center  mx-auto justify-center items-center flex-col md:mx-0  gap-5 mb-28  ">
+        <div className="flex justify-center  items-center mt-20 sm:mt-0   ">
+          <div className="flex md:flex-row  sm:w-[80vw] text-center  mx-auto justify-center items-center flex-col md:mx-0  gap-5 mb-16  ">
             <input
               placeholder="Name"
               className="h-12 md:w-400 w-[100%]  p-2 focus:outline-none focus:ring-2 focus:ring-pink focus:shadow-[0_0_10px_#A4165A]"

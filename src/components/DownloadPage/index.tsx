@@ -31,7 +31,7 @@ export const Downloads = () => {
     <>
       <div
         ref={ref}
-        className="flex clg:flex-row flex-col justify-center items-center mb-20"
+        className="flex clg:flex-row flex-col justify-center items-center mb-24 mt-14"
       >
         <div className="w-1/2 justify-center ml-32 items-center h-auto relative">
            <div

@@ -3,15 +3,15 @@ import React, { useState } from "react";
 import { useSlideContext } from "@/context/SlideContext";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-import { logoNew } from "@/assets/sharedSection";
+import { logoN} from "@/assets/sharedSection";
 
 const NAV_ITEMS = [
   { name: "Home", href: "#home" },
   { name: "Features", href: "#feature" },
-  { name: "Blog", href: "#bitcoinNews" },
+  { name: "About", href: "#bitcoinNews" },
   { name: "Faq", href: "#downloads" },
-  { name: "Gallery", href: "#ssCarousel" },
-  { name: "Pricing", href: "#price" },
+  { name: "Stock", href: "#ssCarousel" },
+  { name: "Gold", href: "#price" },
   { name: "Mail us", href: "#contactForm" },
   { name: "Widgets", href: "#networkInfo" },
 ];
@@ -26,12 +26,12 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className={`font-Segoe ${currentIndex === 0 ? "bg-[#f7f7f7]" : "bg-black"} border-b-[1px] border-gray-700 `}>
+    <div className={`font-Segoe ${currentIndex === 0 ? "bg-[#FAFAFA]" : "bg-black"} border-b-[1px] border-gray-700 `}>
       <nav className=" w-[92%] clg:w-[80%] mx-auto flex md:flex-row flex-col justify-center md:justify-between items-center lg:h-[71px] md:h-14 sm:h-auto gap-5 md:gap-0 p-5 md:p-0">
         {/* Logo Section */}
         <div className="flex items-center  ">
          
-            <img src={logoNew.src} alt="logo"   className="h-70 w-117 ms:h-55 ms:w-100 clmd:h-70 clmd:w-117"/>
+            <img src={logoN.src} alt="logo"   className="md:h-14 lg:h-auto"/>
             {/* <span className="text-white font-extralight ml-1">Crypt<span className="text-pink font-bold">App</span></span> */}
          
         </div>

@@ -1,11 +1,11 @@
 import React from "react";
-import {  logoNew } from "@/assets/sharedSection";
+import {  logoN} from "@/assets/sharedSection";
 import { FaFacebookF, FaGooglePlus, FaTwitter } from "react-icons/fa";
 import { IoLogoFlickr } from "react-icons/io";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-textG py-10 bg-white font-sans font-light">
+    <footer className="text-textG py-10 bg-white font-sans ">
       <div className="lg:w-[80%] mx-auto md:w-[90%] w-[80%] ">
         <div className="flex flex-wrap justify-between mx-5 md:mx-0">
           <div className="w-full md:w-1/4 mb-9 ">
@@ -15,17 +15,17 @@ const Footer: React.FC = () => {
             <ul className="space-y-5 ">
               <li>
                 <a href="#" className="hover:text-crypOrange">
-                  Zen Features
+                  Stock
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-crypOrange">
-                  Mahogany Express
+                  Gold
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-crypOrange">
-                  Socialite Versace
+                 Investment
                 </a>
               </li>
               <li>
@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="#" className="hover:text-crypOrange">
-                  Press
+                  Blogs
                 </a>
               </li>
               <li>
@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
           <div className="p-3 flex justify-center font-opensans">
         
          
-         <img src={logoNew.src} alt="logo"    className="h-100 "/>
+         <img src={logoN.src} alt="logo"    className="h-100 "/>
          {/* <span className="text-black text-3xl mt-2">Crypt<span className="text-pink font-bold ">App</span></span> */}
       
   

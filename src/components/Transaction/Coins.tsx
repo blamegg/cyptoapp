@@ -30,7 +30,9 @@ const CryptoProgress = () => {
                   pathTransitionDuration: 0.5,
                   rotation: crypto.rotation,
                   strokeLinecap: "butt",
+                  textSize:"34px"
                 })}
+                strokeWidth={4}
               />
             </div>
             <p className="text-white font-bold">{crypto.name}</p>
