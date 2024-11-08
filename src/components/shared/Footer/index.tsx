@@ -1,5 +1,5 @@
 import React from "react";
-import {  logo1 } from "@/assets/sharedSection";
+import {  logoNew } from "@/assets/sharedSection";
 import { FaFacebookF, FaGooglePlus, FaTwitter } from "react-icons/fa";
 import { IoLogoFlickr } from "react-icons/io";
 
@@ -121,19 +121,19 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-400 opacity-30 my-12" />
+        <div className="border-t border-gray-400 opacity-30 " />
         <div className="text-center mt-10 ">
           <div className="p-3 flex justify-center font-opensans">
         
          
-         <img src={logo1.src} alt="logo"   className="h-12 w-12"/>
-         <span className="text-black text-3xl mt-2">Crypt<span className="text-pink font-bold ">App</span></span>
+         <img src={logoNew.src} alt="logo"    className="h-100 "/>
+         {/* <span className="text-black text-3xl mt-2">Crypt<span className="text-pink font-bold ">App</span></span> */}
       
   
 
           </div>
           <p>
-            Copyright © 2018{" "}
+            Copyright © 2024{" "}
             <a href="#" className="hover:text-crypOrange ">
               designthemes
             </a>{" "}

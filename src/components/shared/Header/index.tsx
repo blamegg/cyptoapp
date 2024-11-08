@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useSlideContext } from "@/context/SlideContext";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-import { logo2 } from "@/assets/sharedSection";
+import { logoNew } from "@/assets/sharedSection";
 
 const NAV_ITEMS = [
   { name: "Home", href: "#home" },
@@ -26,13 +26,13 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className={`font-sans ${currentIndex === 0 ? "bg-customGray" : "bg-black"} border-b-[1px] border-gray-700 `}>
+    <div className={`font-Segoe ${currentIndex === 0 ? "bg-[#f7f7f7]" : "bg-black"} border-b-[1px] border-gray-700 `}>
       <nav className=" w-[92%] clg:w-[80%] mx-auto flex md:flex-row flex-col justify-center md:justify-between items-center lg:h-[71px] md:h-14 sm:h-auto gap-5 md:gap-0 p-5 md:p-0">
         {/* Logo Section */}
-        <div className="flex items-center text-3xl ">
+        <div className="flex items-center  ">
          
-            <img src={logo2.src} alt="logo"   className="h-14 w-14 "/>
-            <span className="text-white font-extralight ml-1">Crypt<span className="text-pink font-bold">App</span></span>
+            <img src={logoNew.src} alt="logo"   className="h-70 w-117 ms:h-55 ms:w-100 clmd:h-70 clmd:w-117"/>
+            {/* <span className="text-white font-extralight ml-1">Crypt<span className="text-pink font-bold">App</span></span> */}
          
         </div>
 
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
 
                 {/* Visible title that appears below */}
                 <span
-                  className={`block transition-transform duration-300 transform ${i === 0 ? "text-customYellow" : "text-white"} ${
+                  className={`block transition-transform duration-300 transform ${i === 0 ? "text-customYellow" : "text-black"} ${
                     hoveredIndex === i ? "-translate-y-7" : ""
                   }`}
                 >

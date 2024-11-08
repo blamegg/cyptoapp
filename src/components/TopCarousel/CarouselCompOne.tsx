@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { verticalScreen, horizontalScreen } from "@/assets";
+import { vertcal,horizontal1,pichart } from "@/assets";
 import { CarouselData } from "../constants";
 import ScatteredCrypto from "./ScatteredCrypto";
 import { EffectBlock } from "./EffectBlock";
@@ -18,18 +18,20 @@ export default function CarouselCompOne() {
             animate={{ opacity: 1, x: 0, backgroundColor: "#00000000" }}
             transition={{ duration: 1 }}
           >
-          <EffectBlock bgColor="bg-white">
-
-          <p className="whitespace-nowrap text-16 md:text-2xl"> App with Awesome Features</p> 
-          </EffectBlock>
+            <EffectBlock bgColor="bg-white">
+              <p className="whitespace-nowrap text-16 md:text-2xl">
+                {" "}
+                App with Awesome Features
+              </p>
+            </EffectBlock>
           </motion.h2>
-          <motion.h1
-            className="text-5xl font-bold mb-4 w-fit"
-          >
-          <EffectBlock bgColor="bg-customYellow" delay={.5}>
-
-          <p className="whitespace-nowrap sm:text-29 xl:text-5xl lg:text-5xl md:text-4xl text-20">  CryptoCurrency App</p>
-          </EffectBlock>
+          <motion.h1 className="text-5xl font-bold mb-4 w-fit">
+            <EffectBlock bgColor="bg-customYellow" delay={0.5}>
+              <p className="whitespace-nowrap sm:text-29 xl:text-5xl lg:text-5xl md:text-4xl text-20">
+                {" "}
+                Saraa Investment App
+              </p>
+            </EffectBlock>
           </motion.h1>
 
           <div className="flex gap-2 md:gap-8 xl:gap-8 mb-6 mt-10  ">
@@ -38,9 +40,19 @@ export default function CarouselCompOne() {
                 key={index}
                 initial={{ opacity: 0, y: index % 2 === 0 ? -40 : 40 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.4,stiffness:800 ,type:'spring',damping:20 }}
+                transition={{
+                  duration: 0.5,
+                  delay: index * 0.4,
+                  stiffness: 800,
+                  type: "spring",
+                  damping: 20,
+                }}
               >
-                <img src={crypto.image.src} className=" md:h-auto md:w-auto xl:h-auto xl:w-auto h-10 w-8" alt="" />
+                <img
+                  src={crypto.image.src}
+                  className=" md:h-auto md:w-auto xl:h-auto xl:w-auto h-10 w-8"
+                  alt=""
+                />
               </motion.div>
             ))}
           </div>
@@ -51,17 +63,13 @@ export default function CarouselCompOne() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.4 }}
           >
-            Get to know the live rates of all the{" "}
-            <strong className="font-bold">crypto currency</strong> without any{" "}
-            <br />
-            delay. Pay with crypto currency in more than{" "}
-            <strong className="font-bold">20000 stores</strong>.
+            Grow your wealth with Saraa! Invest in gold and stocks effortlessly,
+            track performance, and secure your future with ease.
           </motion.p>
 
           <div className="space-x-4 whitespace-nowrap">
             <motion.button
               className="bg-buttonColor text-white text-8 md:text-16 xl:text-16 font-bold md:px-8 xl:px-8 px-5 py-2 md:py-3 xl:py-3 hover:bg-white hover:text-black"
-             
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 1.6 }}
@@ -81,33 +89,50 @@ export default function CarouselCompOne() {
         </div>
         {/* Right Section  */}
         <div className="relative w-1/2 md:mt-20 xl:mt-20 mt-28 md:translate-x-0 xl:translate-x-0 -translate-x-6 translate-y-10 ">
-          <motion.div
+           <motion.div
             initial={{ x: -100, opacity: 1 }}
             animate={{ x: -100, y: -359, opacity: 1 }}
             className="z-40 min-h-[180vh] md:block hidden    absolute bg-transparent left-10 top-1/2 -translate-y-1/2 min-w-[50vw] "
           >
             <ScatteredCrypto />
           </motion.div>
+
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: -50, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1 }}
-            
-       
+             initial={{ y: -700, opacity: 0 }}
+             animate={{ y: -380, opacity: 1 }}
+             transition={{ duration: 0.6, delay: 1.3 }}
+             className="absolute top-64 ms:top-2/3 left-16 sm:left-10  md:transform xl:transform -translate-y-1/2  "
+     
           >
             <img
-              src={horizontalScreen.src}
+              src={horizontal1.src}
               alt="Horizontal Screen"
-              className="md:min-w-[48vw] xl:min-w-[48vw]  min-w-[130%] md:pl-0 xl:pl-0 pl-20 -translate-x-10 md:translate-x-28 lg:translate-x-32 xl:translate-x-0 sm:-translate-x-10 sm:-translate-y-20 -translate-y-14 md:-translate-y-14  "
+              className="h-250 sm:h-300  ms:h-450  -translate-x-6 md:translate-x-36 lg:translate-x-28 xl:translate-x-0 -translate-y-5 sm:-translate-y-12 md:translate-y-0 xl:translate-y-0 "
+              />
+          </motion.div>
+          <motion.div
+            initial={{ y: -700, opacity: 0 }}
+            animate={{ y: -380, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 1.3 }}
+            className="z-20 absolute top-56 sm:top-2/3 ms:top-1/3  left-20 lg:left-24 xl:left-40  md:right-12 lg:right-8  xl:right-auto md:transform xl:transform -translate-y-1/2  "
+            >
+            <img
+              src={vertcal.src}
+              className="h-300 sm:h-[400px] ms:h-550   -translate-x-6 md:translate-x-36 lg:translate-x-28 xl:translate-x-0 -translate-y-5 sm:-translate-y-12 md:translate-y-0 xl:translate-y-0 "
+              alt="Vertical Screen"
             />
           </motion.div>
           <motion.div
             initial={{ y: -700, opacity: 0 }}
             animate={{ y: -380, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.3 }}
-            className="absolute top-52 sm:top-44 md:top-1/2 lg:top-1/2 xl:top-1/2 md:left-auto lg:left-auto xl:left-auto left-24 md:right-0  xl:right-0 md:transform xl:transform -translate-y-1/2  "
+            className="absolute top-64  ms:top-2/3  -right-5 sm:right-0  md:transform xl:transform -translate-y-1/2  "
           >
-            <img src={verticalScreen.src} className=" md:h-auto md:w-60 xl:h-auto xl:w-auto lg:w-auto h-96 md:pt-0  xl:pt-0 pt-20 md:pb-0 xl:pb-0 sm:pb-0 pb-20 -translate-x-6 md:translate-x-36 lg:translate-x-28 xl:translate-x-0 -translate-y-5 sm:-translate-y-12 md:translate-y-0 xl:translate-y-0 " alt="Vertical Screen" />
+            <img
+              src={pichart.src}
+              className="h-250 sm:h-300 ms:h-450  -translate-x-6 md:translate-x-36 lg:translate-x-28 xl:translate-x-0 -translate-y-5 sm:-translate-y-12 md:translate-y-0 xl:translate-y-0 "
+              alt="Vertical Screen"
+            />
           </motion.div>{" "}
         </div>
       </div>

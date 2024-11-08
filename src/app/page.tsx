@@ -1,4 +1,4 @@
-import {Price, NetworkInfo, ContactForm, TestimonialSection, Navbar} from "@/components";
+import { NetworkInfo, ContactForm, TestimonialSection, Navbar} from "@/components";
 import { TopCarousel ,AppLanding,Feature,Transaction, BitcoinNews, NewsLetter, Downloads, ChooseUs, SsCarousel } from "@/components";
 
 import { SlideProvider } from "@/context/SlideContext"; 
@@ -33,9 +33,9 @@ export default function Home() {
        <div id="ssCarousel">
         <SsCarousel />
       </div>
-      <div id="price">
+      {/* <div id="price">
         <Price />
-      </div>
+      </div> */}
       <div id="networkInfo">
         <NetworkInfo />
       </div>

@@ -11,10 +11,14 @@ import {
   img06,
   img07,
   img08,
-  img09,
-  img10,
-  img11,
-  img12,
+  // img09,
+  // img10,
+  // img11,
+  // img12,
+  ss1,
+  ss2,
+  ss3,
+  ss4
 } from "@/assets/Middle-assests";
 
 import "slick-carousel/slick/slick.css";
@@ -37,18 +41,21 @@ export const SsCarousel = () => {
     setIsMobile(window.innerWidth <= 768);
   };
   const screenshot = [
+   
     img01.src,
     img02.src,
     img03.src,
     img04.src,
+    ss1.src,
+    ss2.src,
+    ss3.src,
+    ss4.src,
     img05.src,
     img06.src,
     img07.src,
     img08.src,
-    img09.src,
-    img10.src,
-    img11.src,
-    img12.src,
+    
+    
   ];
 
   const slides = [];
@@ -98,16 +105,16 @@ export const SsCarousel = () => {
   };
 
   return (
-    <div className="mt-20">
+    <div className="my-20">
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-4xl text-center">
-          <span>Cryptap</span>{" "}
+          <span>Saraa</span>{" "}
           <span className="text-crypOrange font-semibold">
             Live Screenshots
           </span>
         </h2>
         <p className="text-sm font-semibold opacity-55 mt-2">
-          CRYPTAP WORKS FOR YOUR SUCCESS
+        Saraa WORKS FOR YOUR SUCCESS
         </p>
       </div>
 

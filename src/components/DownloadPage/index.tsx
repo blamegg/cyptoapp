@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import { img4, img5, img6 } from '@/assets/Middle-assests';
+import {  img5, img6 ,mobile} from '@/assets/Middle-assests';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -44,17 +44,17 @@ export const Downloads = () => {
  
            <motion.img
             className='absolute clg:block hidden md:h-650  -translate-y-92 translate-x-24'
-            src={img4.src}
+            src={mobile.src}
             initial={{ x: -500, y: -600, opacity: 0 }}
             animate={isInView ? { x:isMobile?-100: 95, y: isMobile?-250:-600, opacity: 1 } : {}} 
             transition={{ duration: 1.5, ease: 'easeInOut' }}
           />
           <motion.img
-            className="clg:hidden  block"
+            className="clg:hidden  block md:h-[750px]"
              initial={{ x: -500, y: -600, opacity: 0 }}
             animate={isInView ? { x: -50, y: 40, opacity: 1 } : {}} 
             transition={{ duration: 1.5, ease: 'easeInOut' }}
-            src={img4.src}
+            src={mobile.src}
           />
         </div>
 

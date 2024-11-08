@@ -9,9 +9,9 @@ export const BitcoinNews = () => {
       <div className="flex justify-center items-center flex-col mt-24 ">
         <div className="whitespace-break-spaces text-center">
           <span className="text-bitBlack text-40 text-center">
-            BitCoin &{" "}
+            Lorem &
             <span className="text-crypOrange text-40 font-semibold">
-              Cryptocurrency
+               Heading Dummy
             </span>
           </span>
         </div>
