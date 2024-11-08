@@ -4,7 +4,7 @@ import { FaPaperPlane } from "react-icons/fa";
 export const NewsLetter = () => {
   return (
     <>
-      <div className="md:h-350 grid place-items-center text-center mt-20 w-full bg-nLetterbg ">
+      <div className="md:h-350 grid place-items-center text-center  w-full bg-nLetterbg ">
         <div className="flex justify-center items-center flex-col ">
           <div className="whitespace-break-spaces mt-10 sm:mt-4">
             <span className="text-white text-40 font-thin ">

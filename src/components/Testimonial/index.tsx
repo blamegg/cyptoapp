@@ -44,7 +44,7 @@ const TestimonialSection = () => {
               key={index}
               className="testimonial-card flex flex-col justify-between items-center bg-white px-14 border-0 lg:border-r border-gray-200   h-auto   " 
             >
-              <div className="flex flex-col justify-center items-center text-center gap-5 font-sans">
+              <div className="flex flex-col justify-center items-center text-center gap-5 font-Segoe">
               <div className="text-4xl text-crypOrange font-serif font-extrabold">
     &ldquo;
 </div>

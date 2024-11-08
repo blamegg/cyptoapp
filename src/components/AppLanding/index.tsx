@@ -23,7 +23,7 @@ export const AppLanding = () => {
             Gold and Stocks
           </span>
         </h1>
-        <p className="text-gray-600 mb-8  font-sans leading-7">
+        <p className="text-gray-600 mb-8  font-Segoe leading-7">
           Using the App, you can check the current exchange rate for BTC and
           Saraa Investment App offers a complete solution for your investment
           needs. Invest in gold and stocks, while also managing Bitcoin with a

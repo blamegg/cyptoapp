@@ -19,7 +19,7 @@ export const BitcoinNews = () => {
           <p className="text-13 font-semibold opacity-55">OUR LATEST NEWS</p>
         </div>
       </div>
-      <div className="max-w-[100vw] overflow-x-hidden min-h-screen  scroll-container flex md:flex-row flex-wrap flex-col items-center justify-center gap-7 mt-20">
+      <div className="max-w-[100vw] overflow-x-hidden min-h-screen  scroll-container flex md:flex-row flex-wrap flex-col items-center justify-center gap-7 clmd:mt-0 mt-10">
         {contentArray.map((content, index) => (
           <div
             key={index}
@@ -32,7 +32,7 @@ export const BitcoinNews = () => {
               />
             </div>
             <div className="md:flex justify-start  md:mx-0 md:text-start  md:gap-0 gap-4">
-              <div className="flex border-t md:mx-0 text-xs   font-sans md:mr-4 mx-10 border-crypOrange mt-10 border-b md:h-20 h-10">
+              <div className="flex border-t md:mx-0 text-xs   font-Segoe md:mr-4 mx-10 border-crypOrange mt-10 border-b md:h-20 h-10">
                 <p className="flex md:flex-col md:gap-2 my-auto gap-4 md:mx-0 mx-auto flex-row items-center">
                   <span>{content.date.split(" ")[0]} </span>
                   <span>{content.date.split(" ")[1]}</span>
@@ -40,16 +40,16 @@ export const BitcoinNews = () => {
                 </p>
               </div>
               <div className="mt-10 md:mx-0 mx-10">
-                <p className="hover:text-crypOrange transition-all duration-500 font-sans font-light cursor-pointer">
+                <p className="hover:text-crypOrange transition-all duration-500 font-Segoe cursor-pointer">
                   {content.title}
                 </p>
-                <p className="text-text leading-8 mt-5 text-base font-light font-sans">
+                <p className="text-text leading-8 mt-5 text-base  font-Segoe">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Magni repellendus alias harum provident debitis autem illum
                   consequuntur nemo possimus sit ratione ipsam voluptatem
                   similique numquam non ipsum, iure amet recusandae...
                 </p>
-                <div className="flex justify-between text-base font-light font-sans mt-4">
+                <div className="flex justify-between text-base font-light font-Segoe mt-4">
                   <span className="flex gap-4 items-center">
                     <FaRegCircleUser className="text-gray-700" />
                     <p>{content.author}</p>

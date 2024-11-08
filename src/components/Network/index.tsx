@@ -35,18 +35,18 @@ const NetworkInfo = () => {
             <span className="text-crypOrange font-bold">Network</span>
           </h3>
 
-          <h2 className="text-text text-2xl mt-4 font-sans ">
+          <h2 className="text-text text-2xl mt-4 font-Segoe ">
             Simple & secure access to buy, sell{" "} <span className="block">and use Bitcoin.</span> 
           </h2>
           
-          <p className="mt-4  font-light leading-7 text-17 text-text font-sans">
+          <p className="mt-4  font-light leading-7 text-17 text-text font-Segoe">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             sagittis nisl porttitor, eleifend tortor sed, auctor libero.
             Proin quis purus eu mi fermentum blandit. Nam eget nisi ipsum. Nullam
             vitae nunc ac eros laoreet egestas.
           </p>
           
-          <button className="bg-buttonColor text-white font-medium  py-3 px-6 mt-6 lg:mt-8 font-sans text-13">
+          <button className="bg-buttonColor text-white font-medium  py-3 px-6 mt-6 lg:mt-8 font-Segoe text-13">
             READ MORE
           </button>
         </div>
