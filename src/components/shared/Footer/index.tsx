@@ -5,7 +5,7 @@ import { IoLogoFlickr } from "react-icons/io";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-textG py-10 bg-white font-sans ">
+    <footer className="text-textG py-10 bg-[#FAFAFA] font-sans ">
       <div className="lg:w-[80%] mx-auto md:w-[90%] w-[80%] ">
         <div className="flex flex-wrap justify-between mx-5 md:mx-0">
           <div className="w-full md:w-1/4 mb-9 ">

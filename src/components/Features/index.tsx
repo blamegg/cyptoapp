@@ -28,7 +28,7 @@ export const Feature = () => {
           A Feature Rich{" "}
           <span className="font-bold text-customYellow"> Saraa Investment</span>
         </h2>
-        <p className="text-xs font-sans font-bold text-gray-500">
+        <p className="text-xs font-Segoe  text-gray-500">
           WHAT DO YOU GET
         </p>
       </div>
@@ -92,7 +92,7 @@ export const Feature = () => {
                 {feature.title}
               </motion.h3>
               <motion.p
-                className={`text-gray-600 text-base font-light px-4 mb-20 font-sans transition-colors duration-300 ${
+                className={`text-gray-600 text-base font-light px-4 mb-20 font-Segoe transition-colors duration-300 ${
                   delayedHover && hovered === index
                     ? "text-white"
                     : "text-black"
@@ -102,7 +102,7 @@ export const Feature = () => {
               </motion.p>
               <motion.a
                 href="#"
-                className={`text-gray-800 uppercase mt-10 text-xs font-sans hover:underline   font-medium transition-colors duration-300 ${
+                className={`text-gray-800 uppercase mt-10 text-xs font-Segoe hover:underline   font-medium transition-colors duration-300 ${
                   hovered === index ? "text-pink" : "text-black"
                 }`}
               >

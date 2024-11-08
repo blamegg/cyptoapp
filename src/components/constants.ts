@@ -77,7 +77,7 @@ export const cryptoData = [
   // { name: "RIPPLE", percentage: 57, color: "#FF0080",rotation : 0.43 },
   // { name: "ZCASH", percentage: 67, color: "#00FFFF",rotation : 0.33 },
   { name: "Gold", percentage: 69, color: "#A4165A",rotation : 0.33 },
-  { name: "Partner", percentage: 57, color: "#2265AA",rotation: 0.25 },
+  { name: "Partner", percentage: 57, color: "#2265AA",rotation: 0.43 },
   { name: "Clients", percentage: 67, color: "#A4165A",rotation : 0.33 },
   { name: "Stock", percentage: 76, color: "#2265AA",rotation : 0.33 },
 ];

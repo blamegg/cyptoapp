@@ -40,7 +40,7 @@ const RightSection = () => {
             }`}
             style={{ transitionProperty: "max-height, opacity" }}
           >
-            <p className="leading-7  text-text  text-sm font-light font-sans ">{section.content}</p>
+            <p className="leading-7  text-text  text-sm font-light font-Segoe ">{section.content}</p>
           </div>
         </div>
       ))}

@@ -17,12 +17,12 @@ const ContentSection = ({
     {paragraphs.map((para, index) => (
       <p
         key={index}
-        className="text-text text-base font-light font-sans text-start flex px-4 mt-5 leading-7"
+        className="text-text text-base font-light font-Segoe text-start flex px-4 mt-5 leading-7"
       >
         {para}
       </p>
     ))}
-    <div className="flex flex-col px-3 mt-10 gap-3 text-base font-light font-sans">
+    <div className="flex flex-col px-3 mt-10 gap-3 text-base font-light font-Segoe">
       {items.map((item, index) => (
         <p key={index} className="flex items-center gap-2">
           <span className="text-xl text-crypOrange">
@@ -34,7 +34,7 @@ const ContentSection = ({
     </div>
     {extraContent && (
       <div className="flex text-pretty mt-5 px-4">
-        <p className="text-text leading-7 text-base font-light font-sans">
+        <p className="text-text leading-7 text-base font-light font-Segoe">
           {extraContent}
         </p>
       </div>

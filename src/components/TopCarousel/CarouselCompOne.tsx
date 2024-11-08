@@ -19,7 +19,7 @@ export default function CarouselCompOne() {
             transition={{ duration: 1 }}
           >
             <EffectBlock bgColor="bg-white">
-              <p className="whitespace-nowrap text-16 md:text-2xl">
+              <p className="whitespace-nowrap text-16 md:text-2xl font-opensans">
                 {" "}
                 App with Awesome Features
               </p>
@@ -58,7 +58,7 @@ export default function CarouselCompOne() {
           </div>
 
           <motion.p
-            className="mb-6 font-sans font-thin md:text-16 text-8"
+            className="mb-6 font-Segoe font-thin md:text-16 text-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.4 }}
