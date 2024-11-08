@@ -18,7 +18,7 @@ const NetworkInfo = () => {
             <div className="shadow-lg rounded-lg bg-white p-2 h-auto border border-gray-200 w-full">
               <div className="text-center">
                 <h2 className="text-[#2C4676] text-xl font-semibold">
-                  BTC Prices List
+                Saraa Prices List
                 </h2>
                 <p className="text-black font-bold text-16 px-2">
                   CCCAGG market does not exist for this coin pair (BTC-EGP)

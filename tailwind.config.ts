@@ -49,9 +49,13 @@ const config: Config = {
         '48' : '48%',
       },
       height: {
+        '55':'55px',
+        '70':'70px',
+        '100':'100px',
         '350': '350px',
         '450': '450px',
         '500': '500px',
+        '580':'580px',
         '550': '550px',
         '600': '600px',
         '650': '650px',
@@ -60,6 +64,8 @@ const config: Config = {
         '300': '300px',
       },
       width: {
+        '100':'100px',
+        '117':'117px',
         '350': '350px',
         '400': '400px',
         '450': '450px',
@@ -67,6 +73,7 @@ const config: Config = {
         '550': '550px',
         '600': '600px',
         '650': '650px',
+        '861':'861px',
         '200': '200px',
         '250': '250px',
         '300': '300px',
@@ -138,6 +145,7 @@ const config: Config = {
         varela: ['Varela', 'sans-serif'],
         ubuntu: ['Ubuntu', 'sans-serif'],
         opensans: ['Open Sans', 'sans-serif'],
+        Segoe: 'Segoe UI Symbol' 
       },
     },
   },

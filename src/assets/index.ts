@@ -2,9 +2,12 @@ import appleStore from './TopSection/app-store-btn.webp'
 
 import hand from './TopSection/hand.webp'
 import Applanding from './TopSection/applanding.webp'
+import Applanding1 from './TopSection/applanding1.png'
 import googlePlayStore from './TopSection/google-store-btn.webp'
 import horizontalScreen from './TopSection/horizontal-screen.webp'
+import horizontal1 from './TopSection/horizontal1.png'
 import verticalScreen from './TopSection/vertical-screen.webp'
+import vertcal from './TopSection/vertical-screen1.png'
 import bitcoin from './TopSection/c1.webp'
 import ripple from './TopSection/c2.webp'
 import omigo from './TopSection/c3.webp'
@@ -13,10 +16,10 @@ import iota from './TopSection/c5.webp'
 import introIcon1 from './TopSection/intro-icon-1-alt.webp'
 import introIcon2 from './TopSection/intro-icon-2-alt.webp'
 import introIcon3 from './TopSection/intro-icon-3-alt.webp'
-
+import pichart from './TopSection/pi-chart.png'
 
 import mobile from './TopSection/mobiles.webp'
-
+import mobile1 from './TopSection/mobiles1.png'
 import l1 from './TopSection/l1.png'
 import l2 from './TopSection/l2.png'
 import l3 from './TopSection/l3.png'
@@ -29,4 +32,4 @@ import pattern from './TopSection/pattern.png'
 import ParallaxImg from './TopSection/parallax.jpg'
 import gradientImg from './TopSection/gradientImg.svg'
 import bgBlack from './TopSection/bgblackn.png'
-export {bgBlack,gradientImg,ParallaxImg,pattern,l1,l2,l3,l4,l5,l6,l7,l8,mobile,introIcon1,introIcon2,introIcon3,bitcoin,ripple,omigo,zcash,iota,appleStore,Applanding,hand,googlePlayStore, horizontalScreen, verticalScreen}
+export {horizontal1,vertcal,pichart,Applanding1,mobile1,bgBlack,gradientImg,ParallaxImg,pattern,l1,l2,l3,l4,l5,l6,l7,l8,mobile,introIcon1,introIcon2,introIcon3,bitcoin,ripple,omigo,zcash,iota,appleStore,Applanding,hand,googlePlayStore, horizontalScreen, verticalScreen}

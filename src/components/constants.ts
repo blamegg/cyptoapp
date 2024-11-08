@@ -30,19 +30,19 @@ export const CarouselData = [
 export const features = [
   {
     icon: introIcon1,
-    title: "#1 Digital Currency",
+    title: "Lorem Ipsume Heading",
     description:
       "Maecenas posuere ac ex vitae fringilla. Fusce pulvinar luctus elit. Fusce cursus lacus vel orci.",
   },
   {
     icon: introIcon2,
-    title: "Encryption Techniques",
+    title: "Lorem Ipsume Heading 2",
     description:
       "Maecenas posuere ac ex vitae fringilla. Fusce pulvinar luctus elit. Fusce cursus lacus vel orci.",
   },
   {
     icon: introIcon3,
-    title: "Independent of Banks",
+    title: "Lorem Ipsume Heading 3",
     description:
       "Maecenas posuere ac ex vitae fringilla. Fusce pulvinar luctus elit. Fusce cursus lacus vel orci.",
   },
@@ -72,10 +72,14 @@ export const features = [
  */
 
 export const cryptoData = [
-  { name: "BITCOIN", percentage: 76, color: "#FFA500",rotation: 0.25 },
-  { name: "ETHERIUM", percentage: 69, color: "#00FF99",rotation: 0.32 },
-  { name: "RIPPLE", percentage: 57, color: "#FF0080",rotation : 0.43 },
-  { name: "ZCASH", percentage: 67, color: "#00FFFF",rotation : 0.33 },
+  { name: "BITCOIN", percentage: 76, color: "#2265AA",rotation: 0.25 },
+  // { name: "ETHERIUM", percentage: 69, color: "#00FF99",rotation: 0.32 },
+  // { name: "RIPPLE", percentage: 57, color: "#FF0080",rotation : 0.43 },
+  // { name: "ZCASH", percentage: 67, color: "#00FFFF",rotation : 0.33 },
+  { name: "Gold", percentage: 69, color: "#A4165A",rotation : 0.33 },
+  { name: "Partner", percentage: 57, color: "#2265AA",rotation: 0.25 },
+  { name: "Clients", percentage: 67, color: "#A4165A",rotation : 0.33 },
+  { name: "Stock", percentage: 76, color: "#2265AA",rotation : 0.33 },
 ];
 
 
@@ -228,7 +232,7 @@ export const contentArray = [
 export   const ChooseUssections = [
     {
       tag: "headone",
-      label: "Acquiring Bitcoins",
+      label: "Dummy Head",
       paragraphs: [
         "Alternatively if you have a specific service or question in mind please dont hesitate to contact us using the contact details:",
       ],
@@ -243,7 +247,7 @@ export   const ChooseUssections = [
     },
     {
       tag: "headtwo",
-      label: "Mining Bitcoins",
+      label: "Dummy Head",
       paragraphs: [
         "xxxxx tincidunt, nisl at porttitor vulputate, justo nulla blandit nisl, ut posuere metus tortor vel odio...",
       ],
@@ -258,7 +262,7 @@ export   const ChooseUssections = [
     },
     {
       tag: "headthree",
-      label: "Digital Wallet",
+      label: "Dummy Head",
       paragraphs: [
         "yyyyy tincidunt, nisl at porttitor vulputate, justo nulla blandit nisl, ut posuere metus tortor vel odio...",
       ],

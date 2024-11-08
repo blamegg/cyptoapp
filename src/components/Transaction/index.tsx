@@ -1,5 +1,5 @@
 import React from "react";
-import { mobile } from "@/assets";
+import { mobile1 } from "@/assets";
 import CryptoProgress from "./Coins";
 
 export const Transaction = () => {
@@ -20,7 +20,7 @@ export const Transaction = () => {
         </p>
       </div>
       <div className="text-center min-w-full pl-16 pr-16 md:pl-14 md:pr-14       flex items-start justify-center ">
-        <img src={mobile.src} alt="" />
+        <img src={mobile1.src} alt="" className="h-[300px] w-[500px] md:h-[500px] md:w-[700px]  lg:h-580 lg:w-861 "/>
       </div>
       <CryptoProgress />
     </div>

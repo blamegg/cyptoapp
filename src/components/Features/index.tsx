@@ -26,7 +26,7 @@ export const Feature = () => {
       <div className="text-center mb-20">
         <h2 className="font-normal text-4xl mb-4">
           A Feature Rich{" "}
-          <span className="font-bold text-customYellow"> Bitcoin Wallet</span>
+          <span className="font-bold text-customYellow"> Saraa Investment</span>
         </h2>
         <p className="text-xs font-sans font-bold text-gray-500">
           WHAT DO YOU GET

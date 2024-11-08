@@ -16,10 +16,12 @@ import img09 from './ssnine.jpg'
 import img10 from './ssten.jpg'
 import img11 from './sseleven.jpg'
 import img12 from './sstwelve.jpg'
+import ss1 from './ss1.png'
+import ss2 from './ss2.png'
+import ss3 from './ss3.png'
+import ss4 from './ss4.png'
 
-
-
-
+import mobile from './mobile1.png'
 
 
 
@@ -41,7 +43,7 @@ export {img09}
 export {img10}
 export {img11}
 export {img12}
-
+export {ss1,ss2,ss3,ss4,mobile}
 
 
 
