@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { logoN} from "@/assets/sharedSection";
 
+
 const NAV_ITEMS = [
   { name: "Home", href: "#home" },
   { name: "Features", href: "#feature" },
@@ -29,9 +30,9 @@ const Navbar: React.FC = () => {
     <div className={`font-Segoe ${currentIndex === 0 ? "bg-[#FAFAFA]" : "bg-black"} border-b-[1px] border-gray-700 `}>
       <nav className=" w-[92%] clg:w-[80%] mx-auto flex md:flex-row flex-col justify-center md:justify-between items-center lg:h-[71px] md:h-14 sm:h-auto gap-5 md:gap-0 p-5 md:p-0">
         {/* Logo Section */}
-        <div className="flex items-center  ">
+        <div className=" flex items-center mt-2 ">
          
-            <img src={logoN.src} alt="logo"   className="md:h-14 lg:h-auto"/>
+            <img src={logoN.src} alt="logo"   className="h-[85px] sm:h-[65px] ms:h-[85px]"/>
             {/* <span className="text-white font-extralight ml-1">Crypt<span className="text-pink font-bold">App</span></span> */}
          
         </div>
